@@ -1,0 +1,418 @@
+{
+  "query_id": "VEILLE-CONTINUE",
+  "nom": "Veille générale simulation hybride santé",
+  "query": "(\"hybrid simulation\" OR \"multi-method simulation\" OR \"DES-ABM\" OR \"SD-ABM\") AND (health* OR hospital OR epidemiol*)",
+  "axis": "axe3",
+  "executed_at": "2026-06-21",
+  "total_count_pubmed": "29",
+  "articles": [
+    {
+      "pmid": "42296413",
+      "title": "Advances in evaluating and delivering nontechnical skills training: The use of simulation, robotics, artificial intelligence and virtual reality.",
+      "journal": "Current opinion in urology",
+      "pubdate": "2026 Jun 16",
+      "doi": "10.1097/MOU.0000000000001419"
+    },
+    {
+      "pmid": "42232277",
+      "title": "Training in minimally invasive thoracic surgery on 3D-model: back to the future of education.",
+      "journal": "Journal of visualized surgery",
+      "pubdate": "2025",
+      "doi": "10.21037/jovs-25-16"
+    },
+    {
+      "pmid": "42201405",
+      "title": "A hybrid framework for compartmental models enabling simulation-based inference.",
+      "journal": "Journal of mathematical biology",
+      "pubdate": "2026 May 27",
+      "doi": "10.1007/s00285-026-02409-y"
+    },
+    {
+      "pmid": "42057387",
+      "title": "Challenges and strategic directions in pediatric nursing clinical practicum in South Korea: a descriptive study.",
+      "journal": "Child health nursing research",
+      "pubdate": "2026 Apr",
+      "doi": "10.4094/chnr.2025.036"
+    },
+    {
+      "pmid": "41993790",
+      "title": "Simulation-based training and education in laparoscopic hepatobiliary and pancreatic surgery.",
+      "journal": "Frontiers in surgery",
+      "pubdate": "2026",
+      "doi": "10.3389/fsurg.2026.1787299"
+    },
+    {
+      "pmid": "41954994",
+      "title": "Challenges in replay detection by TDLM in post-encoding resting state.",
+      "journal": "eLife",
+      "pubdate": "2026 Apr 9",
+      "doi": "10.7554/eLife.108023"
+    },
+    {
+      "pmid": "41893075",
+      "title": "Educational Applications of AI-Based Chatbots in Nursing: A Scoping Review.",
+      "journal": "Nursing reports (Pavia, Italy)",
+      "pubdate": "2026 Mar 3",
+      "doi": "10.3390/nursrep16030087"
+    },
+    {
+      "pmid": "41734716",
+      "title": "The effect of different simulation levels on vaginal birth skills training: A randomized controlled trial in terms of satisfaction, self-confidence and motivation.",
+      "journal": "Nurse education in practice",
+      "pubdate": "2026 Mar",
+      "doi": "10.1016/j.nepr.2026.104777"
+    },
+    {
+      "pmid": "41709193",
+      "title": "Effect of hybrid simulation-based training on improving nursing students' patient interaction and suturing skills.",
+      "journal": "BMC medical education",
+      "pubdate": "2026 Feb 18",
+      "doi": "10.1186/s12909-026-08841-4"
+    },
+    {
+      "pmid": "41444887",
+      "title": "Synthetic data generation methods for longitudinal and time series health data: a systematic review.",
+      "journal": "BMC medical informatics and decision making",
+      "pubdate": "2025 Dec 24",
+      "doi": "10.1186/s12911-025-03326-8"
+    },
+    {
+      "pmid": "41426904",
+      "title": "Effectiveness of Virtual Reality Simulation for Tracheostomy Education Among Healthcare Professionals.",
+      "journal": "Cureus",
+      "pubdate": "2025 Nov",
+      "doi": "10.7759/cureus.97083"
+    },
+    {
+      "pmid": "41299420",
+      "title": "Public confidence in Ireland's Health Service Executive, Mid-West region: Findings from a 2024 regional survey.",
+      "journal": "BMC health services research",
+      "pubdate": "2025 Nov 26",
+      "doi": "10.1186/s12913-025-13663-z"
+    },
+    {
+      "pmid": "41183093",
+      "title": "Using a World Health Assembly simulation to explore undergraduate students' perceptions and confidence in analyzing complex global health challenges: A mixed-methods evaluation.",
+      "journal": "PLOS global public health",
+      "pubdate": "2025",
+      "doi": "10.1371/journal.pgph.0002792"
+    },
+    {
+      "pmid": "40990825",
+      "title": "Development of a 3D-Printed Hybrid Simulation Model for Transnasal Flexible Endoscopy Using Cadaveric Laryngeal Specimens.",
+      "journal": "The Annals of otology, rhinology, and laryngology",
+      "pubdate": "2025 Sep 24",
+      "doi": "10.1177/00034894251377857"
+    },
+    {
+      "pmid": "40851631",
+      "title": "A hybrid simulation model of HIV program interventions: from transmission behavior to macroeconomic impacts.",
+      "journal": "Therapeutic advances in drug safety",
+      "pubdate": "2025",
+      "doi": "10.1177/20420986251367510"
+    },
+    {
+      "pmid": "40836487",
+      "title": "Student Perspectives on the Efficacy of Hybrid Simulation Laboratory Teaching-Practicing Modules.",
+      "journal": "European journal of dental education : official journal of the Association for Dental Education in Europe",
+      "pubdate": "2025 Aug 20",
+      "doi": "10.1111/eje.70044"
+    },
+    {
+      "pmid": "40616821",
+      "title": "Implementation of hybrid simulation training to promote collective and self-efficacy in medical students: a two-pronged approach.",
+      "journal": "Annals of medicine",
+      "pubdate": "2025 Dec",
+      "doi": "10.1080/07853890.2025.2527362"
+    },
+    {
+      "pmid": "40598253",
+      "title": "The effect of Leopold maneuver training with hybrid simulation on nursing students' stress, Bio-Psychosocial response and stress coping behaviors: a randomized controlled trial.",
+      "journal": "BMC nursing",
+      "pubdate": "2025 Jul 1",
+      "doi": "10.1186/s12912-025-03386-1"
+    },
+    {
+      "pmid": "40345087",
+      "title": "Sustainable water allocation under climate change: Deep learning approaches to predict drinking water shortages.",
+      "journal": "Journal of environmental management",
+      "pubdate": "2025 Jun",
+      "doi": "10.1016/j.jenvman.2025.125600"
+    },
+    {
+      "pmid": "40343944",
+      "title": "Consensus on core competencies for simulation training in ultrasound-guided renal biopsy.",
+      "journal": "PloS one",
+      "pubdate": "2025",
+      "doi": "10.1371/journal.pone.0319788"
+    },
+    {
+      "pmid": "40314050",
+      "title": "Impact of an Obstetrical Emergency Simulation Learning Module on Midwifery Students' Competency: A Non-randomized Control Study.",
+      "journal": "Cureus",
+      "pubdate": "2025 Mar",
+      "doi": "10.7759/cureus.81532"
+    },
+    {
+      "pmid": "40165487",
+      "title": "A 3D-printed hybrid portable simulator for skills training in arthroscopic knee surgery.",
+      "journal": "Proceedings of the Institution of Mechanical Engineers. Part H, Journal of engineering in medicine",
+      "pubdate": "2025 Apr",
+      "doi": "10.1177/09544119251328414"
+    },
+    {
+      "pmid": "40122898",
+      "title": "Hybrid simulation and immersive, lived-experience perspectives to shape medical student attitudes towards patients experiencing emotional distress, suicidality, and self-harm.",
+      "journal": "Advances in simulation (London, England)",
+      "pubdate": "2025 Mar 24",
+      "doi": "10.1186/s41077-025-00336-4"
+    },
+    {
+      "pmid": "40049685",
+      "title": "Medical students' experience of culturally diverse family presence during resuscitation simulation.",
+      "journal": "Korean journal of medical education",
+      "pubdate": "2025 Mar",
+      "doi": "10.3946/kjme.2025.325"
+    },
+    {
+      "pmid": "39987664",
+      "title": "Enhancing nurse-parent partnership for NICU nurses by investigating multi-modal learning with a hybrid simulation approach that integrates metaverses and real-world training.",
+      "journal": "Nurse education in practice",
+      "pubdate": "2025 Mar",
+      "doi": "10.1016/j.nepr.2025.104294"
+    },
+    {
+      "pmid": "39860779",
+      "title": "Image-Driven Hybrid Structural Analysis Based on Continuum Point Cloud Method with Boundary Capturing Technique.",
+      "journal": "Sensors (Basel, Switzerland)",
+      "pubdate": "2025 Jan 11",
+      "doi": "10.3390/s25020410"
+    },
+    {
+      "pmid": "39786352",
+      "title": "Molecular dynamics in pharmaceutical nanotechnology: simulating interactions and advancing applications.",
+      "journal": "Journal of biomaterials science. Polymer edition",
+      "pubdate": "2025 Jul",
+      "doi": "10.1080/09205063.2025.2450150"
+    },
+    {
+      "pmid": "39509323",
+      "title": "Simulation-Based Training in Clinical Event Debriefing Improves Leadership Performance.",
+      "journal": "Pediatric emergency care",
+      "pubdate": "2025 Feb 1",
+      "doi": "10.1097/PEC.0000000000003264"
+    },
+    {
+      "pmid": "39358185",
+      "title": "Educational outcomes of simulation-based training in regional anaesthesia: a scoping review.",
+      "journal": "British journal of anaesthesia",
+      "pubdate": "2025 Feb",
+      "doi": "10.1016/j.bja.2024.07.037"
+    }
+  ],
+  "new_articles": [
+    {
+      "pmid": "42296413",
+      "title": "Advances in evaluating and delivering nontechnical skills training: The use of simulation, robotics, artificial intelligence and virtual reality.",
+      "journal": "Current opinion in urology",
+      "pubdate": "2026 Jun 16",
+      "doi": "10.1097/MOU.0000000000001419"
+    },
+    {
+      "pmid": "42232277",
+      "title": "Training in minimally invasive thoracic surgery on 3D-model: back to the future of education.",
+      "journal": "Journal of visualized surgery",
+      "pubdate": "2025",
+      "doi": "10.21037/jovs-25-16"
+    },
+    {
+      "pmid": "42201405",
+      "title": "A hybrid framework for compartmental models enabling simulation-based inference.",
+      "journal": "Journal of mathematical biology",
+      "pubdate": "2026 May 27",
+      "doi": "10.1007/s00285-026-02409-y"
+    },
+    {
+      "pmid": "42057387",
+      "title": "Challenges and strategic directions in pediatric nursing clinical practicum in South Korea: a descriptive study.",
+      "journal": "Child health nursing research",
+      "pubdate": "2026 Apr",
+      "doi": "10.4094/chnr.2025.036"
+    },
+    {
+      "pmid": "41993790",
+      "title": "Simulation-based training and education in laparoscopic hepatobiliary and pancreatic surgery.",
+      "journal": "Frontiers in surgery",
+      "pubdate": "2026",
+      "doi": "10.3389/fsurg.2026.1787299"
+    },
+    {
+      "pmid": "41954994",
+      "title": "Challenges in replay detection by TDLM in post-encoding resting state.",
+      "journal": "eLife",
+      "pubdate": "2026 Apr 9",
+      "doi": "10.7554/eLife.108023"
+    },
+    {
+      "pmid": "41893075",
+      "title": "Educational Applications of AI-Based Chatbots in Nursing: A Scoping Review.",
+      "journal": "Nursing reports (Pavia, Italy)",
+      "pubdate": "2026 Mar 3",
+      "doi": "10.3390/nursrep16030087"
+    },
+    {
+      "pmid": "41734716",
+      "title": "The effect of different simulation levels on vaginal birth skills training: A randomized controlled trial in terms of satisfaction, self-confidence and motivation.",
+      "journal": "Nurse education in practice",
+      "pubdate": "2026 Mar",
+      "doi": "10.1016/j.nepr.2026.104777"
+    },
+    {
+      "pmid": "41709193",
+      "title": "Effect of hybrid simulation-based training on improving nursing students' patient interaction and suturing skills.",
+      "journal": "BMC medical education",
+      "pubdate": "2026 Feb 18",
+      "doi": "10.1186/s12909-026-08841-4"
+    },
+    {
+      "pmid": "41444887",
+      "title": "Synthetic data generation methods for longitudinal and time series health data: a systematic review.",
+      "journal": "BMC medical informatics and decision making",
+      "pubdate": "2025 Dec 24",
+      "doi": "10.1186/s12911-025-03326-8"
+    },
+    {
+      "pmid": "41426904",
+      "title": "Effectiveness of Virtual Reality Simulation for Tracheostomy Education Among Healthcare Professionals.",
+      "journal": "Cureus",
+      "pubdate": "2025 Nov",
+      "doi": "10.7759/cureus.97083"
+    },
+    {
+      "pmid": "41299420",
+      "title": "Public confidence in Ireland's Health Service Executive, Mid-West region: Findings from a 2024 regional survey.",
+      "journal": "BMC health services research",
+      "pubdate": "2025 Nov 26",
+      "doi": "10.1186/s12913-025-13663-z"
+    },
+    {
+      "pmid": "41183093",
+      "title": "Using a World Health Assembly simulation to explore undergraduate students' perceptions and confidence in analyzing complex global health challenges: A mixed-methods evaluation.",
+      "journal": "PLOS global public health",
+      "pubdate": "2025",
+      "doi": "10.1371/journal.pgph.0002792"
+    },
+    {
+      "pmid": "40990825",
+      "title": "Development of a 3D-Printed Hybrid Simulation Model for Transnasal Flexible Endoscopy Using Cadaveric Laryngeal Specimens.",
+      "journal": "The Annals of otology, rhinology, and laryngology",
+      "pubdate": "2025 Sep 24",
+      "doi": "10.1177/00034894251377857"
+    },
+    {
+      "pmid": "40851631",
+      "title": "A hybrid simulation model of HIV program interventions: from transmission behavior to macroeconomic impacts.",
+      "journal": "Therapeutic advances in drug safety",
+      "pubdate": "2025",
+      "doi": "10.1177/20420986251367510"
+    },
+    {
+      "pmid": "40836487",
+      "title": "Student Perspectives on the Efficacy of Hybrid Simulation Laboratory Teaching-Practicing Modules.",
+      "journal": "European journal of dental education : official journal of the Association for Dental Education in Europe",
+      "pubdate": "2025 Aug 20",
+      "doi": "10.1111/eje.70044"
+    },
+    {
+      "pmid": "40616821",
+      "title": "Implementation of hybrid simulation training to promote collective and self-efficacy in medical students: a two-pronged approach.",
+      "journal": "Annals of medicine",
+      "pubdate": "2025 Dec",
+      "doi": "10.1080/07853890.2025.2527362"
+    },
+    {
+      "pmid": "40598253",
+      "title": "The effect of Leopold maneuver training with hybrid simulation on nursing students' stress, Bio-Psychosocial response and stress coping behaviors: a randomized controlled trial.",
+      "journal": "BMC nursing",
+      "pubdate": "2025 Jul 1",
+      "doi": "10.1186/s12912-025-03386-1"
+    },
+    {
+      "pmid": "40345087",
+      "title": "Sustainable water allocation under climate change: Deep learning approaches to predict drinking water shortages.",
+      "journal": "Journal of environmental management",
+      "pubdate": "2025 Jun",
+      "doi": "10.1016/j.jenvman.2025.125600"
+    },
+    {
+      "pmid": "40343944",
+      "title": "Consensus on core competencies for simulation training in ultrasound-guided renal biopsy.",
+      "journal": "PloS one",
+      "pubdate": "2025",
+      "doi": "10.1371/journal.pone.0319788"
+    },
+    {
+      "pmid": "40314050",
+      "title": "Impact of an Obstetrical Emergency Simulation Learning Module on Midwifery Students' Competency: A Non-randomized Control Study.",
+      "journal": "Cureus",
+      "pubdate": "2025 Mar",
+      "doi": "10.7759/cureus.81532"
+    },
+    {
+      "pmid": "40165487",
+      "title": "A 3D-printed hybrid portable simulator for skills training in arthroscopic knee surgery.",
+      "journal": "Proceedings of the Institution of Mechanical Engineers. Part H, Journal of engineering in medicine",
+      "pubdate": "2025 Apr",
+      "doi": "10.1177/09544119251328414"
+    },
+    {
+      "pmid": "40122898",
+      "title": "Hybrid simulation and immersive, lived-experience perspectives to shape medical student attitudes towards patients experiencing emotional distress, suicidality, and self-harm.",
+      "journal": "Advances in simulation (London, England)",
+      "pubdate": "2025 Mar 24",
+      "doi": "10.1186/s41077-025-00336-4"
+    },
+    {
+      "pmid": "40049685",
+      "title": "Medical students' experience of culturally diverse family presence during resuscitation simulation.",
+      "journal": "Korean journal of medical education",
+      "pubdate": "2025 Mar",
+      "doi": "10.3946/kjme.2025.325"
+    },
+    {
+      "pmid": "39987664",
+      "title": "Enhancing nurse-parent partnership for NICU nurses by investigating multi-modal learning with a hybrid simulation approach that integrates metaverses and real-world training.",
+      "journal": "Nurse education in practice",
+      "pubdate": "2025 Mar",
+      "doi": "10.1016/j.nepr.2025.104294"
+    },
+    {
+      "pmid": "39860779",
+      "title": "Image-Driven Hybrid Structural Analysis Based on Continuum Point Cloud Method with Boundary Capturing Technique.",
+      "journal": "Sensors (Basel, Switzerland)",
+      "pubdate": "2025 Jan 11",
+      "doi": "10.3390/s25020410"
+    },
+    {
+      "pmid": "39786352",
+      "title": "Molecular dynamics in pharmaceutical nanotechnology: simulating interactions and advancing applications.",
+      "journal": "Journal of biomaterials science. Polymer edition",
+      "pubdate": "2025 Jul",
+      "doi": "10.1080/09205063.2025.2450150"
+    },
+    {
+      "pmid": "39509323",
+      "title": "Simulation-Based Training in Clinical Event Debriefing Improves Leadership Performance.",
+      "journal": "Pediatric emergency care",
+      "pubdate": "2025 Feb 1",
+      "doi": "10.1097/PEC.0000000000003264"
+    },
+    {
+      "pmid": "39358185",
+      "title": "Educational outcomes of simulation-based training in regional anaesthesia: a scoping review.",
+      "journal": "British journal of anaesthesia",
+      "pubdate": "2025 Feb",
+      "doi": "10.1016/j.bja.2024.07.037"
+    }
+  ]
+}
