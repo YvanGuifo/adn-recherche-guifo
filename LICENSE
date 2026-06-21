@@ -1,0 +1,39 @@
+MIT License (code uniquement — voir clarification ci-dessous)
+
+Copyright (c) 2026 A. Yvan GUIFO FODJO
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+Clarification (hors texte légal de la licence MIT) :
+
+Cette licence MIT couvre le CODE de ce dépôt (scripts Python, workflows,
+squelettes de configuration). Elle ne couvre PAS le contenu académique en
+cours d'élaboration ou de soumission — notamment :
+
+  - le manuscrit du NIER paper (axe1_2_native_ia/nier_icse2027/),
+  - le papier #184 et ses dérivés,
+  - la revue systématique PRISMA (axe3_simulation_hybride/prisma/) et son
+    contenu narratif (lacunes, synthèse thématique),
+  - tout document .docx ou .pdf présent dans le dépôt ou référencé par lui.
+
+Ces contenus restent la propriété intellectuelle de leur auteur (A. Yvan
+GUIFO FODJO) jusqu'à publication, et sont soumis aux politiques de copyright
+des revues/conférences visées une fois acceptés.

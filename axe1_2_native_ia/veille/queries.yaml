@@ -1,0 +1,32 @@
+# Requêtes de veille — Axe 1+2 (Native-IA Software Engineering / IA frugale)
+# Source des thèmes : keywords du papier #184 et de la veille 2022-2025
+# (Structuration_article_projet, Projet_de_recherche docs).
+
+arxiv_queries:
+  - id: "AX1"
+    nom: "Génie logiciel natif-IA / programmation agentique"
+    search_query: 'all:"AI-native software engineering" OR all:"agentic programming" OR (cat:cs.SE AND all:"large language model")'
+    max_results: 30
+    sort_by: "submittedDate"
+    sort_order: "descending"
+
+  - id: "AX2"
+    nom: "Traçabilité, provenance et gouvernance du code généré par IA"
+    search_query: 'all:"code provenance" OR all:"AI code governance" OR (cat:cs.SE AND all:"semantic validation")'
+    max_results: 30
+    sort_by: "submittedDate"
+    sort_order: "descending"
+
+  - id: "AX3"
+    nom: "Facteurs humains et cognitifs — Behavioural Software Engineering"
+    search_query: '(cat:cs.SE AND all:"developer cognition") OR all:"rubber-stamping" AND all:"code generation"'
+    max_results: 20
+    sort_by: "submittedDate"
+    sort_order: "descending"
+
+  - id: "AX4"
+    nom: "IA frugale, explicable, sobriété computationnelle (Axe 2)"
+    search_query: '(cat:cs.AI OR cat:cs.LG) AND (all:"frugal AI" OR all:"green AI" OR all:"energy efficient deep learning") AND all:explainab*'
+    max_results: 30
+    sort_by: "submittedDate"
+    sort_order: "descending"

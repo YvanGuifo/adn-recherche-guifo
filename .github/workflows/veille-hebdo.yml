@@ -1,0 +1,62 @@
+name: Veille hebdomadaire
+
+on:
+  schedule:
+    # Tous les lundis à 7h00 UTC (≈ 8h00/9h00 heure de Paris selon saison)
+    - cron: "0 7 * * 1"
+  workflow_dispatch: {}   # permet aussi un déclenchement manuel depuis l'onglet Actions
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  veille:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      - name: Veille PubMed (Axe 3 — slots H1, H4, H6 + veille continue)
+        run: python scripts/veille/pubmed_search.py --config axe3_simulation_hybride/veille/queries.yaml --axis axe3
+        continue-on-error: true   # une requête en échec ne doit pas bloquer le reste du digest
+
+      - name: Veille arXiv (Axe 1+2)
+        run: python scripts/veille/arxiv_monitor.py --config axe1_2_native_ia/veille/queries.yaml --axis axe1_2
+        continue-on-error: true
+
+      - name: Vérification des deadlines
+        run: python scripts/veille/deadline_tracker.py --config config/deadlines.yaml
+
+      - name: Générer le digest hebdomadaire
+        run: python scripts/reporting/weekly_digest.py
+
+      - name: Commit des résultats de veille
+        run: |
+          git config user.name "veille-bot"
+          git config user.email "veille-bot@users.noreply.github.com"
+          git add data/veille_results/
+          git diff --cached --quiet || git commit -m "Veille hebdomadaire automatique [skip ci]"
+          git push
+
+      - name: Ouvrir une issue avec le digest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          LATEST_DIGEST=$(ls -t data/veille_results/digest_*.md 2>/dev/null | head -n1)
+          if [ -n "$LATEST_DIGEST" ]; then
+            gh issue create \
+              --title "📡 Veille hebdomadaire — $(date +'%d %B %Y')" \
+              --body-file "$LATEST_DIGEST" \
+              --label "veille" || echo "Le label 'veille' n'existe peut-être pas encore — créez-le dans Issues > Labels."
+          else
+            echo "Aucun digest généré, issue non créée."
+          fi

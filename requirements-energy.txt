@@ -1,0 +1,3 @@
+# Installer séparément : pip install -r requirements-energy.txt
+# (codecarbon a des dépendances plus lourdes, non nécessaires pour la veille/vérification)
+codecarbon>=2.5

@@ -1,0 +1,35 @@
+# Requêtes de veille — Axe 3 (Simulation Hybride en Santé)
+# Seuls les slots H1, H4, H6 sont automatisables (base PubMed, API E-utilities gratuite).
+# H2 (Scopus), H3 (Web of Science), H5 (ACM DL/IEEE) nécessitent un accès manuel
+# — voir axe3_simulation_hybride/prisma/README.md.
+
+pubmed_queries:
+  - id: "H1"
+    nom: "Tuberculose / paludisme / résistance antimicrobienne"
+    query: '("hybrid simulation") AND (tuberculosis OR malaria OR "antimicrobial resistance")'
+    mindate: "2022/01/01"
+    maxdate: "2024/12/31"
+    retmax: 50
+
+  - id: "H4"
+    nom: "Systèmes de santé en pays à revenu faible / Afrique (LMIC)"
+    query: '("hybrid simulation") AND (health) AND (LMIC OR Africa OR "low income")'
+    mindate: "2022/01/01"
+    maxdate: "2024/12/31"
+    retmax: 50
+
+  - id: "H6"
+    nom: "Santé maternelle, néonatale et infantile"
+    query: '("hybrid simulation") AND (maternal OR newborn OR "child health")'
+    mindate: "2022/01/01"
+    maxdate: "2024/12/31"
+    retmax: 50
+
+  # Requête de veille continue (hors slots H1-H6) : capter toute nouvelle publication
+  # pertinente pour la revue, au-delà des 6 emplacements réservés.
+  - id: "VEILLE-CONTINUE"
+    nom: "Veille générale simulation hybride santé"
+    query: '("hybrid simulation" OR "multi-method simulation" OR "DES-ABM" OR "SD-ABM") AND (health* OR hospital OR epidemiol*)'
+    mindate: "2025/01/01"
+    maxdate: "2026/12/31"
+    retmax: 30

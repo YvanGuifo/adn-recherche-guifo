@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# LaTeX
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.toc
+
+# Les résultats de veille (pubmed_*.json, arxiv_*.json, digest_*.md) sont
+# intentionnellement VERSIONNÉS : le diff entre exécutions hebdomadaires successives
+# dépend de la présence du résultat précédent dans le dépôt (cf. scripts/veille/*.py).
+# Seuls les benchmarks énergétiques locaux, plus volumineux et exploratoires, sont ignorés.
+data/veille_results/energy_benchmarks/
+
+# Système
+.DS_Store
+*.swp

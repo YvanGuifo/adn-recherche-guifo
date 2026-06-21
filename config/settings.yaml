@@ -1,0 +1,30 @@
+# Paramètres centraux du dépôt ADN de Recherche
+# À COMPLÉTER : remplacer les valeurs marquées <À_COMPLETER>
+
+auteur:
+  nom: "A. Yvan GUIFO FODJO"
+  affiliation: "EFREI Paris / Sorbonne Université (LIP6)"
+  email: "<À_COMPLETER>"  # utilisé comme identifiant dans les appels API (bonnes pratiques NCBI/arXiv)
+
+ncbi:
+  # NCBI E-utilities demande un email + un nom d'outil pour identifier les requêtes automatisées.
+  # Sans clé API : limite ~3 requêtes/seconde. Avec une clé API gratuite (NCBI account) : ~10/seconde.
+  tool_name: "adn-recherche-guifo"
+  email: "<À_COMPLETER>"
+  api_key: ""  # optionnel — laisser vide si vous n'avez pas de clé NCBI
+  rate_limit_seconds: 0.4
+
+arxiv:
+  # arXiv recommande un délai d'au moins 3 secondes entre requêtes successives (Terms of Use).
+  rate_limit_seconds: 3.0
+  user_agent: "adn-recherche-guifo/1.0 (<À_COMPLETER_email>)"
+
+crossref:
+  # Crossref REST API n'exige pas de clé, mais demande un User-Agent identifiable ("politeness pool").
+  user_agent: "adn-recherche-guifo/1.0 (mailto:<À_COMPLETER_email>)"
+
+chemins:
+  data_dir: "data/veille_results"
+  axe12_queries: "axe1_2_native_ia/veille/queries.yaml"
+  axe3_queries: "axe3_simulation_hybride/veille/queries.yaml"
+  deadlines: "config/deadlines.yaml"

@@ -1,0 +1,39 @@
+name: Vérification des deadlines
+
+on:
+  schedule:
+    # Tous les jours à 6h00 UTC
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      - name: Vérifier les deadlines critiques (< 7 jours)
+        id: deadlines
+        run: python scripts/veille/deadline_tracker.py --config config/deadlines.yaml --alert-threshold 7 --github-output
+
+      - name: Ouvrir une alerte si deadline critique
+        if: steps.deadlines.outputs.critical == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "🚨 Deadline critique : moins de 7 jours" \
+            --body "${{ steps.deadlines.outputs.message }}" \
+            --label "urgent" || echo "Le label 'urgent' n'existe peut-être pas encore — créez-le dans Issues > Labels."

@@ -1,0 +1,42 @@
+# Deadlines suivies — maintenues manuellement.
+# Principe : on ne scrape pas se-deadlines.github.io / conf.researchr.org automatiquement
+# (pages changeantes, risque d'erreur). On vérifie ponctuellement sur les sources officielles
+# et on met à jour ce fichier. Le script deadline_tracker.py calcule les échéances à partir d'ici.
+#
+# Champs :
+#   date: format YYYY-MM-DD, ou null si aucune date ferme n'est encore publiée
+#   statut: texte libre décrivant l'état réel (ne jamais inventer un statut)
+#   priorite: primaire | secondaire | active | continue
+
+deadlines:
+  - nom: "ICSE 2027 — NIER Track"
+    type: "conference"
+    date: "2026-10-23"
+    url: "https://conf.researchr.org/track/icse-2027/icse-2027-nier"
+    statut: "en préparation — cible primaire"
+    axe: "Axe 1+2"
+    priorite: "primaire"
+
+  - nom: "JSS Special Issue — Software Architecture in a Digital Society"
+    type: "journal"
+    date: "2027-01-31"
+    url: ""
+    statut: "conditionnel — décision après notification NIER (stratégie cascade)"
+    axe: "Axe 1+2"
+    priorite: "secondaire"
+
+  - nom: "Paper #184 — Native-IA SE (Industry Showcase Track)"
+    type: "conference"
+    date: null
+    url: ""
+    statut: "réentré en review depuis le 17 juin 2026 — en attente de notification"
+    axe: "Axe 1+2"
+    priorite: "active"
+
+  - nom: "Revue PRISMA simulation hybride santé (Nature Sustainability / J. Simulation)"
+    type: "journal"
+    date: null
+    url: ""
+    statut: "préliminaire — cible Q4 2026, date exacte de soumission à définir"
+    axe: "Axe 3"
+    priorite: "continue"

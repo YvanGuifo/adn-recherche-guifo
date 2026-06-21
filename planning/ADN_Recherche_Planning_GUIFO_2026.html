@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADN de Recherche — Planning Intégré 2026</title>
+<style>
+  :root {
+    --accent: #1a3c5e; --blue: #2471a3; --green: #1e8449; --orange: #d35400;
+    --red: #c0392b; --purple: #6c3483; --teal: #148f77;
+    --light: #eaf2f8; --lighter: #f8fbfd; --bg: #f4f6f9;
+    --axe12: #2471a3; --axe3: #d35400; --formation: #1e8449; --veille: #6c3483; --enseignement: #148f77;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter','Segoe UI',system-ui,-apple-system,sans-serif; background: var(--bg); color: #2c3e50; padding: 16px; }
+  .container { max-width: 1000px; margin: 0 auto; }
+
+  /* Header */
+  .header { background: linear-gradient(135deg, #0b2545 0%, #13508f 60%, #1e8449 100%); border-radius: 16px; padding: 30px 34px; margin-bottom: 20px; color: #fff; position: relative; overflow: hidden; }
+  .header::after { content:''; position:absolute; top:-50px; right:-50px; width:220px; height:220px; background:rgba(255,255,255,0.03); border-radius:50%; }
+  .header-eyebrow { font-size:11px; letter-spacing:2.5px; text-transform:uppercase; opacity:0.55; margin-bottom:4px; }
+  .header h1 { font-size:26px; font-weight:800; margin-bottom:4px; line-height:1.2; }
+  .header-sub { font-size:15px; opacity:0.85; font-weight:300; margin-bottom:10px; }
+  .header-meta { font-size:13px; opacity:0.8; display:flex; gap:6px; flex-wrap:wrap; }
+  .header-meta span { display:inline-block; background:rgba(255,255,255,0.12); padding:3px 11px; border-radius:20px; }
+
+  /* Global progress */
+  .global-progress { background:#fff; border-radius:12px; padding:14px 20px; margin-bottom:16px; display:flex; gap:18px; align-items:center; flex-wrap:wrap; border:1px solid #e8e8e8; }
+  .gp-bar-wrap { flex:1; min-width:200px; }
+  .gp-label { font-size:12px; font-weight:600; color:#888; margin-bottom:4px; }
+  .gp-bar { height:8px; background:#eee; border-radius:4px; overflow:hidden; }
+  .gp-bar-fill { height:100%; border-radius:4px; transition:width 0.4s; background:linear-gradient(90deg,var(--blue),var(--green)); }
+  .gp-stats { display:flex; gap:14px; }
+  .gp-stat { text-align:center; }
+  .gp-stat-num { font-size:20px; font-weight:800; }
+  .gp-stat-label { font-size:10px; color:#999; text-transform:uppercase; letter-spacing:0.5px; }
+
+  /* Day-cap banner */
+  .daycap-banner { background:#fff; border:1px solid #d6eee6; border-left:4px solid var(--teal); border-radius:10px; padding:10px 16px; margin-bottom:16px; font-size:12px; color:#1f5c4e; display:flex; align-items:center; gap:8px; }
+
+  /* Phases */
+  .phases { display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap; }
+  .phase-card { flex:1; min-width:180px; background:#fff; border-radius:12px; padding:12px 14px; border-left:4px solid; cursor:pointer; transition:box-shadow 0.2s,transform 0.15s; }
+  .phase-card:hover { box-shadow:0 4px 16px rgba(0,0,0,0.08); transform:translateY(-1px); }
+  .phase-card.active { box-shadow:0 4px 20px rgba(0,0,0,0.12); }
+  .phase-label { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:3px; }
+  .phase-title { font-size:13px; font-weight:700; color:#333; margin-bottom:2px; }
+  .phase-weeks { font-size:11px; color:#999; }
+
+  /* Week tabs */
+  .week-tabs { display:flex; gap:4px; margin-bottom:16px; flex-wrap:wrap; }
+  .week-tab { flex:0 0 auto; min-width:52px; padding:8px 4px; border:2px solid #e0e0e0; border-radius:9px; cursor:pointer; background:#fff; text-align:center; transition:all 0.2s; position:relative; }
+  .week-tab:hover { border-color:#bbb; }
+  .week-tab.active { color:#fff; }
+  .week-tab .wt-num { display:block; font-size:11px; font-weight:700; }
+  .week-tab .wt-dates { display:block; font-size:8px; font-weight:500; opacity:0.6; margin-top:1px; }
+  .week-tab .wt-progress { width:30px; height:3px; border-radius:2px; background:#eee; margin:3px auto 0; overflow:hidden; }
+  .week-tab .wt-progress-bar { height:100%; border-radius:2px; transition:width 0.3s; }
+
+  /* Week detail */
+  .week-detail { background:#fff; border-radius:14px; border:1px solid #e8e8e8; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.04); }
+  .week-header { padding:20px 26px; color:#fff; }
+  .week-header-top { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+  .week-header .wh-phase { font-size:11px; opacity:0.7; font-weight:600; letter-spacing:0.5px; }
+  .week-header h2 { font-size:22px; font-weight:800; margin-top:3px; }
+  .wh-badges { display:flex; gap:8px; flex-wrap:wrap; }
+  .wh-badge { background:rgba(255,255,255,0.18); padding:4px 11px; border-radius:20px; font-size:12px; font-weight:500; }
+  .wh-info { margin-top:10px; font-size:12.5px; opacity:0.92; line-height:1.55; }
+  .wh-info strong { opacity:1; }
+  .wh-milestone { margin-top:10px; background:rgba(255,255,255,0.15); border-radius:8px; padding:8px 14px; font-size:12px; font-weight:600; }
+
+  /* Days & Tasks */
+  .days-container { padding:16px 20px; }
+  .day-group { margin-bottom:14px; }
+  .day-label { font-size:12px; font-weight:700; color:var(--accent); margin-bottom:6px; padding-bottom:4px; border-bottom:1px solid #eee; display:flex; justify-content:space-between; align-items:center; }
+  .day-label-date { font-weight:400; color:#aaa; font-size:11px; }
+  .day-label-end { font-weight:600; color:var(--teal); font-size:10px; background:#e8f8f5; padding:1px 8px; border-radius:8px; }
+  .task-row { display:flex; gap:10px; align-items:flex-start; padding:10px 12px; margin-bottom:5px; border-radius:9px; border:1px solid; cursor:pointer; transition:all 0.15s; }
+  .task-row:hover { box-shadow:0 2px 8px rgba(0,0,0,0.05); }
+  .task-row.done { opacity:0.55; }
+  .checkbox { width:20px; height:20px; border-radius:5px; border:2px solid #ccc; background:#fff; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:1px; transition:all 0.2s; font-size:12px; color:#fff; font-weight:700; }
+  .checkbox.checked { background:var(--green); border-color:var(--green); }
+  .task-text { font-size:13px; font-weight:500; color:#333; line-height:1.4; }
+  .task-row.done .task-text { color:#aaa; text-decoration:line-through; }
+  .task-tags { display:flex; gap:5px; margin-top:4px; flex-wrap:wrap; }
+  .tag { font-size:10px; padding:1px 8px; border-radius:10px; font-weight:600; }
+  .tag-time { color:#888; background:#f5f5f5; }
+
+  /* Notes section */
+  .notes-section { margin-top:12px; padding:12px 16px; background:#fafbfc; border-radius:10px; border:1px dashed #ddd; }
+  .notes-section label { font-size:11px; font-weight:700; color:#888; text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:4px; }
+  .notes-section textarea { width:100%; min-height:60px; border:1px solid #e0e0e0; border-radius:6px; padding:8px 10px; font-family:inherit; font-size:12px; resize:vertical; background:#fff; color:#333; }
+  .notes-section textarea:focus { outline:none; border-color:var(--blue); }
+
+  /* Empty state */
+  .empty-state { text-align:center; padding:40px 20px; color:#aaa; }
+  .empty-state .icon { font-size:40px; margin-bottom:12px; }
+  .empty-state h3 { font-size:15px; color:#888; margin-bottom:6px; }
+  .empty-state p { font-size:12px; max-width:420px; margin:0 auto; line-height:1.6; }
+
+  /* Legend */
+  .legend { display:flex; gap:8px; margin-top:16px; flex-wrap:wrap; justify-content:center; }
+  .legend-item { font-size:10px; padding:3px 10px; border-radius:12px; border:1px solid; font-weight:600; }
+  .footer-note { text-align:center; font-size:10px; color:#bbb; margin-top:12px; padding-bottom:16px; line-height:1.5; }
+
+  /* Actions bar */
+  .actions-bar { display:flex; gap:8px; margin-top:12px; justify-content:center; flex-wrap:wrap; }
+  .btn { padding:7px 16px; border-radius:8px; border:1px solid #ddd; background:#fff; font-size:11px; font-weight:600; cursor:pointer; transition:all 0.2s; color:#555; }
+  .btn:hover { background:#f0f0f0; }
+  .btn-danger { border-color:#e74c3c40; color:#c0392b; }
+  .btn-danger:hover { background:#fdf2f2; }
+  .btn-export { border-color:var(--blue); color:var(--blue); }
+
+  @media print { body { background:#fff; padding:0; } .week-tabs,.phases,.global-progress,.actions-bar,.notes-section,.legend,.daycap-banner { display:none; } .week-detail { box-shadow:none; border:none; } }
+  @media (max-width:600px) { body { padding:8px; } .header { padding:18px; } .header h1 { font-size:20px; } }
+</style>
+</head>
+<body>
+<div class="container" id="app"></div>
+
+<script>
+// ── DATA ──
+const PHASES = [
+  {id:1, label:"Fondations & Cadrage", color:"#2471a3", weeks:"S1–S4", range:[0,3]},
+  {id:2, label:"Montée en puissance", color:"#d35400", weeks:"S5–S8", range:[4,7]},
+  {id:3, label:"Convergence", color:"#1e8449", weeks:"S9–S12", range:[8,11]},
+  {id:4, label:"Sprint final NIER", color:"#8e44ad", weeks:"S13–S18", range:[12,17]}
+];
+
+const CATS = {
+  formation: {bg:"#eafaf1",border:"#1e8449",label:"📚 Formation",color:"#1e8449"},
+  axe12:     {bg:"#ebf5fb",border:"#2471a3",label:"🔬 Axe 1+2",color:"#2471a3"},
+  axe3:      {bg:"#fef5e7",border:"#d35400",label:"🧬 Axe 3",color:"#d35400"},
+  enseignement: {bg:"#e8f8f5",border:"#148f77",label:"🎓 Enseignement",color:"#148f77"},
+  veille:    {bg:"#f5eef8",border:"#6c3483",label:"📡 Veille",color:"#6c3483"},
+  admin:     {bg:"#f9f9f9",border:"#95a5a6",label:"⚙️ Admin",color:"#95a5a6"},
+  jalon:     {bg:"#fdf2e9",border:"#e67e22",label:"🏁 Jalon",color:"#e67e22"}
+};
+
+function d(startStr, offset) {
+  const [d,m,y] = [22,5,2026]; // June 22 2026 = day 0
+  const base = new Date(y, m, d);
+  base.setDate(base.getDate() + offset);
+  const days = ["Dim","Lun","Mar","Mer","Jeu","Ven","Sam"];
+  const months = ["jan","fév","mars","avr","mai","juin","juil","août","sept","oct","nov","déc"];
+  return `${days[base.getDay()]} ${base.getDate()} ${months[base.getMonth()]}`;
+}
+
+function weekDates(wi) {
+  const s = wi * 7;
+  const [d1,m1] = [22,5];
+  const base1 = new Date(2026, m1, d1 + s);
+  const base2 = new Date(2026, m1, d1 + s + 6);
+  const mo = ["jan","fév","mars","avr","mai","juin","juil","août","sept","oct"];
+  return `${base1.getDate()} ${mo[base1.getMonth()]}–${base2.getDate()} ${mo[base2.getMonth()]}`;
+}
+
+// Rotation hebdomadaire des tâches d'enseignement (syllabus / cours 2026-2027)
+const TEACH = {
+  lun1: "Travail sur syllabus 2026-2027 : cadrage du plan de cours, objectifs pédagogiques (partie 1)",
+  lun2: "Travail sur syllabus 2026-2027 : cadrage du plan de cours, objectifs pédagogiques (partie 2)",
+  mar:  "Travail sur syllabus 2026-2027 : rédaction du contenu de cours",
+  mer:  "Travail sur syllabus 2026-2027 : préparation des supports (slides, exercices)",
+  jeu:  "Travail sur syllabus 2026-2027 : conception des évaluations et TP",
+  ven:  "Travail sur syllabus 2026-2027 : relecture et consolidation des supports"
+};
+
+const WEEKS = [
+  // ── PHASE 1: S1–S4 (22 juin – 19 juillet) ──
+  {
+    week:1, phase:1, title:"Démarrage & fondations", hours:"~30h",
+    objective:"Setup formation + squelette NIER + première requête PRISMA H1 + lancement enseignement 2026-2027",
+    deliverable:"Repo ai-portfolio cloné, squelette IEEEtran NIER v0.0, requête H1 lancée, cadrage syllabus initié",
+    milestone:"Environnements opérationnels (formation + recherche + enseignement)",
+    days:[
+      {label:"Lundi", date:d(0,0), tasks:[
+        {cat:"formation", time:"9h–12h", task:"Clone repo ai-portfolio, setup environnement Python, lecture Semaine 1 (prompt engineering)"},
+        {cat:"enseignement", time:"14h–15h", task:TEACH.lun1},
+        {cat:"formation", time:"15h–17h", task:"Créneau formation : How LLMs Work + Prompt Engineering for Developers (DeepLearning.AI)"},
+        {cat:"enseignement", time:"17h–18h", task:TEACH.lun2}
+      ]},
+      {label:"Mardi", date:d(0,1), tasks:[
+        {cat:"axe12", time:"9h–12h", task:"Relire le papier #184 soumis. Identifier les éléments réutilisables pour le NIER. Lister les concepts-clés du framework Native-IA."},
+        {cat:"formation", time:"14h–16h", task:"Auto-formation : Building Systems with ChatGPT API + notes de synthèse"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.mar}
+      ]},
+      {label:"Mercredi", date:d(0,2), tasks:[
+        {cat:"formation", time:"9h–11h", task:"LangChain : Chat with Your Data — exercices prompt engineering"},
+        {cat:"axe12", time:"14h–16h", task:"Créer le squelette IEEEtran NIER (titre, sections, abstract draft). Documenter les observations prompt engineering avec perspective Axe 2."},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.mer}
+      ]},
+      {label:"Jeudi", date:d(0,3), tasks:[
+        {cat:"axe3", time:"9h–12h", task:"Lancer requête H1 (PubMed : hybrid simulation tuberculosis/malaria/AMR 2022–2024). Documenter résultats ou absence de résultats."},
+        {cat:"formation", time:"14h–16h", task:"Auto-formation : LangChain Chat with Your Data — Partie 2 + pratique notebook"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.jeu}
+      ]},
+      {label:"Vendredi", date:d(0,4), tasks:[
+        {cat:"formation", time:"9h–11h", task:"Consolidation semaine 1 formation. Rédiger journal d'apprentissage."},
+        {cat:"veille", time:"14h–15h30", task:"Veille scientifique : alertes Zotero, vérifier se-deadlines.github.io pour ICSE 2027 NIER"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.ven}
+      ]}
+    ]
+  },
+  {
+    week:2, phase:1, title:"RAG & synthèse empirique", hours:"~30h",
+    objective:"Projet Mini RAG Pipeline + avancer synthèse empirique NIER + slot H2 + syllabus",
+    deliverable:"Mini RAG Pipeline fonctionnel, NIER introduction v0.1, requête H2 lancée",
+    days:[
+      {label:"Lundi", date:d(0,7), tasks:[
+        {cat:"formation", time:"9h–12h", task:"Auto-formation : agents LangChain, Functions & Tools"},
+        {cat:"enseignement", time:"14h–15h", task:TEACH.lun1},
+        {cat:"formation", time:"15h–17h", task:"Créneau formation : Agentic Workflows with LangGraph"},
+        {cat:"enseignement", time:"17h–18h", task:TEACH.lun2}
+      ]},
+      {label:"Mardi", date:d(0,8), tasks:[
+        {cat:"axe12", time:"9h–12h", task:"Rédiger introduction NIER v0.1 : positionnement, gap identifié, contribution annoncée. S'appuyer sur la veille 2022–2025."},
+        {cat:"formation", time:"14h–16h", task:"Auto-formation : Multi AI Agent Systems (crewAI)"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.mar}
+      ]},
+      {label:"Mercredi", date:d(0,9), tasks:[
+        {cat:"formation", time:"9h–12h", task:"Construire Mini RAG Pipeline (LangChain + ChromaDB) — projet S2"},
+        {cat:"axe12", time:"14h–15h30", task:"Double capitalisation : documenter architecture RAG avec perspective gouvernance Native-IA (traçabilité, provenance)"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.mer}
+      ]},
+      {label:"Jeudi", date:d(0,10), tasks:[
+        {cat:"axe3", time:"9h–11h30", task:"Lancer requête H2 (Scopus : hybrid simulation occupational health DES ABM 2022–2024). Intégrer résultats dans grille d'extraction."},
+        {cat:"formation", time:"14h–16h", task:"Auto-formation : Optimizing RAG — Advanced Techniques"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.jeu}
+      ]},
+      {label:"Vendredi", date:d(0,11), tasks:[
+        {cat:"formation", time:"9h–11h", task:"Finaliser Mini RAG Pipeline + pousser sur GitHub avec README"},
+        {cat:"veille", time:"14h–15h", task:"Veille : vérifier notification #184, alertes Zotero"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.ven}
+      ]}
+    ]
+  },
+  {
+    week:3, phase:1, title:"Docker & related work NIER", hours:"~30h",
+    objective:"Docker LangChain Agent + section Related Work NIER + syllabus",
+    deliverable:"Docker LangChain Agent déployé, NIER Related Work v0.1",
+    days:[
+      {label:"Lundi", date:d(0,14), tasks:[
+        {cat:"formation", time:"9h–12h", task:"Auto-formation : Docker fundamentals + containerisation agents"},
+        {cat:"enseignement", time:"14h–15h", task:TEACH.lun1},
+        {cat:"formation", time:"15h–17h", task:"Créneau formation : démarrage projet Docker LangChain Agent"},
+        {cat:"enseignement", time:"17h–18h", task:TEACH.lun2}
+      ]},
+      {label:"Mardi", date:d(0,15), tasks:[
+        {cat:"axe12", time:"9h–12h", task:"Rédiger section Related Work NIER : organiser par thèmes (qualité code, traçabilité, facteurs cognitifs, gouvernance). Mapper les références vérifiées du #184."},
+        {cat:"formation", time:"14h–16h", task:"Auto-formation : Docker + FastAPI intégration"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.mar}
+      ]},
+      {label:"Mercredi", date:d(0,16), tasks:[
+        {cat:"formation", time:"9h–11h30", task:"Avancer projet Docker LangChain Agent"},
+        {cat:"axe12", time:"14h–16h", task:"Double capitalisation : documenter les choix de containerisation comme cas d'étude pour la reproductibilité (Axe 1)"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.mer}
+      ]},
+      {label:"Jeudi", date:d(0,17), tasks:[
+        {cat:"axe3", time:"9h–11h", task:"Lecture approfondie de 3–4 articles PRISMA prioritaires. Compléter extraction sur grille 21 dimensions."},
+        {cat:"formation", time:"14h–16h", task:"Auto-formation : Red Teaming LLM Applications (sécurité)"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.jeu}
+      ]},
+      {label:"Vendredi", date:d(0,18), tasks:[
+        {cat:"formation", time:"9h–11h", task:"Finaliser Docker LangChain Agent + push GitHub"},
+        {cat:"veille", time:"14h–15h", task:"Journal apprentissage S3 + veille alertes"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.ven}
+      ]}
+    ]
+  },
+  {
+    week:4, phase:1, title:"Azure & jalon Phase 1", hours:"~30h",
+    objective:"Azure RAG Chat + NIER v0.1 complet + jalon Phase 1 + syllabus",
+    deliverable:"Azure RAG Chat fonctionnel, NIER squelette v0.1 complet, 2 slots PRISMA complétés",
+    milestone:"JALON PHASE 1 : squelette NIER v0.1, Sprint 1 formation terminé, slots H1+H2 traités",
+    days:[
+      {label:"Lundi", date:d(0,21), tasks:[
+        {cat:"formation", time:"9h–12h", task:"Auto-formation : Azure AI Foundry + Azure OpenAI setup"},
+        {cat:"enseignement", time:"14h–15h", task:TEACH.lun1},
+        {cat:"formation", time:"15h–17h", task:"Créneau formation : démarrage Azure RAG Chat"},
+        {cat:"enseignement", time:"17h–18h", task:TEACH.lun2}
+      ]},
+      {label:"Mardi", date:d(0,22), tasks:[
+        {cat:"axe12", time:"9h–12h", task:"Consolider NIER v0.1 : relire intro + related work, vérifier cohérence framework. Préparer section méthodologie."},
+        {cat:"formation", time:"14h–16h", task:"Auto-formation : Azure AI Search + intégration RAG"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.mar}
+      ]},
+      {label:"Mercredi", date:d(0,23), tasks:[
+        {cat:"formation", time:"9h–11h30", task:"Finaliser Azure RAG Chat + documentation"},
+        {cat:"axe12", time:"14h–16h", task:"Double capitalisation : documenter architecture Azure comme exemple de pipeline IA gouverné (traçabilité cloud, provenance artefacts)"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.mer}
+      ]},
+      {label:"Jeudi", date:d(0,24), tasks:[
+        {cat:"axe3", time:"9h–11h30", task:"Bilan slots H1 et H2 : articles trouvés ou documentation des requêtes sans résultat. Mise à jour corpus PRISMA."},
+        {cat:"admin", time:"14h–15h", task:"Bilan Phase 1 : vérifier avancement sur les 3 axes, ajuster planning Phase 2 si nécessaire"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.jeu}
+      ]},
+      {label:"Vendredi", date:d(0,25), tasks:[
+        {cat:"jalon", time:"9h–11h", task:"JALON : Checkpoint Phase 1 — squelette NIER v0.1 posé, Sprint 1 formation terminé, 2 slots PRISMA traités"},
+        {cat:"veille", time:"14h–15h", task:"Veille : check notification #184, planifier Phase 2"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.ven}
+      ]}
+    ]
+  },
+
+  // ── PHASE 2: S5–S8 (20 juillet – 16 août) ──
+  {
+    week:5, phase:2, title:"RAG avancé & NIER méthodologie", hours:"~30h",
+    objective:"Customer Support Agent + section méthodologie NIER + syllabus",
+    deliverable:"Customer Support Agent fonctionnel, NIER méthodologie v0.1",
+    days:[
+      {label:"Lundi", date:d(0,28), tasks:[
+        {cat:"formation", time:"9h–12h", task:"Auto-formation : RAG avancé, techniques de chunking et reranking"},
+        {cat:"enseignement", time:"14h–15h", task:TEACH.lun1},
+        {cat:"formation", time:"15h–17h", task:"Créneau formation : démarrage Customer Support Agent"},
+        {cat:"enseignement", time:"17h–18h", task:TEACH.lun2}
+      ]},
+      {label:"Mardi", date:d(0,29), tasks:[
+        {cat:"axe12", time:"9h–12h", task:"Rédiger section Methodology NIER : protocole de review, critères inclusion/exclusion, bases de données, processus PRISMA"},
+        {cat:"formation", time:"14h–16h", task:"Auto-formation : classification et escalade dans RAG"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.mar}
+      ]},
+      {label:"Mercredi", date:d(0,30), tasks:[
+        {cat:"formation", time:"9h–11h30", task:"Avancer Customer Support Agent + intégrer classification"},
+        {cat:"axe12", time:"14h–15h30", task:"Double capitalisation : le Customer Support Agent comme cas de validation sémantique (Axe 1)"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.mer}
+      ]},
+      {label:"Jeudi", date:d(0,31), tasks:[
+        {cat:"axe3", time:"9h–11h30", task:"Lancer requête H3 (Web of Science : hybrid simulation palliative/aging 2022–2024). Documenter résultats."},
+        {cat:"formation", time:"14h–16h", task:"Auto-formation : LangSmith observabilité — premiers pas"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.jeu}
+      ]},
+      {label:"Vendredi", date:d(0,32), tasks:[
+        {cat:"formation", time:"9h–11h", task:"Finaliser Customer Support Agent + push GitHub"},
+        {cat:"veille", time:"14h–15h", task:"Veille : check notification #184, journal apprentissage"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.ven}
+      ]}
+    ]
+  },
+  {
+    week:6, phase:2, title:"Multi-agents & framework NIER", hours:"~30h",
+    objective:"Multi-Agent Research + section Framework NIER (gouvernance) + syllabus",
+    deliverable:"Multi-Agent Research System, NIER framework section v0.1",
+    days:[
+      {label:"Lundi", date:d(0,35), tasks:[
+        {cat:"formation", time:"Journée", task:"LangGraph multi-agents : architecture, state management, workflows parallèles"},
+        {cat:"enseignement", time:"14h–15h", task:TEACH.lun1},
+        {cat:"formation", time:"15h–17h", task:"Créneau formation : Multi-Agent Research System"},
+        {cat:"enseignement", time:"17h–18h", task:TEACH.lun2}
+      ]},
+      {label:"Mardi", date:d(0,36), tasks:[
+        {cat:"axe12", time:"9h–12h", task:"Rédiger section Framework NIER : gouvernance humain-IA, AI Commit Ledger, validation sémantique. Intégrer observations multi-agents."},
+        {cat:"formation", time:"14h–16h", task:"Avancer Multi-Agent Research + LangGraph"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.mar}
+      ]},
+      {label:"Mercredi", date:d(0,37), tasks:[
+        {cat:"formation", time:"9h–11h30", task:"Production FastAPI + LangGraph : démarrage projet déploiement"},
+        {cat:"axe12", time:"14h–16h", task:"Double capitalisation : orchestration multi-agents = cas concret pour le framework de gouvernance (niveaux d'autonomie, traçabilité LangSmith)"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.mer}
+      ]},
+      {label:"Jeudi", date:d(0,38), tasks:[
+        {cat:"axe3", time:"9h–11h", task:"Lancer requête H4 (Scopus/PubMed : hybrid simulation LMIC Africa health 2022–2024). Documenter résultats."},
+        {cat:"formation", time:"14h–16h", task:"Auto-formation : LangSmith tracing, evaluation, monitoring"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.jeu}
+      ]},
+      {label:"Vendredi", date:d(0,39), tasks:[
+        {cat:"formation", time:"9h–11h", task:"Finaliser projets S6 + push GitHub"},
+        {cat:"veille", time:"14h–15h", task:"Veille : alertes Zotero, journal apprentissage"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.ven}
+      ]}
+    ]
+  },
+  {
+    week:7, phase:2, title:"Sécurité LLM & NIER draft v1", hours:"~30h",
+    objective:"Sécurité LLM + assembler NIER draft v1 complet + syllabus",
+    deliverable:"NIER draft v1 complet (4 pages IEEEtran), notes sécurité LLM",
+    days:[
+      {label:"Lundi", date:d(0,42), tasks:[
+        {cat:"formation", time:"Journée", task:"Sécurité LLM : injection, jailbreak, guardrails, red teaming"},
+        {cat:"enseignement", time:"14h–15h", task:TEACH.lun1},
+        {cat:"formation", time:"15h–17h", task:"Créneau formation : pratique sécurité LLM"},
+        {cat:"enseignement", time:"17h–18h", task:TEACH.lun2}
+      ]},
+      {label:"Mardi", date:d(0,43), tasks:[
+        {cat:"axe12", time:"9h–12h", task:"Assembler NIER draft v1 : combiner toutes les sections (intro, related work, methodology, framework, discussion). Vérifier cohérence."},
+        {cat:"axe12", time:"14h–16h", task:"NIER draft v1 : rédiger section Discussion et Implications. Articuler les trade-offs velocity/quality/control."},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.mar}
+      ]},
+      {label:"Mercredi", date:d(0,44), tasks:[
+        {cat:"axe12", time:"9h–12h", task:"NIER draft v1 : finaliser Threats to Validity + Conclusion. Intégrer les données de sécurité LLM comme élément de validation sémantique."},
+        {cat:"formation", time:"14h–15h30", task:"Auto-formation : préparation certification AI-103"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.mer}
+      ]},
+      {label:"Jeudi", date:d(0,45), tasks:[
+        {cat:"axe3", time:"9h–11h", task:"Commencer rédaction synthèse thématique PRISMA : distribution par paradigmes, lacunes L1–L6."},
+        {cat:"formation", time:"14h–16h", task:"Préparation AI-103 : modules Azure AI Services"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.jeu}
+      ]},
+      {label:"Vendredi", date:d(0,46), tasks:[
+        {cat:"axe12", time:"9h–11h", task:"Relecture complète NIER draft v1. Vérifier toutes les références (DOI, année). Compiler LaTeX."},
+        {cat:"veille", time:"14h–15h", task:"Veille + journal apprentissage S7"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.ven}
+      ]}
+    ]
+  },
+  {
+    week:8, phase:2, title:"AI-103 & jalon Phase 2", hours:"~30h",
+    objective:"Certification AI-103 + réaction #184 + jalon Phase 2 + syllabus",
+    deliverable:"Certification AI-103, NIER draft v1 stabilisé, 4/6 slots PRISMA traités",
+    milestone:"JALON PHASE 2 : NIER draft v1 complet, AI-103 passée, 4 slots PRISMA traités, réaction #184",
+    days:[
+      {label:"Lundi", date:d(0,49), tasks:[
+        {cat:"formation", time:"Journée", task:"Révision intensive AI-103 : practice tests, modules restants"},
+        {cat:"enseignement", time:"14h–15h", task:TEACH.lun1},
+        {cat:"formation", time:"15h–17h", task:"Créneau formation : dernière révision AI-103"},
+        {cat:"enseignement", time:"17h–18h", task:TEACH.lun2}
+      ]},
+      {label:"Mardi", date:d(0,50), tasks:[
+        {cat:"formation", time:"9h–12h", task:"Passage certification AI-103 (Azure AI Apps & Agents Developer Associate)"},
+        {cat:"axe12", time:"14h–16h", task:"Réagir au retour #184 : si accepté → corrections prioritaires (2–3 jours). Si rejeté → intégrer feedback dans NIER."},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.mar}
+      ]},
+      {label:"Mercredi", date:d(0,51), tasks:[
+        {cat:"axe12", time:"9h–12h", task:"Si #184 accepté : corrections formatting + data availability statement. Si rejeté : ajuster positionnement NIER."},
+        {cat:"formation", time:"14h–16h", task:"Auto-formation : consolidation Sprint 2, bilan compétences acquises"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.mer}
+      ]},
+      {label:"Jeudi", date:d(0,52), tasks:[
+        {cat:"axe3", time:"9h–11h30", task:"Bilan slots H3 et H4. Mise à jour corpus PRISMA (44+N articles). Avancer synthèse thématique."},
+        {cat:"admin", time:"14h–15h", task:"Bilan Phase 2 : vérifier avancement, ajuster planning Phase 3"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.jeu}
+      ]},
+      {label:"Vendredi", date:d(0,53), tasks:[
+        {cat:"jalon", time:"9h–11h", task:"JALON : Checkpoint Phase 2 — NIER draft v1 complet, AI-103 passée, 4/6 slots traités, statut #184 intégré"},
+        {cat:"veille", time:"14h–15h", task:"Veille + planification Phase 3"},
+        {cat:"enseignement", time:"16h–18h", task:TEACH.ven}
+      ]}
+    ]
+  },
+
+  // ── PHASE 3: S9–S12 (17 août – 13 septembre) ──
+  {
+    week:9, phase:3, title:"Enterprise AI Assistant (1/2)", hours:"~30h",
+    objective:"Architecture projet FDE + NIER draft v2 démarrage + syllabus (reste du planning à préciser)",
+    deliverable:"Architecture Enterprise AI Assistant, NIER v2 en cours",
+    days:[
+      {label:"Lundi", date:d(0,56), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.lun1}]},
+      {label:"Mardi", date:d(0,57), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mar}]},
+      {label:"Mercredi", date:d(0,58), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mer}]},
+      {label:"Jeudi", date:d(0,59), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.jeu}]},
+      {label:"Vendredi", date:d(0,60), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.ven}]}
+    ]
+  },
+  {
+    week:10, phase:3, title:"Enterprise AI Assistant (2/2)", hours:"~30h",
+    objective:"Déploiement + observabilité + NIER figures et diagrammes + syllabus (reste du planning à préciser)",
+    deliverable:"Projet FDE déployé avec métriques, figures NIER prêtes",
+    days:[
+      {label:"Lundi", date:d(0,63), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.lun1}]},
+      {label:"Mardi", date:d(0,64), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mar}]},
+      {label:"Mercredi", date:d(0,65), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mer}]},
+      {label:"Jeudi", date:d(0,66), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.jeu}]},
+      {label:"Vendredi", date:d(0,67), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.ven}]}
+    ]
+  },
+  {
+    week:11, phase:3, title:"NIER v2 & relecture pairs", hours:"~30h",
+    objective:"NIER draft v2 complet + envoi pour relecture (EFREI, LIP6) + syllabus (reste du planning à préciser)",
+    deliverable:"NIER draft v2 envoyé pour review, PRISMA slots H5+H6 traités",
+    days:[
+      {label:"Lundi", date:d(0,70), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.lun1}]},
+      {label:"Mardi", date:d(0,71), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mar}]},
+      {label:"Mercredi", date:d(0,72), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mer}]},
+      {label:"Jeudi", date:d(0,73), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.jeu}]},
+      {label:"Vendredi", date:d(0,74), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.ven}]}
+    ]
+  },
+  {
+    week:12, phase:3, title:"Jalon Phase 3", hours:"~30h",
+    objective:"Intégrer retours relecture + finaliser corpus PRISMA 50 articles + syllabus (reste du planning à préciser)",
+    deliverable:"NIER draft v2 relu, formation terminée, corpus PRISMA complet",
+    milestone:"JALON PHASE 3 : NIER draft v2 relu, formation terminée, PRISMA 50 articles, portfolio FDE complet",
+    days:[
+      {label:"Lundi", date:d(0,77), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.lun1}]},
+      {label:"Mardi", date:d(0,78), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mar}]},
+      {label:"Mercredi", date:d(0,79), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mer}]},
+      {label:"Jeudi", date:d(0,80), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.jeu}]},
+      {label:"Vendredi", date:d(0,81), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.ven}]}
+    ]
+  },
+
+  // ── PHASE 4: S13–S18 (14 septembre – 23 octobre) ──
+  {
+    week:13, phase:4, title:"NIER v3 — structure finale", hours:"~28h",
+    objective:"NIER draft v3 : restructuration post-relecture, renforcement argumentation + syllabus (reste du planning à préciser)",
+    deliverable:"NIER draft v3 structuré",
+    days:[
+      {label:"Lundi", date:d(0,84), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.lun1}]},
+      {label:"Mardi", date:d(0,85), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mar}]},
+      {label:"Mercredi", date:d(0,86), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mer}]},
+      {label:"Jeudi", date:d(0,87), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.jeu}]},
+      {label:"Vendredi", date:d(0,88), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.ven}]}
+    ]
+  },
+  {
+    week:14, phase:4, title:"NIER v3 — polissage", hours:"~28h",
+    objective:"Polissage rédactionnel, vérification exhaustive des références, conformité IEEEtran + syllabus (reste du planning à préciser)",
+    deliverable:"NIER draft v3 poli, toutes références vérifiées",
+    days:[
+      {label:"Lundi", date:d(0,91), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.lun1}]},
+      {label:"Mardi", date:d(0,92), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mar}]},
+      {label:"Mercredi", date:d(0,93), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mer}]},
+      {label:"Jeudi", date:d(0,94), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.jeu}]},
+      {label:"Vendredi", date:d(0,95), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.ven}]}
+    ]
+  },
+  {
+    week:15, phase:4, title:"NIER v3 — figures & données", hours:"~28h",
+    objective:"Finaliser figures, data availability statement, supplementary materials + syllabus (reste du planning à préciser)",
+    deliverable:"NIER draft v3 avec figures finales",
+    days:[
+      {label:"Lundi", date:d(0,98), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.lun1}]},
+      {label:"Mardi", date:d(0,99), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mar}]},
+      {label:"Mercredi", date:d(0,100), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mer}]},
+      {label:"Jeudi", date:d(0,101), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.jeu}]},
+      {label:"Vendredi", date:d(0,102), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.ven}]}
+    ]
+  },
+  {
+    week:16, phase:4, title:"Relecture finale", hours:"~25h",
+    objective:"Dernière relecture approfondie, corrections mineures, compilation LaTeX propre + syllabus (reste du planning à préciser)",
+    deliverable:"NIER version candidate pour soumission",
+    days:[
+      {label:"Lundi", date:d(0,105), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.lun1}]},
+      {label:"Mardi", date:d(0,106), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mar}]},
+      {label:"Mercredi", date:d(0,107), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mer}]},
+      {label:"Jeudi", date:d(0,108), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.jeu}]},
+      {label:"Vendredi", date:d(0,109), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.ven}]}
+    ]
+  },
+  {
+    week:17, phase:4, title:"Pré-soumission", hours:"~20h",
+    objective:"Vérification conformité soumission (format, metadata, fichiers), dry run + syllabus (reste du planning à préciser)",
+    deliverable:"Package de soumission prêt",
+    days:[
+      {label:"Lundi", date:d(0,112), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.lun1}]},
+      {label:"Mardi", date:d(0,113), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mar}]},
+      {label:"Mercredi", date:d(0,114), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mer}]},
+      {label:"Jeudi", date:d(0,115), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.jeu}]},
+      {label:"Vendredi", date:d(0,116), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.ven}]}
+    ]
+  },
+  {
+    week:18, phase:4, title:"SOUMISSION ICSE 2027 NIER", hours:"~18h",
+    objective:"Soumission finale ICSE 2027 NIER (deadline 23 octobre 2026) + syllabus (reste du planning à préciser)",
+    deliverable:"Papier soumis à ICSE 2027 NIER Track",
+    milestone:"🎯 JALON FINAL : Soumission ICSE 2027 NIER — 23 octobre 2026",
+    days:[
+      {label:"Lundi", date:d(0,119), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.lun1}]},
+      {label:"Mardi", date:d(0,120), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mar}]},
+      {label:"Mercredi", date:d(0,121), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.mer}]},
+      {label:"Jeudi", date:d(0,122), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.jeu}]},
+      {label:"Vendredi", date:d(0,123), tasks:[{cat:"enseignement", time:"16h–18h", task:TEACH.ven}]}
+    ]
+  }
+];
+
+// ── STATE ──
+let selectedWeek = 0;
+let completed = {};
+let notes = {};
+try { const s=localStorage.getItem("adn_v3_tasks"); if(s) completed=JSON.parse(s); } catch(e){}
+try { const s=localStorage.getItem("adn_v3_notes"); if(s) notes=JSON.parse(s); } catch(e){}
+
+function saveTasks() { try { localStorage.setItem("adn_v3_tasks",JSON.stringify(completed)); } catch(e){} }
+function saveNotes() { try { localStorage.setItem("adn_v3_notes",JSON.stringify(notes)); } catch(e){} }
+
+function toggleTask(wi,di,ti) { const k=`${wi}-${di}-${ti}`; completed[k]=!completed[k]; saveTasks(); render(); }
+function updateNote(wi,val) { notes[wi]=val; saveNotes(); }
+
+function getProgress(wi) {
+  const w=WEEKS[wi]; if(!w.days.length) return null;
+  let t=0,d=0;
+  w.days.forEach((day,di)=>day.tasks.forEach((_,ti)=>{t++; if(completed[`${wi}-${di}-${ti}`]) d++;}));
+  return t?Math.round(d/t*100):0;
+}
+
+function getGlobalProgress() {
+  let t=0,d=0;
+  WEEKS.forEach((w,wi)=>w.days.forEach((day,di)=>day.tasks.forEach((_,ti)=>{t++; if(completed[`${wi}-${di}-${ti}`]) d++;})));
+  return {total:t, done:d, pct: t?Math.round(d/t*100):0};
+}
+
+function selectWeek(i) { selectedWeek=i; render(); }
+
+function resetAll() {
+  if(!confirm("Réinitialiser toute la progression ? Cette action est irréversible.")) return;
+  completed={}; notes={}; saveTasks(); saveNotes(); render();
+}
+
+function exportData() {
+  const data = {completed, notes, exported: new Date().toISOString()};
+  const blob = new Blob([JSON.stringify(data,null,2)], {type:"application/json"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `adn_recherche_backup_${new Date().toISOString().slice(0,10)}.json`;
+  a.click();
+}
+
+function esc(s) { const d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
+
+function render() {
+  const w = WEEKS[selectedWeek];
+  const phase = PHASES.find(p=>p.id===w.phase);
+  const gp = getGlobalProgress();
+
+  let html = `
+  <div class="header">
+    <div class="header-eyebrow">ADN de Recherche et Stratégie Scientifique Intégrée</div>
+    <h1>Planning Opérationnel 2026</h1>
+    <div class="header-sub">A. Yvan GUIFO FODJO — EFREI Paris / Sorbonne Université LIP6</div>
+    <div class="header-meta">
+      <span>📅 18 semaines</span><span>🎯 ICSE 2027 NIER — 23 oct.</span><span>📝 Paper #184 en review</span><span>🎓 Formation AI Portfolio</span><span>🕐 Journée bornée à 18h</span>
+    </div>
+  </div>
+
+  <div class="daycap-banner">🕐 <strong>Règle de cadrage :</strong> chaque journée de travail (formation + recherche + enseignement) s'arrête à 18h, quelle que soit la charge de la semaine. Un bloc de 2h/jour (lundi–vendredi) est réservé à la préparation des cours et syllabus 2026-2027.</div>
+
+  <div class="global-progress">
+    <div class="gp-bar-wrap">
+      <div class="gp-label">Progression globale des tâches détaillées</div>
+      <div class="gp-bar"><div class="gp-bar-fill" style="width:${gp.pct}%"></div></div>
+    </div>
+    <div class="gp-stats">
+      <div class="gp-stat"><div class="gp-stat-num" style="color:var(--green)">${gp.done}</div><div class="gp-stat-label">Terminées</div></div>
+      <div class="gp-stat"><div class="gp-stat-num" style="color:var(--blue)">${gp.total}</div><div class="gp-stat-label">Total</div></div>
+      <div class="gp-stat"><div class="gp-stat-num" style="color:var(--accent)">${gp.pct}%</div><div class="gp-stat-label">Avancement</div></div>
+    </div>
+  </div>
+
+  <div class="phases">`;
+
+  PHASES.forEach(p=>{
+    const active = w.phase===p.id;
+    html+=`<div class="phase-card ${active?'active':''}" style="border-left-color:${p.color}" onclick="selectWeek(${p.range[0]})">
+      <div class="phase-label" style="color:${p.color}">Phase ${p.id}</div>
+      <div class="phase-title">${esc(p.label)}</div>
+      <div class="phase-weeks">${p.weeks}</div>
+    </div>`;
+  });
+
+  html+=`</div><div class="week-tabs">`;
+
+  WEEKS.forEach((wk,i)=>{
+    const prog = getProgress(i);
+    const active = i===selectedWeek;
+    const col = PHASES.find(p=>p.id===wk.phase).color;
+    const style = active ? `background:${col};border-color:${col};color:#fff` : '';
+    html+=`<div class="week-tab ${active?'active':''}" style="${style}" onclick="selectWeek(${i})">
+      <span class="wt-num">S${wk.week}</span>
+      <span class="wt-dates">${esc(weekDates(i))}</span>
+      ${prog!==null?`<div class="wt-progress" style="${active?'background:rgba(255,255,255,0.3)':''}">
+        <div class="wt-progress-bar" style="width:${prog}%;background:${active?'#fff':'var(--green)'}"></div>
+      </div>`:''}
+    </div>`;
+  });
+
+  html+=`</div><div class="week-detail">
+    <div class="week-header" style="background:${phase.color}">
+      <div class="week-header-top">
+        <div>
+          <div class="wh-phase">PHASE ${phase.id} — SEMAINE ${w.week}</div>
+          <h2>${esc(w.title)}</h2>
+        </div>
+        <div class="wh-badges">
+          <span class="wh-badge">🕐 ${esc(w.hours)}</span>
+          <span class="wh-badge">📅 ${esc(weekDates(selectedWeek))}</span>
+        </div>
+      </div>
+      <div class="wh-info"><strong>Objectif :</strong> ${esc(w.objective)}</div>
+      <div class="wh-info"><strong>Livrable :</strong> ${esc(w.deliverable)}</div>
+      ${w.milestone?`<div class="wh-milestone">🏁 ${esc(w.milestone)}</div>`:''}
+    </div>
+    <div class="days-container">`;
+
+  if(w.days.length) {
+    w.days.forEach((day,di)=>{
+      html+=`<div class="day-group"><div class="day-label"><span>${esc(day.label)}</span><span style="display:flex;gap:6px;align-items:center"><span class="day-label-date">${esc(day.date)}</span><span class="day-label-end">fin 18h</span></span></div>`;
+      day.tasks.forEach((task,ti)=>{
+        const k=`${selectedWeek}-${di}-${ti}`;
+        const done=!!completed[k];
+        const cs=CATS[task.cat]||CATS.admin;
+        const borderC=done?'#d5f5e3':cs.border+'30';
+        const bgC=done?'#f5faf6':cs.bg;
+        html+=`<div class="task-row ${done?'done':''}" style="border-color:${borderC};background:${bgC}" onclick="toggleTask(${selectedWeek},${di},${ti})">
+          <div class="checkbox ${done?'checked':''}">${done?'✓':''}</div>
+          <div style="flex:1">
+            <div class="task-text">${esc(task.task)}</div>
+            <div class="task-tags">
+              ${task.time?`<span class="tag tag-time">🕐 ${esc(task.time)}</span>`:''}
+              <span class="tag" style="color:${cs.color};background:${cs.bg};border:1px solid ${cs.border}30">${cs.label}</span>
+            </div>
+          </div>
+        </div>`;
+      });
+      html+=`</div>`;
+    });
+  } else {
+    html+=`<div class="empty-state">
+      <div class="icon">📋</div>
+      <h3>Planning détaillé à compléter</h3>
+      <p>Le détail jour par jour de cette semaine sera construit à l'approche de la phase. Les objectifs et livrables sont définis ci-dessus. Utilisez les notes ci-dessous pour planifier.</p>
+    </div>`;
+  }
+
+  // Notes section
+  const noteVal = notes[selectedWeek] || '';
+  html+=`<div class="notes-section">
+    <label>📝 Notes & observations — Semaine ${w.week}</label>
+    <textarea placeholder="Ajoutez vos notes, observations, résultats, liens utiles..." oninput="updateNote(${selectedWeek},this.value)">${esc(noteVal)}</textarea>
+  </div>`;
+
+  html+=`</div></div>
+
+  <div class="legend">`;
+  for(const [k,v] of Object.entries(CATS)){
+    html+=`<span class="legend-item" style="background:${v.bg};border-color:${v.border}40;color:${v.color}">${v.label}</span>`;
+  }
+  html+=`</div>
+
+  <div class="actions-bar">
+    <button class="btn btn-export" onclick="exportData()">📥 Exporter la progression</button>
+    <button class="btn btn-danger" onclick="resetAll()">🗑️ Réinitialiser</button>
+  </div>
+
+  <p class="footer-note">
+    Cliquer sur une tâche pour la marquer comme terminée · Les notes sont sauvegardées localement<br>
+    ADN de Recherche v2.1 — A. Yvan GUIFO FODJO · Été–Automne 2026 · ICSE 2027 NIER Deadline : 23 octobre 2026 · Journée bornée à 18h
+  </p>`;
+
+  document.getElementById('app').innerHTML = html;
+}
+
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+# Emplacements réservés H1–H6 de la revue PRISMA.
+# Source : revue_PRISMA_simulation_hybride_sante_2020_2026.docx
+# Principe de transparence (rappelé dans le document source) :
+#   "6 emplacements (H1-H6) sont explicitement marqués comme 'À compléter' car leur
+#    inclusion nécessite un accès direct aux bases de données PubMed, Scopus ou Web
+#    of Science. Aucune référence n'a été inventée ou extrapolée."
+#
+# automatisable: true  -> requête lancable via scripts/veille/pubmed_search.py
+# automatisable: false -> base sans API publique gratuite (Scopus, WoS, ACM DL, IEEE Xplore)
+#                         -> requête à exécuter manuellement, résultat à consigner ici.
+
+slots:
+  H1:
+    base: "PubMed"
+    automatisable: true
+    periode: "2022-2024"
+    requete: "hybrid simulation ABM DES tuberculosis health 2022 2024 pubmed"
+    paradigme_attendu: "ABM+SD ou DES"
+    domaine: "Maladies infectieuses, pays à revenus faibles"
+    articles_attendus: 3
+    statut: "à compléter"
+    articles_trouves: []   # à remplir avec {titre, doi/pmid, annee} une fois vérifiés
+
+  H2:
+    base: "Scopus"
+    automatisable: false
+    periode: "2022-2024"
+    requete: "hybrid simulation occupational health DES ABM 2022 2024 scopus"
+    paradigme_attendu: "à définir"
+    domaine: "Santé au travail"
+    articles_attendus: 3
+    statut: "à compléter"
+    articles_trouves: []
+
+  H3:
+    base: "Web of Science"
+    automatisable: false
+    periode: "2022-2024"
+    requete: "hybrid simulation DES ABM aging palliative 2022 2024 web of science"
+    paradigme_attendu: "DES+SD ou ABM"
+    domaine: "Soins palliatifs, vieillissement"
+    articles_attendus: 3
+    statut: "à compléter"
+    articles_trouves: []
+
+  H4:
+    base: "PubMed"
+    automatisable: true
+    periode: "2022-2024"
+    requete: "hybrid simulation health system LMIC Africa DES ABM 2022 2024"
+    paradigme_attendu: "SD+ABM"
+    domaine: "Pays à revenu faible, systèmes de santé"
+    articles_attendus: 3
+    statut: "à compléter"
+    articles_trouves: []
+
+  H5:
+    base: "ACM Digital Library / IEEE Xplore"
+    automatisable: false
+    periode: "2022-2024"
+    requete: "hybrid simulation reinforcement learning hospital 2022 2024 IEEE"
+    paradigme_attendu: "DES+RL (hybride IA)"
+    domaine: "Optimisation ressources, IA"
+    articles_attendus: 3
+    statut: "à compléter"
+    articles_trouves: []
+
+  H6:
+    base: "PubMed"
+    automatisable: true
+    periode: "2022-2024"
+    requete: "hybrid simulation maternal child health ABM DES 2022 2024"
+    paradigme_attendu: "ABM+DES ou SD"
+    domaine: "Santé maternelle et infantile"
+    articles_attendus: 3
+    statut: "à compléter"
+    articles_trouves: []
+
+# Rappel : ne jamais faire passer un article de "à compléter" à "inclus" sans DOI
+# ou PMID vérifié (cf. scripts/verification/doi_verify.py).
