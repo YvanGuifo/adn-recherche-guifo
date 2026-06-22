@@ -3,7 +3,7 @@
   "nom": "Veille générale simulation hybride santé",
   "query": "(\"hybrid simulation\" OR \"multi-method simulation\" OR \"DES-ABM\" OR \"SD-ABM\") AND (health* OR hospital OR epidemiol*)",
   "axis": "axe3",
-  "executed_at": "2026-06-21",
+  "executed_at": "2026-06-22",
   "total_count_pubmed": "29",
   "articles": [
     {

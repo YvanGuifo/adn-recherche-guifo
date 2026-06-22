@@ -3,7 +3,7 @@
   "nom": "Systèmes de santé en pays à revenu faible / Afrique (LMIC)",
   "query": "(\"hybrid simulation\") AND (health) AND (LMIC OR Africa OR \"low income\")",
   "axis": "axe3",
-  "executed_at": "2026-06-21",
+  "executed_at": "2026-06-22",
   "total_count_pubmed": "1",
   "articles": [
     {

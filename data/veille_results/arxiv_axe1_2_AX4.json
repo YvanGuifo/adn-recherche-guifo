@@ -3,7 +3,7 @@
   "nom": "IA frugale, explicable, sobriété computationnelle (Axe 2)",
   "search_query": "(cat:cs.AI OR cat:cs.LG) AND (all:\"frugal AI\" OR all:\"green AI\" OR all:\"energy efficient deep learning\") AND all:explainab*",
   "axis": "axe1_2",
-  "executed_at": "2026-06-21",
+  "executed_at": "2026-06-22",
   "articles": [],
   "new_articles": []
 }
