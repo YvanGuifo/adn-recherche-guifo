@@ -3,7 +3,7 @@
   "nom": "Traçabilité, provenance et gouvernance du code généré par IA",
   "search_query": "all:\"code provenance\" OR all:\"AI code governance\" OR (cat:cs.SE AND all:\"semantic validation\")",
   "axis": "axe1_2",
-  "executed_at": "2026-06-22",
+  "executed_at": "2026-06-29",
   "articles": [
     {
       "arxiv_id": "2605.30054v1",

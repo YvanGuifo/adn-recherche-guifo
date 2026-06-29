@@ -3,9 +3,16 @@
   "nom": "Veille générale simulation hybride santé",
   "query": "(\"hybrid simulation\" OR \"multi-method simulation\" OR \"DES-ABM\" OR \"SD-ABM\") AND (health* OR hospital OR epidemiol*)",
   "axis": "axe3",
-  "executed_at": "2026-06-22",
-  "total_count_pubmed": "29",
+  "executed_at": "2026-06-29",
+  "total_count_pubmed": "30",
   "articles": [
+    {
+      "pmid": "42331488",
+      "title": "From Wooden Mock-Ups to Hybrid Ecosystems: A Systems Architecture Approach to Next-Generation Helicopter emergency medical services/Search and Rescue Crew Training.",
+      "journal": "Air medical journal",
+      "pubdate": "2026 Jul-Aug",
+      "doi": "10.1016/j.amj.2026.04.008"
+    },
     {
       "pmid": "42296413",
       "title": "Advances in evaluating and delivering nontechnical skills training: The use of simulation, robotics, artificial intelligence and virtual reality.",
@@ -210,5 +217,13 @@
       "doi": "10.1016/j.bja.2024.07.037"
     }
   ],
-  "new_articles": []
+  "new_articles": [
+    {
+      "pmid": "42331488",
+      "title": "From Wooden Mock-Ups to Hybrid Ecosystems: A Systems Architecture Approach to Next-Generation Helicopter emergency medical services/Search and Rescue Crew Training.",
+      "journal": "Air medical journal",
+      "pubdate": "2026 Jul-Aug",
+      "doi": "10.1016/j.amj.2026.04.008"
+    }
+  ]
 }
