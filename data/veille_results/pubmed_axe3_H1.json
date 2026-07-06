@@ -3,7 +3,7 @@
   "nom": "Tuberculose / paludisme / résistance antimicrobienne",
   "query": "(\"hybrid simulation\") AND (tuberculosis OR malaria OR \"antimicrobial resistance\")",
   "axis": "axe3",
-  "executed_at": "2026-06-29",
+  "executed_at": "2026-07-06",
   "total_count_pubmed": "0",
   "articles": [],
   "new_articles": []

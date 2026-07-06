@@ -3,9 +3,16 @@
   "nom": "Veille générale simulation hybride santé",
   "query": "(\"hybrid simulation\" OR \"multi-method simulation\" OR \"DES-ABM\" OR \"SD-ABM\") AND (health* OR hospital OR epidemiol*)",
   "axis": "axe3",
-  "executed_at": "2026-06-29",
-  "total_count_pubmed": "30",
+  "executed_at": "2026-07-06",
+  "total_count_pubmed": "31",
   "articles": [
+    {
+      "pmid": "42393455",
+      "title": "3D-Printing in Neurosurgical Training: Hands-On Practice, Patient-Specific Planning and Simulation.",
+      "journal": "Advances and technical standards in neurosurgery",
+      "pubdate": "2026",
+      "doi": "10.1007/978-3-032-22008-0_16"
+    },
     {
       "pmid": "42331488",
       "title": "From Wooden Mock-Ups to Hybrid Ecosystems: A Systems Architecture Approach to Next-Generation Helicopter emergency medical services/Search and Rescue Crew Training.",
@@ -208,22 +215,15 @@
       "journal": "Pediatric emergency care",
       "pubdate": "2025 Feb 1",
       "doi": "10.1097/PEC.0000000000003264"
-    },
-    {
-      "pmid": "39358185",
-      "title": "Educational outcomes of simulation-based training in regional anaesthesia: a scoping review.",
-      "journal": "British journal of anaesthesia",
-      "pubdate": "2025 Feb",
-      "doi": "10.1016/j.bja.2024.07.037"
     }
   ],
   "new_articles": [
     {
-      "pmid": "42331488",
-      "title": "From Wooden Mock-Ups to Hybrid Ecosystems: A Systems Architecture Approach to Next-Generation Helicopter emergency medical services/Search and Rescue Crew Training.",
-      "journal": "Air medical journal",
-      "pubdate": "2026 Jul-Aug",
-      "doi": "10.1016/j.amj.2026.04.008"
+      "pmid": "42393455",
+      "title": "3D-Printing in Neurosurgical Training: Hands-On Practice, Patient-Specific Planning and Simulation.",
+      "journal": "Advances and technical standards in neurosurgery",
+      "pubdate": "2026",
+      "doi": "10.1007/978-3-032-22008-0_16"
     }
   ]
 }

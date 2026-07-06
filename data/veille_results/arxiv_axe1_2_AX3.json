@@ -3,8 +3,22 @@
   "nom": "Facteurs humains et cognitifs — Behavioural Software Engineering",
   "search_query": "(cat:cs.SE AND all:\"developer cognition\") OR all:\"rubber-stamping\" AND all:\"code generation\"",
   "axis": "axe1_2",
-  "executed_at": "2026-06-29",
+  "executed_at": "2026-07-06",
   "articles": [
+    {
+      "arxiv_id": "2607.00533v1",
+      "title": "You Shall Not Pass! Where and Why Developers Draw The Line on AI Autonomy",
+      "authors": [
+        "Rudrajit Choudhuri",
+        "Christian Bird",
+        "Carmen Badea",
+        "Marco Gerosa",
+        "Anita Sarma"
+      ],
+      "published": "2026-07-01T07:24:14Z",
+      "summary": "As AI takes on more software work, the line between human and AI effort is shifting. Where developers draw that line around AI autonomy bears on how we design tools and roles that preserve meaningful work. Drawing on cognitive appraisal theory, work design, and automation research, we conducted a mixed-methods study of 448 professional developers at Microsoft to investigate their accepted levels of AI autonomy across software engineering work. Most developers accepted AI producing work under the",
+      "link": "https://arxiv.org/abs/2607.00533v1"
+    },
     {
       "arxiv_id": "2602.10540v2",
       "title": "Theory of Troubleshooting: The Developer's Cognitive Experience of Overcoming Confusion",
@@ -108,5 +122,20 @@
       "link": "https://arxiv.org/abs/2501.02684v1"
     }
   ],
-  "new_articles": []
+  "new_articles": [
+    {
+      "arxiv_id": "2607.00533v1",
+      "title": "You Shall Not Pass! Where and Why Developers Draw The Line on AI Autonomy",
+      "authors": [
+        "Rudrajit Choudhuri",
+        "Christian Bird",
+        "Carmen Badea",
+        "Marco Gerosa",
+        "Anita Sarma"
+      ],
+      "published": "2026-07-01T07:24:14Z",
+      "summary": "As AI takes on more software work, the line between human and AI effort is shifting. Where developers draw that line around AI autonomy bears on how we design tools and roles that preserve meaningful work. Drawing on cognitive appraisal theory, work design, and automation research, we conducted a mixed-methods study of 448 professional developers at Microsoft to investigate their accepted levels of AI autonomy across software engineering work. Most developers accepted AI producing work under the",
+      "link": "https://arxiv.org/abs/2607.00533v1"
+    }
+  ]
 }
