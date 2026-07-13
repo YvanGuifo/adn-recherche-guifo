@@ -3,8 +3,20 @@
   "nom": "Traçabilité, provenance et gouvernance du code généré par IA",
   "search_query": "all:\"code provenance\" OR all:\"AI code governance\" OR (cat:cs.SE AND all:\"semantic validation\")",
   "axis": "axe1_2",
-  "executed_at": "2026-07-06",
+  "executed_at": "2026-07-13",
   "articles": [
+    {
+      "arxiv_id": "2607.06471v1",
+      "title": "Domain-Driven Design in Practice: A Large-Scale Empirical Characterisation of the Open-Source Ecosystem",
+      "authors": [
+        "Ozan Özkan",
+        "Önder Babur",
+        "Mark van den Brand"
+      ],
+      "published": "2026-07-07T16:29:51Z",
+      "summary": "Context: Domain-Driven Design (DDD) is a leading paradigm for managing software complexity, yet research remains largely theoretical; our prior work found nearly 39% of DDD studies lack rigorous empirical evaluation, leaving practical adoption largely unexamined at scale. Objective: We provide the first large-scale characterisation of the DDD landscape on GitHub, a data-driven baseline for how the paradigm is implemented and sustained in practice. Method: Using a Mining Software Repositories (MS",
+      "link": "https://arxiv.org/abs/2607.06471v1"
+    },
     {
       "arxiv_id": "2605.30054v1",
       "title": "Projectional Decoding: Towards Semantic-Aware LLM Generation",
@@ -411,19 +423,20 @@
       "published": "2025-07-16T09:46:58Z",
       "summary": "Smart contracts play a pivotal role in blockchain ecosystems, and fuzzing remains an important approach to securing smart contracts. Even though mutation scheduling is a key factor influencing fuzzing effectiveness, existing fuzzers have primarily explored seed scheduling and generation, while mutation scheduling has been rarely addressed by prior work. In this work, we propose a Large Language Models (LLMs)-based Multi-feedback Smart Contract Fuzzing framework (LLAMA) that integrates LLMs, evol",
       "link": "https://arxiv.org/abs/2507.12084v1"
-    },
-    {
-      "arxiv_id": "2507.05619v2",
-      "title": "Detecting Proxy Gaming in RL and LLM Alignment via Evaluator Stress Tests",
-      "authors": [
-        "Ibne Farabi Shihab",
-        "Sanjeda Akter",
-        "Anuj Sharma"
-      ],
-      "published": "2025-07-08T03:00:02Z",
-      "summary": "Proxy optimization, where AI systems exploit evaluator weaknesses rather than improve intended objectives, threatens both reinforcement learning (reward hacking) and LLM alignment (evaluator gaming). We introduce the Evaluator Stress Test (EST), an invariance-based framework that detects proxy gaming by separating exploitable sensitivity (e.g., formatting artifacts, physics bugs) from content-driven improvements using controlled perturbations with semantic validity audits. We validate EST across",
-      "link": "https://arxiv.org/abs/2507.05619v2"
     }
   ],
-  "new_articles": []
+  "new_articles": [
+    {
+      "arxiv_id": "2607.06471v1",
+      "title": "Domain-Driven Design in Practice: A Large-Scale Empirical Characterisation of the Open-Source Ecosystem",
+      "authors": [
+        "Ozan Özkan",
+        "Önder Babur",
+        "Mark van den Brand"
+      ],
+      "published": "2026-07-07T16:29:51Z",
+      "summary": "Context: Domain-Driven Design (DDD) is a leading paradigm for managing software complexity, yet research remains largely theoretical; our prior work found nearly 39% of DDD studies lack rigorous empirical evaluation, leaving practical adoption largely unexamined at scale. Objective: We provide the first large-scale characterisation of the DDD landscape on GitHub, a data-driven baseline for how the paradigm is implemented and sustained in practice. Method: Using a Mining Software Repositories (MS",
+      "link": "https://arxiv.org/abs/2607.06471v1"
+    }
+  ]
 }

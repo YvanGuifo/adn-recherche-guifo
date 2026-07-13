@@ -3,7 +3,7 @@
   "nom": "Veille générale simulation hybride santé",
   "query": "(\"hybrid simulation\" OR \"multi-method simulation\" OR \"DES-ABM\" OR \"SD-ABM\") AND (health* OR hospital OR epidemiol*)",
   "axis": "axe3",
-  "executed_at": "2026-07-06",
+  "executed_at": "2026-07-13",
   "total_count_pubmed": "31",
   "articles": [
     {
@@ -217,13 +217,5 @@
       "doi": "10.1097/PEC.0000000000003264"
     }
   ],
-  "new_articles": [
-    {
-      "pmid": "42393455",
-      "title": "3D-Printing in Neurosurgical Training: Hands-On Practice, Patient-Specific Planning and Simulation.",
-      "journal": "Advances and technical standards in neurosurgery",
-      "pubdate": "2026",
-      "doi": "10.1007/978-3-032-22008-0_16"
-    }
-  ]
+  "new_articles": []
 }

@@ -3,879 +3,833 @@
   "nom": "Génie logiciel natif-IA / programmation agentique",
   "search_query": "all:\"AI-native software engineering\" OR all:\"agentic programming\" OR (cat:cs.SE AND all:\"large language model\")",
   "axis": "axe1_2",
-  "executed_at": "2026-07-06",
+  "executed_at": "2026-07-13",
   "articles": [
     {
-      "arxiv_id": "2607.02345v1",
-      "title": "SkillFuzz: Fuzzing Skill Composition for Implicit Intents Discovery in Open Skill Marketplaces",
+      "arxiv_id": "2607.09524v1",
+      "title": "Balancing Usefulness and Naturalness: An LLM-based Curation Pipeline for Code Review Comments",
       "authors": [
-        "Jinwei Hu",
-        "Yi Dong",
-        "Youcheng Sun",
-        "Xiaowei Huang"
+        "Oussama Ben Sghaier",
+        "Martin Weyssow",
+        "Houari Sahraoui"
       ],
-      "published": "2026-07-02T15:49:21Z",
-      "summary": "Large Language Model (LLM)-based agents increasingly automate software engineering tasks through reusable skills, natural-language instruction documents that guide planning and execution. Open skill marketplaces enable users to assemble agents by co-activating community-contributed skills, but marketplace operators typically audit skills in isolation. As a result, individually benign skills may interact to redirect an agent toward unintended objectives, which we term implicit intents. Detecting ",
-      "link": "https://arxiv.org/abs/2607.02345v1"
+      "published": "2026-07-10T15:33:47Z",
+      "summary": "Code review is a cornerstone of software development, where reviewers provide feedback through written comments to ensure code quality, maintainability, and correctness. The effectiveness of this process hinges on the quality of review comments. As large language models (LLMs) gain traction in automating code review tasks, the utility of these systems is directly limited by the quality of the datasets on which they are trained. Unfortunately, existing code review datasets are often noisy, incons",
+      "link": "https://arxiv.org/abs/2607.09524v1"
     },
     {
-      "arxiv_id": "2607.02333v1",
-      "title": "Guiding Human Validation of LLM-Generated Code via Verifiable Literate Programming",
+      "arxiv_id": "2607.09510v1",
+      "title": "Failure as a Process: An Anatomy of CLI Coding Agent Trajectories",
       "authors": [
-        "Ziqi Yuan",
-        "Wenhao Lu",
-        "Hao Wu",
-        "Dunhong Jin",
-        "Chuan Wu"
+        "Xiangxin Zhao",
+        "Han Li",
+        "Shuaiting Li",
+        "Tianyi Zhao",
+        "Earl T. Barr",
+        "Federica Sarro",
+        "He Ye"
       ],
-      "published": "2026-07-02T15:37:54Z",
-      "summary": "Vibe coding democratizes software development by allowing users to generate code via natural-language (NL) interaction with large language models (LLMs). However, the code is reliable only when it faithfully implements the user's intent, which is difficult and labor-intensive for users to validate. Existing validation methods either rely on LLM-assisted automated testing, which suffers from prompt ambiguity and model fallibility, or involve users only in partial software artifacts such as prompt",
-      "link": "https://arxiv.org/abs/2607.02333v1"
+      "published": "2026-07-10T15:25:56Z",
+      "summary": "Large language model (LLM) coding agents are increasingly deployed to autonomously perform software engineering tasks in terminal-based environments, making their reliability a growing concern. Existing empirical studies investigate why coding agents fail, yet they largely treat failure as a final outcome rather than a temporal process, providing limited insight into how failures emerge, evolve, and become unrecoverable. We present the first large-scale empirical study of CLI coding-agent failur",
+      "link": "https://arxiv.org/abs/2607.09510v1"
     },
     {
-      "arxiv_id": "2607.02057v1",
-      "title": "Prompt Coverage Adequacy",
+      "arxiv_id": "2607.09452v1",
+      "title": "Practical Source Code Recovery from Binary Functions Using Anchor-Based Retrieval and LLM Reasoning",
       "authors": [
-        "Florian Tambon",
-        "Michael Konstantinou",
-        "Cedric Richter",
-        "Charles Chenouard",
-        "Mark Harman",
-        "Mike Papadakis"
+        "Charles Edward Gagnon",
+        "Steven H. H. Ding",
+        "Philippe Charland",
+        "Benjamin C. M. Fung"
       ],
-      "published": "2026-07-02T11:35:39Z",
-      "summary": "In recent years, it has become increasingly evident that large language models (LLMs) and autonomous agents raise the level of abstraction in software development by shifting the focus from writing precise procedures to expressing intents and goals. This paradigm shift introduces new challenges, particularly in how testing should be guided when prompts, rather than code, become primary development artifacts. To address this challenge, we propose Prompt Coverage Adequacy, a novel coverage criteri",
-      "link": "https://arxiv.org/abs/2607.02057v1"
+      "published": "2026-07-10T14:22:30Z",
+      "summary": "We present a practical pipeline for recovering source code from stripped binary functions by combining reverse engineering, anchor-based source code retrieval, and large language model reasoning. Our binary-to-source-code retrieval method attempts to identify the source function from a source code database, rather than generating approximate decompiled pseudocode. It extracts anchors such as strings, constants, external calls, and available function names using Ghidra, retrieves candidate files ",
+      "link": "https://arxiv.org/abs/2607.09452v1"
     },
     {
-      "arxiv_id": "2607.02052v1",
-      "title": "Mitigating Package Hallucinations in Large Language Models via Model Editing",
+      "arxiv_id": "2607.09224v1",
+      "title": "Git-Assistant: Planning-Based Support for Updating Git Repositories",
       "authors": [
-        "Shuhan Liu",
-        "Yukai Zhao",
-        "Xing Hu",
-        "Kui Liu",
-        "Xiaohu Yang",
-        "Xin Xia"
+        "Alfredo Garrachón Ruiz",
+        "Tomás de la Rosa",
+        "Daniel Borrajo"
       ],
-      "published": "2026-07-02T11:27:01Z",
-      "summary": "Large language models (LLMs) have demonstrated strong capabilities in software engineering tasks, such as code generation, library recommendation, and dependency configuration. However, recent studies show that LLMs may suffer from package hallucination, where they generate non-existent or invalid package names. These hallucinations can be exploited in software supply chain attacks, as attackers may register malicious packages under hallucinated names. Therefore, mitigating package hallucination",
-      "link": "https://arxiv.org/abs/2607.02052v1"
+      "published": "2026-07-10T09:16:20Z",
+      "summary": "Version control systems are essential for collaborative software development, yet tools like git remain challenging for many practitioners. Recent advances in Large Language Models (LLMs) offer promising capabilities for interpreting developer intent, but their effectiveness in repository management tasks is limited by the need for formal reasoning. This work introduces Git-Assistant, an AI-based assistant that combines LLMs with automated planning to support developers in executing non-trivial ",
+      "link": "https://arxiv.org/abs/2607.09224v1"
     },
     {
-      "arxiv_id": "2607.01980v1",
-      "title": "Epic-Organized vs. Requirement-Aligned Gherkin: An Empirical Evaluation of LLM-Based Acceptance Criteria Generation",
+      "arxiv_id": "2607.09172v1",
+      "title": "Attention to Detail: Evaluating Energy, Performance, and Accuracy Trade-offs Across vLLM Configurations",
       "authors": [
-        "Shahbaz Siddeeq",
-        "Mateen Abbasi",
-        "Jussi Rasku",
-        "Zheying Zhang",
-        "François Christophe",
-        "Tommi Mikkonen",
-        "Pekka Abrahamsson"
+        "Nada Zine",
+        "Tristan Coignion",
+        "Vincenzo Stoico",
+        "Clément Quinton",
+        "Romain Rouvoy",
+        "Patricia Lago"
       ],
-      "published": "2026-07-02T10:12:29Z",
-      "summary": "Automated authoring of Gherkin Behavior-Driven Development (BDD) acceptance criteria remains a manual bottleneck in requirements engineering. This study investigates whether epic-organized LLM-generated Gherkin produces higher quality and coverage than requirement-aligned generation. We compare our Timeless (an epic-organized LLM pipeline) approach against a naive large language model (LLM) baseline on four requirements documents (107 requirements) from the PURE dataset. Evaluation covers struct",
-      "link": "https://arxiv.org/abs/2607.01980v1"
+      "published": "2026-07-10T08:04:19Z",
+      "summary": "Large Language Models are reshaping how software is developed and maintained. They are typically deployed in production using inference engines such as vLLM, which can efficiently serve pre-trained, highly configurable models. While prior work has focused on model architectures and hardware acceleration, the impact of inference engine configuration on energy consumption, performance, and output quality remains poorly understood. In this paper, we present a large-scale controlled study of three s",
+      "link": "https://arxiv.org/abs/2607.09172v1"
     },
     {
-      "arxiv_id": "2607.01953v1",
-      "title": "Underspecification does not imply Incoherence: The Risks of Semantic Collapse in Coding Models",
+      "arxiv_id": "2607.09146v1",
+      "title": "Exploring the Potential of Program Flowcharts on Code Generation Using Multimodal LLMs",
       "authors": [
-        "Cedric Richter",
-        "Mike Papadakis"
-      ],
-      "published": "2026-07-02T09:43:15Z",
-      "summary": "Large Language Models (LLMs) have become increasingly effective at generating code when task descriptions are clear and precise. Yet, in practice, user-provided task descriptions are often ambiguous, incomplete, or contradictory, leaving critical aspects of the intended program behavior underspecified. In such cases, multiple behaviorally distinct interpretations may satisfy the description equally well, yet semantically differ in ways that matter/affect the user intent. A natural expectation, o",
-      "link": "https://arxiv.org/abs/2607.01953v1"
-    },
-    {
-      "arxiv_id": "2607.01929v1",
-      "title": "Beyond Textual Repository Exploration: Dual-Modal Structural Reasoning for Agentic Issue Resolution",
-      "authors": [
-        "Jiayi Zhang",
-        "Kai Huang",
-        "Yang Liu",
-        "Chunyang Chen"
-      ],
-      "published": "2026-07-02T09:23:48Z",
-      "summary": "Recent advances in agentic program repair have significantly improved issue resolution by enabling iterative repository exploration. However, existing approaches predominantly rely on sequential, text-based code navigation, which fundamentally limits their ability to reason over large-scale long-horizon repositories with complex and long-range dependencies. As issue-resolution agents traverse repositories through fragmented textual observations, structural information such as module organization",
-      "link": "https://arxiv.org/abs/2607.01929v1"
-    },
-    {
-      "arxiv_id": "2607.01640v1",
-      "title": "AgentFlow: Building Agent Dependency Graphs for Static Analysis of Agent Programs",
-      "authors": [
-        "Shenao Wang",
-        "Xinyi Hou",
-        "Yanjie Zhao",
-        "Xiao Cheng",
-        "Haoyu Wang"
-      ],
-      "published": "2026-07-02T03:11:41Z",
-      "summary": "LLM agents are increasingly developed as source-code applications built on agent frameworks. These agent programs combine conventional host-language code with framework-defined semantics for models, prompts, tools, memory, and multi-agent orchestration logic. As a result, their behavior depends not only on traditional control and data flows, but also on a new class of agent dependencies. Such dependencies are often expressed as framework-induced semantics, such as agent constructors, tool decora",
-      "link": "https://arxiv.org/abs/2607.01640v1"
-    },
-    {
-      "arxiv_id": "2607.01590v1",
-      "title": "Hawk: Harnessing Hardware-Aware Knowledge for High-Performance NPU Kernel Generation",
-      "authors": [
-        "Junyi Wen",
-        "Ruiyan Zhuang",
-        "Yongjia Xu",
-        "Pengtu Li",
-        "Rui Zou",
-        "Hongyi Chen",
-        "Chingman Wan",
-        "Puxu Yang",
-        "Wuhui Chen",
-        "Yanlin Wang"
-      ],
-      "published": "2026-07-02T01:41:34Z",
-      "summary": "Developing high-performance kernels for Neural Processing Units (NPUs) is a critical industry bottleneck, requiring developers to manually navigate implicit hardware constraints and strict memory hierarchies. While large language models offer immense automation potential, they fail catastrophically on NPUs due to a fundamental lack of hardware-specific priors. Naively transplanting code snippets from similar NPU kernels may pass the compiler, but it consistently triggers runtime crashes and perf",
-      "link": "https://arxiv.org/abs/2607.01590v1"
-    },
-    {
-      "arxiv_id": "2607.01360v1",
-      "title": "Benchmarking Code Improvement with Progressive, Adaptive, and Interactive Feedback",
-      "authors": [
-        "Cuong Chi Le",
-        "Aashish Yadavally",
-        "Minh Le-Anh",
-        "Tien N. Nguyen"
-      ],
-      "published": "2026-07-01T18:20:27Z",
-      "summary": "Large language models (LLMs) are typically evaluated on code generation and program repair using binary functional correctness: a generated program or patch either passes or fails a test suite. This protocol is simple but coarse, as it ignores partial progress, feedback use, regressions, and the refinement trajectory through which models often improve code. We introduce PAIR-Bench, a progressive and adaptive benchmark for evaluating code improvement: transforming an incorrect or incomplete progr",
-      "link": "https://arxiv.org/abs/2607.01360v1"
-    },
-    {
-      "arxiv_id": "2607.01136v1",
-      "title": "Skills Are Not Islands: Measuring Dependency and Risk in Agent Skill Supply Chains",
-      "authors": [
-        "Changguo Jia",
-        "Tianqi Zhao",
-        "Runzhi He",
-        "Minghui Zhou"
-      ],
-      "published": "2026-07-01T16:21:49Z",
-      "summary": "Agent skills package reusable operational knowledge for Large Language Model (LLM) agents, yet as they grow in scope, they become dependency-bearing artifacts whose identities, versions, and provenance remain implicit. This opacity already causes duplicated dependencies and inconsistent installations, exposing a gap that dependency management has yet to close. We introduce Agent Skill Supply Chains (ASSCs) to characterize mixed skill-package-service dependency graphs and help close this gap. Bor",
-      "link": "https://arxiv.org/abs/2607.01136v1"
-    },
-    {
-      "arxiv_id": "2607.01063v1",
-      "title": "AutoRestTest at the SBFT 2026 Tool Competition",
-      "authors": [
-        "Tyler Stennett",
-        "Myeongsoo Kim",
-        "Saurabh Sinha",
-        "Alessandro Orso"
-      ],
-      "published": "2026-07-01T15:24:38Z",
-      "summary": "Large input spaces and complex inter-operation dependencies make black-box REST API testing challenging. AutoRestTest combines a Semantic Property Dependency Graph, multi-agent reinforcement learning, and large language models to intelligently explore large API input spaces. In the SBFT 2026 REST League, AutoRestTest ranked first in all three evaluation categories -- fault detection, overall efficiency, and overall effectiveness -- on 11 APIs (317 operations, approximately 29 per API), averaging",
-      "link": "https://arxiv.org/abs/2607.01063v1"
-    },
-    {
-      "arxiv_id": "2607.00990v1",
-      "title": "SWE-Doctor: Guiding Software Engineering Agents with Runtime Diagnosis from Multi-Faceted Bug Reproduction Tests",
-      "authors": [
-        "Yaoqi Guo",
-        "Yang Liu",
-        "Jie M. Zhang",
-        "Yun Ma",
-        "Yiling Lou",
-        "Zhenpeng Chen"
-      ],
-      "published": "2026-07-01T14:27:12Z",
-      "summary": "Large language model (LLM)-based software engineering agents are increasingly developed to resolve software issues by generating patches from issue reports and code repositories. Bug reproduction tests (BRTs) are an important building block for such agents and have been shown useful for patch validation. However, it remains unclear whether BRTs can also help the more central stage of patch generation. We first conduct a preliminary study and find that directly using advanced BRT generators to gu",
-      "link": "https://arxiv.org/abs/2607.00990v1"
-    },
-    {
-      "arxiv_id": "2607.00939v1",
-      "title": "Leveraging LLM-Based Agentic Systems to Generate Quantum Applications for Test Optimization",
-      "authors": [
-        "Ming Tao",
-        "Yuechen Li",
-        "Tao Yue",
-        "Man Zhang",
-        "Aitor Arrieta Marcos"
-      ],
-      "published": "2026-07-01T13:40:51Z",
-      "summary": "Quantum computing is increasingly explored for software engineering (SE) optimization, but translating natural-language (NL) task-level requirements into executable quantum applications still demands substantial quantum and programming expertise. We present QPipe, a large language model (LLM)-based multi-agent architecture that autonomously turns NL requirements into traceable quantum-application workflows through specialized agents for requirement parsing, formulation, code generation, review, ",
-      "link": "https://arxiv.org/abs/2607.00939v1"
-    },
-    {
-      "arxiv_id": "2607.00711v1",
-      "title": "ClarifyCodeBench: Evaluating LLMs on Clarifying Ambiguous Requirements for Code Generation",
-      "authors": [
-        "Zheng Fang",
-        "Dongming Jin",
-        "Yihong dong",
-        "Yongmin Li",
-        "Kechi Zhang",
-        "Zhi Jin",
-        "Ge Li"
-      ],
-      "published": "2026-07-01T09:58:59Z",
-      "summary": "Large Language Models have emerged as programming assistants. However, the efficacy of code generation is constrained by the quality of input requirements, which are frequently ambiguous, incomplete, or underspecified. While LLMs excel at one-shot code synthesis, their ability to proactively clarify intent remains underexplored, as a critical trait for robust software engineering. Existing benchmarks largely overlook this interactive bottleneck, assuming perfectly specified prompts that do not r",
-      "link": "https://arxiv.org/abs/2607.00711v1"
-    },
-    {
-      "arxiv_id": "2607.00700v1",
-      "title": "LLVM-Bench: Benchmarking and Advancing Large Language Models for LLVM Compiler Issue Resolution",
-      "authors": [
-        "Zhao Tian",
-        "Yingquan Zhao",
-        "Chenyao Suo",
-        "Meng Wang",
-        "Junjie Chen"
-      ],
-      "published": "2026-07-01T09:50:26Z",
-      "summary": "LLVM is a widely used compiler infrastructure whose scale and complexity make issue resolution labor-intensive and challenging. Although large language models (LLMs) have recently achieved remarkable success in issue resolution, their effectiveness on complex system-level LLVM compiler remains largely unexplored. To address this gap, we introduce LLVM-Bench, the first large-scale benchmark for LLVM issue resolution, containing 423 real-world, validated tasks collected from the LLVM project. We f",
-      "link": "https://arxiv.org/abs/2607.00700v1"
-    },
-    {
-      "arxiv_id": "2607.00511v1",
-      "title": "Large Language Models for Multi-Lingual Equivalent Mutant Detection: An Extended Empirical Study",
-      "authors": [
-        "Honglin Shu",
-        "Zhao Tian",
-        "Dong Wang",
-        "Junji Yu",
-        "Jiazhe Zhang",
-        "Xuejie Cao",
-        "Junjie Chen",
+        "Yuki Toi",
+        "Tao Xiao",
+        "Kazushi Tomoto",
+        "Masanari Kondo",
         "Yasutaka Kamei"
       ],
-      "published": "2026-07-01T06:46:13Z",
-      "summary": "Mutation testing is a powerful technique for ensuring software quality. However, the presence of equivalent mutants introduces unnecessary costs and biases, limiting its practical effectiveness. Although numerous equivalent mutant detection (EMD) methods have been proposed, they often face distinct challenges: pure-code analysis methods can be limited by their reliance on specific compiler infrastructures, while existing machine-learning approaches remain constrained by scarce training data and ",
-      "link": "https://arxiv.org/abs/2607.00511v1"
+      "published": "2026-07-10T07:00:53Z",
+      "summary": "In recent years, Large Language Models (LLMs) have made significant strides, leading to the emergence of multimodal LLMs capable of processing diverse inputs such as images and audio. Previous research indicates that the supply of multimodal LLMs with combined textual and visual information improves the automatic code generation capabilities. In software development, diagrams such as flowcharts are widely employed to facilitate tasks like code comprehension. While existing studies investigated t",
+      "link": "https://arxiv.org/abs/2607.09146v1"
     },
     {
-      "arxiv_id": "2607.00427v1",
-      "title": "BT-APE: A Computationally Light Backtracking Approach to Automatic Prompt Engineering for Requirements Classification",
+      "arxiv_id": "2607.09123v1",
+      "title": "ReProAgent: Tool-Augmented Multi-Stage Agentic Generation of Bug Reproduction Tests from Issue Reports",
       "authors": [
-        "Mohammad Amin Zadenoori",
-        "Waad Alhoshan",
-        "Jacek Dąbrowski",
-        "Liping Zhao",
-        "Alessio Ferrari"
+        "Quanjun Zhang",
+        "Yi Zheng",
+        "Ye Shang",
+        "Weifeng Sun",
+        "Haichuan Hu",
+        "Chunrong Fang",
+        "Zhenyu Chen",
+        "Liang Xiao"
       ],
-      "published": "2026-07-01T04:36:30Z",
-      "summary": "Large language models (LLMs) are increasingly applied to requirements engineering (RE) tasks, yet the prompts guiding them are typically designed manually through trial and error, yielding inconsistent and suboptimal results. Automated prompt construction remains largely unexplored in RE, leaving its effectiveness unclear. To address this, we propose a lightweight Automatic Prompt Engineering approach, Backtracking APE (BT-APE), and apply it to requirements classification. We frame prompt design",
-      "link": "https://arxiv.org/abs/2607.00427v1"
+      "published": "2026-07-10T06:25:18Z",
+      "summary": "Reproduction tests help developers confirm reported issues and provide executable feedback for issue resolution, yet issue reports in open-source projects rarely include such tests. Recent studies have explored generating issue reproduction tests from issue reports with large language models, but existing approaches largely rely on prompt-based pipelines that retrieve textual context and generate tests. This limits their ability to understand how reported issues behave in repository-scale codeba",
+      "link": "https://arxiv.org/abs/2607.09123v1"
     },
     {
-      "arxiv_id": "2607.00107v1",
-      "title": "The Illusion of Safety: Multi-Tier Verification of AI vs. Human C++ Code",
+      "arxiv_id": "2607.09101v1",
+      "title": "Multi-Agent LLM Collaboration for Unit Test Generation via Human-Testing-Inspired Workflows",
       "authors": [
-        "Saif Mahmud",
-        "Fadul Sikder",
-        "Yuede Ji",
-        "Zhang Haotian",
-        "Jeff",
-        "Lei"
+        "Quanjun Zhang",
+        "Ye Shang",
+        "Siqi Gu",
+        "Jianyi Zhou",
+        "Chunrong Fang",
+        "Zhenyu Chen",
+        "Liang Xiao"
       ],
-      "published": "2026-06-30T19:48:35Z",
-      "summary": "Large language models increasingly generate C++, a memory-unsafe language where a single overlooked violation can become an exploitable bug. Yet most security evaluations of AI-generated code rely on static analysis alone, which flags warnings without confirming runtime violations or reasoning about untested paths. We ask whether AI-generated C++ is measurably less safe than human-written code, and whether common verification tools agree on the risk. We introduce VULBENCH-CPP, a benchmark of 8,9",
-      "link": "https://arxiv.org/abs/2607.00107v1"
+      "published": "2026-07-10T05:16:54Z",
+      "summary": "Recently, the emergence of Large Language Models (LLMs) has spurred a surge of research into automated unit test generation, yielding impressive performance and reducing manual effort. However, existing LLM-based approaches still suffer from two major limitations: (1) they follow rigid, procedural workflows that underutilize the autonomous reasoning potential of LLMs, making it difficult to dynamically adapt testing strategies based on real-time feedback; and (2) they rely on rule-based context ",
+      "link": "https://arxiv.org/abs/2607.09101v1"
     },
     {
-      "arxiv_id": "2606.31725v1",
-      "title": "Do Machines Struggle Where Humans Do? LLM and Human Comprehension of Obfuscated Code",
+      "arxiv_id": "2607.09059v1",
+      "title": "ARCANA: A Reflective Multi-Agent Program Synthesis Framework for ARC-AGI-2 Reasoning",
       "authors": [
-        "Jack Le",
-        "Anh H. N. Nguyen",
-        "Tien N. Nguyen"
+        "Kunbo Zhang",
+        "Lei Fu",
+        "Zeyu Wang",
+        "Zijing Liu",
+        "Kejian Tong"
       ],
-      "published": "2026-06-30T14:26:46Z",
-      "summary": "While code obfuscation impairs human code comprehension, it remains unclear if large language models share these failure modes. Building directly on a recent human study of program comprehension under code obfuscation, we evaluate whether large language models share the failure modes that obfuscation induces in human programmers. Evaluating several LLMs with five obfuscation tiers using the Block Model, we localize comprehension failures at the atom, block, relational, and macro levels. We find ",
-      "link": "https://arxiv.org/abs/2606.31725v1"
+      "published": "2026-07-10T03:03:42Z",
+      "summary": "We present ARCANA, a collaborative multi agent framework for solving ARC AGI 2 tasks under strict test time and hardware constraints. ARCANA decomposes each task into iterative perception, hypothesis generation, symbolic execution, and reflective refinement. A perceptual grounding agent builds object centric scene graphs from raw grids, a latent program policy proposes diverse DSL programs, a symbolic executor verifies candidates on demonstrations, and a reflective agent synthesizes failure driv",
+      "link": "https://arxiv.org/abs/2607.09059v1"
     },
     {
-      "arxiv_id": "2606.31706v1",
-      "title": "AdaTrans: Automated C to Rust Transformation via Error-Adaptive Repair",
+      "arxiv_id": "2607.09007v1",
+      "title": "Benchmarking Large Language Models on Repairing Qiskit Programs using Bugs4Q",
       "authors": [
-        "Xiaofan Liu",
-        "Zecan Li",
-        "Zhuang Zhao",
-        "Ziqi Shuai",
-        "Yanming Yang",
-        "Qi Xin",
-        "Jifeng Xuan"
+        "Saumya Brahmbhatt",
+        "Mitali Hukkeri",
+        "Dongchan Kim",
+        "M. V. Panduranga Rao",
+        "Lei Zhang"
       ],
-      "published": "2026-06-30T14:11:54Z",
-      "summary": "The automated transformation of C code to Rust is challenging due to Rust's strict ownership and borrowing semantics. While Large Language Models (LLMs) show promise, they often produce code that violates these rules or relies on unsafe constructs. We propose AdaTrans, a framework that addresses these issues through three core mechanisms: a Strategy-Driven Retrieval-Augmented Generation (RAG) mechanism to map compiler errors to specific repairs, an Error-Stratified Transformation Strategy (ESTS)",
-      "link": "https://arxiv.org/abs/2606.31706v1"
+      "published": "2026-07-10T00:23:47Z",
+      "summary": "In quantum programs, Bugs4Q is a widely used benchmark containing real quantum defects. However, its evaluation assumes that benchmark labels remain valid and that generated fixes execute in the target environment. We evaluate two Bugs4Q versions containing 67 unique real Qiskit defects, adding executable tests where missing, and re-run all entries across six pinned Qiskit releases (0.25.0, 0.45.0, 1.0.0, 1.1.1, 2.0.0, and 2.3.1). We find that quantum benchmarks can suffer from silent label inve",
+      "link": "https://arxiv.org/abs/2607.09007v1"
     },
     {
-      "arxiv_id": "2606.31206v1",
-      "title": "FeatX: Editing Software by Editing Features for Repository-Level Code Evolution",
+      "arxiv_id": "2607.08740v1",
+      "title": "Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows",
       "authors": [
-        "Xutian Li",
-        "Yifeng Zhu",
-        "Xianlin Zhao",
-        "Yanzhen Zou",
-        "Lu Zhang",
-        "Bing Xie"
+        "Emanuele Quinto",
+        "Carlo Andrea Rozzi",
+        "Francesco Zanitti"
       ],
-      "published": "2026-06-30T06:38:56Z",
-      "summary": "Large language models (LLMs) are increasingly used for software evolution, yet most interaction paradigms remain code-centric and require manual context management and prompt iteration. We present FeatX, a feature-oriented tool for editing software by editing features. Given an existing repository, FeatX extracts a hierarchical epic-feature structure with explicit feature-to-code mappings, then invokes a three-stage Evolution Agent to translate feature edits into code patches. The workflow is ex",
-      "link": "https://arxiv.org/abs/2606.31206v1"
+      "published": "2026-07-09T17:40:46Z",
+      "summary": "Large language model (LLM) applications increasingly use explicit workflows for tool use, retrieval, branching, checkpointing, and human approval. Existing workflow systems already address many execution concerns. This paper proposes a Lisp-inspired but language-independent conceptual model: symbolic forms, object identity, and live-image thinking are used as explanatory lenses, not implementation commitments. In this model, workflow definitions, workflow instances, inference records, context sn",
+      "link": "https://arxiv.org/abs/2607.08740v1"
     },
     {
-      "arxiv_id": "2606.31159v1",
-      "title": "An Empirical Study of Security Calibration in Large Language Models for Code",
+      "arxiv_id": "2607.08028v1",
+      "title": "From Prompts to Contracts: Harness Engineering for Auditable Enterprise LLM Agents",
       "authors": [
-        "Mohammed Latif Siddiq",
-        "Md. Nafiu Rahman",
-        "Joanna C. S. Santos"
+        "Joongho Ahn",
+        "Moonsoo Kim"
       ],
-      "published": "2026-06-30T05:37:39Z",
-      "summary": "Large Language Models (LLMs) are rapidly transforming software development, yet their use in security-critical contexts raises a key question: do models know when their generated code is insecure? This property, known as calibration, measures whether a model's confidence aligns with the true correctness of its outputs. We present the first large-scale empirical study of security calibration in LLM-generated code. We evaluate GPT-4o-mini, Gemini-2.0-Flash, and Qwen3-Coder-Next across multiple tem",
-      "link": "https://arxiv.org/abs/2606.31159v1"
+      "published": "2026-07-09T01:08:33Z",
+      "summary": "Enterprise large language model (LLM) applications often begin as prototypes whose behavior is carried by prompts and retrieval context. Productization adds requirements for source boundaries, entity routing, answer contracts, and reproducible traces. We present a harness-engineering approach that reconstructs this pattern into a traceable, auditable LLM-agent architecture: deterministic behavior moves into code, manifests, schemas, and validation artifacts around a replaceable composition bound",
+      "link": "https://arxiv.org/abs/2607.08028v1"
     },
     {
-      "arxiv_id": "2606.31032v1",
-      "title": "Partially ordering software licenses",
+      "arxiv_id": "2607.07881v1",
+      "title": "Functional and Secure Code Generation with Task Vectors",
       "authors": [
-        "Hamidah Oderinwale",
-        "David Atkinson",
-        "Rachel Hong",
-        "Art Abal",
-        "Ben Laufer"
+        "Felix Wang",
+        "Anudeep Das",
+        "Mei Nagappan",
+        "N. Asokan"
       ],
-      "published": "2026-06-30T02:03:21Z",
-      "summary": "Licenses are legal instruments that inventors may use to protect the technologies they build and regulate how they are used -- however, the nature of their authorship and selection means that how they are interpreted, chosen, and enforced is largely unstructured. In practice, this makes it difficult to compare licenses at scale -- when is one license considered more permissive than the other, and when are their terms incomparable to each other? Currently, there is a growing list of licenses that",
-      "link": "https://arxiv.org/abs/2606.31032v1"
+      "published": "2026-07-08T19:32:22Z",
+      "summary": "Large language models (LLMs) are increasingly used for code generation, but they struggle to generate functional code free of security vulnerabilities. Prior work to improve the secure code generation abilities of such coding LLMs has largely focused on evaluating code functionality and security separately using different datasets, or focused on finding vulnerabilities post-generation. At the same time, the text-generation domain has seen significant work on alignment techniques, where models ar",
+      "link": "https://arxiv.org/abs/2607.07881v1"
     },
     {
-      "arxiv_id": "2607.00053v1",
-      "title": "SWE-Router: Routing in Multi-turn Agentic Software Engineering Tasks",
+      "arxiv_id": "2607.07619v1",
+      "title": "Rethinking Code Performance Benchmarks for LLMs",
       "authors": [
-        "Seongho Son",
-        "Sangwoong Yoon",
-        "Jiahua Tang",
-        "Shuhan Wang",
-        "Lorenz Wolf",
-        "Ilija Bogunovic"
+        "Nhat Minh Le",
+        "Yisen Xu",
+        "Zhijie Wang",
+        "Tse-Hsun",
+        "Chen"
       ],
-      "published": "2026-06-30T01:46:26Z",
-      "summary": "Large language models (LLMs) embedded in multi-turn agentic harnesses are reshaping software engineering (SWE), but routing every task to a frontier model is wasteful when many issues admit cheap fixes. Existing LLM routers operate on the task description alone, which inherits an information-theoretic Bayes-error floor in agentic settings: a similar issue can hide either a localized typo or a multi-module refactor, and the prompt does not separate the two. We introduce SWE-Router, a value-based ",
-      "link": "https://arxiv.org/abs/2607.00053v1"
+      "published": "2026-07-08T16:36:03Z",
+      "summary": "Many function-level performance benchmarks have been proposed to evaluate whether large language models (LLMs) can generate efficient programs. However, results on these benchmarks often show that LLM-generated implementations have little or no execution-time difference from canonical solutions. In this paper, we revisit four popular benchmarks: EffiBench, Enamel, EvalPerf, and Mercury. We evaluate 1,538 tasks under more rigorous setting by running each task 30 times and assessing the runtime di",
+      "link": "https://arxiv.org/abs/2607.07619v1"
     },
     {
-      "arxiv_id": "2607.00049v1",
-      "title": "Prompting GPT-5 on Scrum Certification Questions: An Empirical Accuracy Study",
+      "arxiv_id": "2607.07481v1",
+      "title": "The Poisoned Chalice of LLM Evaluation Report",
       "authors": [
-        "Mirko Perkusich",
-        "Danyllo Albuquerque",
-        "João Paiva",
-        "Robson Vilar",
-        "Emanuel Dantas",
-        "Ademar França de Sousa Neto",
-        "Rohit Gheyi",
-        "Kyller Gorgônio",
-        "Angelo Perkusich"
+        "Jonathan Katzy",
+        "Ali Al-Kaswan",
+        "Razvan Mihai Popescu",
+        "Zhou Yang"
       ],
-      "published": "2026-06-29T23:55:14Z",
-      "summary": "Large Language Models (LLMs) are increasingly used in Agile Software Development for documentation, coaching, and training. As practitioners adopt these tools to prepare for certifications such as Professional Scrum Master (PSM), a key question is whether LLMs can reliably reason about Scrum, a framework with normative, well-defined rules described in the Scrum Guide (2020). This paper examines how different prompt techniques affect the factual accuracy of LLM responses to Scrum certification-st",
-      "link": "https://arxiv.org/abs/2607.00049v1"
+      "published": "2026-07-08T14:45:08Z",
+      "summary": "Large language models are increasingly used to evaluate and support software engineering tasks, yet the validity of these evaluations is often undermined by uncertainty about whether benchmark instances were seen during pretraining. This can lead to data contamination, which may inflate performance and result in misleading conclusions about model capability. Despite this, the training corpora of many modern models are only partially disclosed, making direct decontamination infeasible. This creat",
+      "link": "https://arxiv.org/abs/2607.07481v1"
     },
     {
-      "arxiv_id": "2607.00048v1",
-      "title": "Comparing Large Language Models on Scrum Certification-Style Questions: Accuracy, Stability, and Error Patterns",
+      "arxiv_id": "2607.07461v1",
+      "title": "Mitigating Taint-Style Vulnerabilities in MCP Servers via Security-Aware Tool Descriptions",
       "authors": [
-        "Robson Alves Vilar",
-        "Emanuel Dantas Filho",
-        "Ademar França de Sousa Neto",
-        "Mirko Perkusich",
-        "Danyllo Wagner Albuquerque",
-        "João Paiva",
-        "Kyller Gorgônio",
-        "Angelo Perkusich"
+        "Yang Shi",
+        "Jiaheng Fu",
+        "Yihe Huang",
+        "Ruixiang Wu",
+        "Chengyao Sun",
+        "Kaifeng Huang"
       ],
-      "published": "2026-06-29T23:37:56Z",
-      "summary": "Large Language Models (LLMs) are increasingly used in exam- and certification-style question answering tasks, where their ability to retrieve, interpret, and apply domain-specific knowledge can be systematically assessed. In Software Engineering, such settings are particularly relevant when questions depend on strict adherence to normative definitions, roles, artifacts, and rules. This paper evaluates the performance of three contemporary LLMs, \\textit{GPT-5 mini}, \\textit{Gemini 3 Flash}, and \\",
-      "link": "https://arxiv.org/abs/2607.00048v1"
+      "published": "2026-07-08T14:29:23Z",
+      "summary": "Large language models (LLMs) are increasingly deployed as autonomous agents that interact with external tools and services via the Model Context Protocol (MCP), a standardized interface for dynamic tool invocation. While MCP simplifies integration, it also expands the attack surface and enables generic exploits across multiple servers. Despite prior work on malicious MCP servers, the vulnerability landscape of MCP servers remains underexplored. In this work, we systematically analyze MCP server ",
+      "link": "https://arxiv.org/abs/2607.07461v1"
     },
     {
-      "arxiv_id": "2607.00043v1",
-      "title": "A Taxonomy of Single-Turn Textual Prompt Patterns",
+      "arxiv_id": "2607.07007v1",
+      "title": "Thinking More, Harnessing Better: State Machine Guided Harness Automatic Generation with Project Digestion and Workflow Decomposition",
       "authors": [
-        "Vennila Sooben",
-        "Eugene Syriani"
+        "Xing Zhang",
+        "Zikang Huang",
+        "Gang Yang",
+        "CongChong Wang",
+        "Lu Liu",
+        "Bin Yin",
+        "Mingyi Wang",
+        "Ziquan Zhao",
+        "Min Li",
+        "Zhenyu Chen",
+        "Bo Wu",
+        "Lingyun Ying"
       ],
-      "published": "2026-06-29T18:54:23Z",
-      "summary": "Large language models (LLMs) are now widely employed in software development and everyday use. Interacting with LLMs requires crafting prompts, which range from simple ad hoc sentences to extensive, detailed, and structured instructions. Knowledge about prompt engineering has been documented in several surveys and catalogs in the literature. However, the term ``prompt pattern'' is defined differently across sources, and existing works have classified prompt patterns in different ways. In this re",
-      "link": "https://arxiv.org/abs/2607.00043v1"
+      "published": "2026-07-08T05:04:28Z",
+      "summary": "High-quality fuzz harnesses are essential for effective gray-box fuzzing. While Large Language Models (LLMs) offer promise for automating this task, existing one-turn generation methods suffer from hallucinations and inadequate coverage due to coarse-grained function targeting and misaligned generation workflows. We present SynapseFlow, an automatic harness generator that addresses these limitations through two key innovations: dataflow-aware function aggregation and a staged, rollback-enabled g",
+      "link": "https://arxiv.org/abs/2607.07007v1"
     },
     {
-      "arxiv_id": "2606.30810v1",
-      "title": "Towards Knowledge Alignment in Code LLMs: Contrastive Unlearning for Evolving APIs",
+      "arxiv_id": "2607.07738v1",
+      "title": "REFORGE: A Method for Benchmarking LLMs' Reverse Engineering Capabilities in Decompiled Binary Function Naming",
       "authors": [
-        "Huy Q. Tran",
-        "Dang H. Vu",
-        "Tuyen N. Dinh",
-        "Anh H. D. Nguyen",
-        "Anh N. H. Vu",
-        "Anh M. T. Bui",
-        "Phuong T. Nguyen"
+        "Nicolas Koller",
+        "Andreas u. Schmidt"
       ],
-      "published": "2026-06-29T18:34:55Z",
-      "summary": "Large Language Models (LLMs) have recently achieved strong performance in code generation. However, due to knowledge cut-off and the rapid evolution of software libraries, they often generate deprecated API usages that lead to unreliable and incompatible code. Existing fine-tuning methods lack selectivity when only a small portion of model knowledge requires modification. Recent model-level approaches, such as machine unlearning and model editing, offer a promising direction for modifying parame",
-      "link": "https://arxiv.org/abs/2606.30810v1"
+      "published": "2026-07-07T23:17:03Z",
+      "summary": "Large language models (LLMs) are increasingly applied to reverse-engineering tasks, and recent threat-intelligence reporting shows them operating inside live offensive-security workflows. Claims about their capability, however, outpace our ability to measure it. Existing benchmarks for LLM-assisted binary analysis treat the construction of function-level ground truth as a solved pre-processing step and report accuracy without disclosing how many functions were reliably evaluable. We argue that t",
+      "link": "https://arxiv.org/abs/2607.07738v1"
     },
     {
-      "arxiv_id": "2606.30610v1",
-      "title": "PyMETA: A Benchmark Dataset for Hierarchical Student Code Error Classification with Python-Interpreter-Based Labels",
+      "arxiv_id": "2607.06748v1",
+      "title": "SmartHomeSecure: Automated Detection and Repair of Smart Home Configuration Errors Using Large Language Models",
       "authors": [
-        "Chuyue Li",
-        "Ziqi Tang",
-        "Jingyi Wang",
-        "Yu Wu",
-        "Kazuma Hashimoto",
-        "Lingyu Gao"
+        "Yizhi Wang",
+        "Xinghua Gao",
+        "Reachsak Ly",
+        "Alireza Shojaei"
       ],
-      "published": "2026-06-29T17:45:36Z",
-      "summary": "With the advancement of Large Language Models (LLMs), code error detection has extended beyond traditional IDE diagnostics to context-sensitive debugging in educational scenarios. However, existing approaches lack large-scale datasets, multi-error analysis, and unified error taxonomies. To address this, we introduce PyMETA, a large-scale Python code error classification dataset of 48,646 student submissions, with single-error labels for all samples and a diagnostic subset of 97 expert-annotated ",
-      "link": "https://arxiv.org/abs/2606.30610v1"
+      "published": "2026-07-07T19:29:10Z",
+      "summary": "Smart home automation platforms increasingly rely on user-authored YAML configuration files to define device behaviors, but these files are prone to syntax, formatting, and semantic logic errors that can cause automation failures and safety risks. Existing YAML validators, static analysis tools, and general-purpose large language models offer limited support for end-to-end diagnosis and repair because they lack domain-specific understanding and validated correction workflows. This paper presents",
+      "link": "https://arxiv.org/abs/2607.06748v1"
+    },
+    {
+      "arxiv_id": "2607.06713v1",
+      "title": "Reliable and Developer-Aligned Evaluation of Agents for Software Engineering",
+      "authors": [
+        "Razvan Mihai Popescu"
+      ],
+      "published": "2026-07-07T18:29:50Z",
+      "summary": "Large language models are rapidly moving towards closing the development cycle, transitioning from simple assistive companions to autonomous contributors deeply embedded into collaborative development environments. Despite their accelerated adoption, existing evaluation techniques are limited due to their fragmented nature and distorted projection of true model capabilities, often obtained from hypothetical syntactic scenarios. This research aims to bridge this gap by providing a comprehensive e",
+      "link": "https://arxiv.org/abs/2607.06713v1"
+    },
+    {
+      "arxiv_id": "2607.06341v1",
+      "title": "Harnessing Code Agents for Automatic Software Verification",
+      "authors": [
+        "Shuangxiang Kan",
+        "Shuanglong Kan",
+        "Sebastian Ertel"
+      ],
+      "published": "2026-07-07T14:39:59Z",
+      "summary": "Formal verification offers the strongest guarantee of software correctness, but it does not scale: the proofs demanded by interactive theorem provers such as Coq require enormous expert effort. Large language models (LLMs) promise to generate these proofs automatically, yet existing approaches wire a fixed, human-designed proof strategy into the system and constrain the model to follow it (retrieving premises and predicting tactics one step at a time, or splitting goals by divide-and-conquer), a",
+      "link": "https://arxiv.org/abs/2607.06341v1"
+    },
+    {
+      "arxiv_id": "2607.06636v1",
+      "title": "Specification Grounding Drives Test Effectiveness for LLM Code",
+      "authors": [
+        "Amin Haeri",
+        "Mahdi Ghelichi"
+      ],
+      "published": "2026-07-07T14:11:00Z",
+      "summary": "Large language models frequently generate code that appears correct on typical inputs yet fails on edge cases, invalid inputs, and other specification-defined corner conditions. A popular fix has the model write its own tests and repair until they pass, but the source of the gain is unclear: does it come from the tests merely existing, or from their grounding in a specification of what the code should do? We isolate this factor. Holding the tester, test budget, and repair loop fixed, we change a",
+      "link": "https://arxiv.org/abs/2607.06636v1"
+    },
+    {
+      "arxiv_id": "2607.06306v1",
+      "title": "UI2App: Benchmarking Visual Interaction Inference in Executable Web Application Generation",
+      "authors": [
+        "Grace Man Chen",
+        "Litao Guo",
+        "Yifan Wu",
+        "Yiyu Chen",
+        "Yenchi Tseng",
+        "Sicheng Liu",
+        "Yuyu Luo",
+        "Ying-Cong Chen"
+      ],
+      "published": "2026-07-07T14:08:55Z",
+      "summary": "Large language models (LLMs) have demonstrated growing competence in web page generation. However, existing text-driven approaches rely on complex prompts that impose substantial demands on users and offer limited expressivity for page layout and cross-page visual coherence. Image-driven paradigms, which take UI screenshots as input, align more closely with real development workflows. However, current benchmarks focus primarily on visual fidelity and lack a systematic evaluation of the interacti",
+      "link": "https://arxiv.org/abs/2607.06306v1"
+    },
+    {
+      "arxiv_id": "2607.06273v1",
+      "title": "AgentTether: Graph-Guided Diagnosis and Runtime Intervention for Reliable LLM Agent Operation",
+      "authors": [
+        "Chenyu Zhao",
+        "Shenglin Zhang",
+        "Wenwei Gu",
+        "Yongqian Sun",
+        "Dan Pei",
+        "Chetan Bansal",
+        "Saravan Rajmohan",
+        "Minghua Ma"
+      ],
+      "published": "2026-07-07T13:40:31Z",
+      "summary": "Large language model (LLM) agents are increasingly used for multi-step, stateful tool-use tasks, yet production reliability remains limited. Unlike static software repair, agent repair must recover dynamic trajectories whose early decisions can propagate into later errors and external state changes. Existing automatic remedies address only part of this problem: blind retry adds no diagnosis, outcome feedback says whether a run failed but not where or why, and self-reflection often lacks grounded",
+      "link": "https://arxiv.org/abs/2607.06273v1"
+    },
+    {
+      "arxiv_id": "2607.06195v1",
+      "title": "LogicHunter: Testing LLM Agent Frameworks with an Agentic Oracle",
+      "authors": [
+        "Minghui Long",
+        "Yanjie Zhao",
+        "Haoyu Wang"
+      ],
+      "published": "2026-07-07T12:21:42Z",
+      "summary": "Large Language Model (LLM) agent frameworks such as LangChain, LlamaIndex, and CrewAI have become critical infrastructure powering production AI systems, yet they remain severely under-tested due to fundamental challenges in automated testing. Unlike traditional software, where crashes serve as reliable oracles, defects in these pure Python frameworks manifest as ordinary exceptions or silent semantic failures, creating profound oracle ambiguity. This problem is exacerbated by strict type govern",
+      "link": "https://arxiv.org/abs/2607.06195v1"
+    },
+    {
+      "arxiv_id": "2607.06039v1",
+      "title": "Automating Quality Assessment with NLP of LLM-Generated Defeaters",
+      "authors": [
+        "Tihomir Rohlinger",
+        "Daniel Ratiu",
+        "Stefan Wagner"
+      ],
+      "published": "2026-07-07T09:15:23Z",
+      "summary": "High-integrity systems, such as autonomous vehicle fleets and large-scale energy infrastructures, rely on structured assurance cases to justify safety claims. To remain valid under evolving operational conditions, such cases must be examined against potential challenges, known as defeaters. While large language models (LLMs) can support the scalable generation of candidate defeaters, assessing their quality remains largely manual and subjective process. This paper presents an automated approach ",
+      "link": "https://arxiv.org/abs/2607.06039v1"
+    },
+    {
+      "arxiv_id": "2607.06009v1",
+      "title": "Multi-Channel Spread-Spectrum Code Watermarking",
+      "authors": [
+        "Soohyeon Choi",
+        "Debin Gao",
+        "Yue Duan"
+      ],
+      "published": "2026-07-07T08:50:19Z",
+      "summary": "Attributing code to the large language model that produced it is essential for provenance, licensing, and misuse accountability, yet no deployed watermark meets this need. Generation-time schemes require access to the producing model and cannot be applied to third-party code, while post-hoc schemes work on any code but carry at most 4 bits of payload, far too few to distinguish the many deployed model configurations. We present multi-channel spread-spectrum watermarking, the first post-hoc, trai",
+      "link": "https://arxiv.org/abs/2607.06009v1"
+    },
+    {
+      "arxiv_id": "2607.06004v1",
+      "title": "Large Language Models Have Unreliable Understanding of Software Engineering Terminology",
+      "authors": [
+        "Huzaifa Ejaz",
+        "Fabian C. Peña",
+        "Steffen Herbold"
+      ],
+      "published": "2026-07-07T08:46:49Z",
+      "summary": "Large Language Models (LLMs) are increasingly used in software engineering (SE), yet there is no systematic study that determines to which degree these LLMs actually understand standardized SE terminology. Lack of such understanding can lead to miscommunication and misunderstanding, both by LLMs consuming text but also by human-developers acting on LLM-generated text. Within this paper, we investigate to which degree state-of-the-art LLMs are able to identify whether definitions from the ISO/IEC",
+      "link": "https://arxiv.org/abs/2607.06004v1"
+    },
+    {
+      "arxiv_id": "2607.05842v1",
+      "title": "Beyond Refusal: A Same-Lineage Study of Aligned and Abliterated LLMs for Vulnerability Analysis",
+      "authors": [
+        "Mingchen Li",
+        "Meikang Qiu",
+        "Zifan Peng",
+        "Heng Fan",
+        "Song Fu",
+        "Junhua Ding",
+        "Yunhe Feng"
+      ],
+      "published": "2026-07-07T05:04:48Z",
+      "summary": "Large language model (LLM)-assisted software security operates at a difficult boundary: the vulnerability-analysis terminology needed for legitimate code review, triage, and repair can closely resemble terminology associated with misuse. Existing safety and cybersecurity evaluations are difficult to interpret in this setting because they often compare unrelated model families, thereby conflating safety behavior with differences in architecture, scale, training data, and deployment. To isolate th",
+      "link": "https://arxiv.org/abs/2607.05842v1"
+    },
+    {
+      "arxiv_id": "2607.05810v1",
+      "title": "SCOPE: Leveraging Subgoal Critiques for Code Generation",
+      "authors": [
+        "Yueke Zhang",
+        "Yifan Zhang",
+        "Zihan Fang",
+        "Kevin Leach",
+        "Wei Zhang",
+        "Yu Huang"
+      ],
+      "published": "2026-07-07T04:09:41Z",
+      "summary": "Code generation with large language models (LLMs) remains unreliable because generated programs can appear correct while still violating key semantic requirements in the natural language specification. Existing feedback-based methods improve over coder-only generation, but they often rely on unstructured critique or execution signals that do not explicitly identify what the code is semantically missing. We present SCOPE, a prover-initialized subgoal critic for code generation. SCOPE adapts a Lea",
+      "link": "https://arxiv.org/abs/2607.05810v1"
     }
   ],
   "new_articles": [
     {
-      "arxiv_id": "2607.02345v1",
-      "title": "SkillFuzz: Fuzzing Skill Composition for Implicit Intents Discovery in Open Skill Marketplaces",
+      "arxiv_id": "2607.09524v1",
+      "title": "Balancing Usefulness and Naturalness: An LLM-based Curation Pipeline for Code Review Comments",
       "authors": [
-        "Jinwei Hu",
-        "Yi Dong",
-        "Youcheng Sun",
-        "Xiaowei Huang"
+        "Oussama Ben Sghaier",
+        "Martin Weyssow",
+        "Houari Sahraoui"
       ],
-      "published": "2026-07-02T15:49:21Z",
-      "summary": "Large Language Model (LLM)-based agents increasingly automate software engineering tasks through reusable skills, natural-language instruction documents that guide planning and execution. Open skill marketplaces enable users to assemble agents by co-activating community-contributed skills, but marketplace operators typically audit skills in isolation. As a result, individually benign skills may interact to redirect an agent toward unintended objectives, which we term implicit intents. Detecting ",
-      "link": "https://arxiv.org/abs/2607.02345v1"
+      "published": "2026-07-10T15:33:47Z",
+      "summary": "Code review is a cornerstone of software development, where reviewers provide feedback through written comments to ensure code quality, maintainability, and correctness. The effectiveness of this process hinges on the quality of review comments. As large language models (LLMs) gain traction in automating code review tasks, the utility of these systems is directly limited by the quality of the datasets on which they are trained. Unfortunately, existing code review datasets are often noisy, incons",
+      "link": "https://arxiv.org/abs/2607.09524v1"
     },
     {
-      "arxiv_id": "2607.02333v1",
-      "title": "Guiding Human Validation of LLM-Generated Code via Verifiable Literate Programming",
+      "arxiv_id": "2607.09510v1",
+      "title": "Failure as a Process: An Anatomy of CLI Coding Agent Trajectories",
       "authors": [
-        "Ziqi Yuan",
-        "Wenhao Lu",
-        "Hao Wu",
-        "Dunhong Jin",
-        "Chuan Wu"
+        "Xiangxin Zhao",
+        "Han Li",
+        "Shuaiting Li",
+        "Tianyi Zhao",
+        "Earl T. Barr",
+        "Federica Sarro",
+        "He Ye"
       ],
-      "published": "2026-07-02T15:37:54Z",
-      "summary": "Vibe coding democratizes software development by allowing users to generate code via natural-language (NL) interaction with large language models (LLMs). However, the code is reliable only when it faithfully implements the user's intent, which is difficult and labor-intensive for users to validate. Existing validation methods either rely on LLM-assisted automated testing, which suffers from prompt ambiguity and model fallibility, or involve users only in partial software artifacts such as prompt",
-      "link": "https://arxiv.org/abs/2607.02333v1"
+      "published": "2026-07-10T15:25:56Z",
+      "summary": "Large language model (LLM) coding agents are increasingly deployed to autonomously perform software engineering tasks in terminal-based environments, making their reliability a growing concern. Existing empirical studies investigate why coding agents fail, yet they largely treat failure as a final outcome rather than a temporal process, providing limited insight into how failures emerge, evolve, and become unrecoverable. We present the first large-scale empirical study of CLI coding-agent failur",
+      "link": "https://arxiv.org/abs/2607.09510v1"
     },
     {
-      "arxiv_id": "2607.02057v1",
-      "title": "Prompt Coverage Adequacy",
+      "arxiv_id": "2607.09452v1",
+      "title": "Practical Source Code Recovery from Binary Functions Using Anchor-Based Retrieval and LLM Reasoning",
       "authors": [
-        "Florian Tambon",
-        "Michael Konstantinou",
-        "Cedric Richter",
-        "Charles Chenouard",
-        "Mark Harman",
-        "Mike Papadakis"
+        "Charles Edward Gagnon",
+        "Steven H. H. Ding",
+        "Philippe Charland",
+        "Benjamin C. M. Fung"
       ],
-      "published": "2026-07-02T11:35:39Z",
-      "summary": "In recent years, it has become increasingly evident that large language models (LLMs) and autonomous agents raise the level of abstraction in software development by shifting the focus from writing precise procedures to expressing intents and goals. This paradigm shift introduces new challenges, particularly in how testing should be guided when prompts, rather than code, become primary development artifacts. To address this challenge, we propose Prompt Coverage Adequacy, a novel coverage criteri",
-      "link": "https://arxiv.org/abs/2607.02057v1"
+      "published": "2026-07-10T14:22:30Z",
+      "summary": "We present a practical pipeline for recovering source code from stripped binary functions by combining reverse engineering, anchor-based source code retrieval, and large language model reasoning. Our binary-to-source-code retrieval method attempts to identify the source function from a source code database, rather than generating approximate decompiled pseudocode. It extracts anchors such as strings, constants, external calls, and available function names using Ghidra, retrieves candidate files ",
+      "link": "https://arxiv.org/abs/2607.09452v1"
     },
     {
-      "arxiv_id": "2607.02052v1",
-      "title": "Mitigating Package Hallucinations in Large Language Models via Model Editing",
+      "arxiv_id": "2607.09224v1",
+      "title": "Git-Assistant: Planning-Based Support for Updating Git Repositories",
       "authors": [
-        "Shuhan Liu",
-        "Yukai Zhao",
-        "Xing Hu",
-        "Kui Liu",
-        "Xiaohu Yang",
-        "Xin Xia"
+        "Alfredo Garrachón Ruiz",
+        "Tomás de la Rosa",
+        "Daniel Borrajo"
       ],
-      "published": "2026-07-02T11:27:01Z",
-      "summary": "Large language models (LLMs) have demonstrated strong capabilities in software engineering tasks, such as code generation, library recommendation, and dependency configuration. However, recent studies show that LLMs may suffer from package hallucination, where they generate non-existent or invalid package names. These hallucinations can be exploited in software supply chain attacks, as attackers may register malicious packages under hallucinated names. Therefore, mitigating package hallucination",
-      "link": "https://arxiv.org/abs/2607.02052v1"
+      "published": "2026-07-10T09:16:20Z",
+      "summary": "Version control systems are essential for collaborative software development, yet tools like git remain challenging for many practitioners. Recent advances in Large Language Models (LLMs) offer promising capabilities for interpreting developer intent, but their effectiveness in repository management tasks is limited by the need for formal reasoning. This work introduces Git-Assistant, an AI-based assistant that combines LLMs with automated planning to support developers in executing non-trivial ",
+      "link": "https://arxiv.org/abs/2607.09224v1"
     },
     {
-      "arxiv_id": "2607.01980v1",
-      "title": "Epic-Organized vs. Requirement-Aligned Gherkin: An Empirical Evaluation of LLM-Based Acceptance Criteria Generation",
+      "arxiv_id": "2607.09172v1",
+      "title": "Attention to Detail: Evaluating Energy, Performance, and Accuracy Trade-offs Across vLLM Configurations",
       "authors": [
-        "Shahbaz Siddeeq",
-        "Mateen Abbasi",
-        "Jussi Rasku",
-        "Zheying Zhang",
-        "François Christophe",
-        "Tommi Mikkonen",
-        "Pekka Abrahamsson"
+        "Nada Zine",
+        "Tristan Coignion",
+        "Vincenzo Stoico",
+        "Clément Quinton",
+        "Romain Rouvoy",
+        "Patricia Lago"
       ],
-      "published": "2026-07-02T10:12:29Z",
-      "summary": "Automated authoring of Gherkin Behavior-Driven Development (BDD) acceptance criteria remains a manual bottleneck in requirements engineering. This study investigates whether epic-organized LLM-generated Gherkin produces higher quality and coverage than requirement-aligned generation. We compare our Timeless (an epic-organized LLM pipeline) approach against a naive large language model (LLM) baseline on four requirements documents (107 requirements) from the PURE dataset. Evaluation covers struct",
-      "link": "https://arxiv.org/abs/2607.01980v1"
+      "published": "2026-07-10T08:04:19Z",
+      "summary": "Large Language Models are reshaping how software is developed and maintained. They are typically deployed in production using inference engines such as vLLM, which can efficiently serve pre-trained, highly configurable models. While prior work has focused on model architectures and hardware acceleration, the impact of inference engine configuration on energy consumption, performance, and output quality remains poorly understood. In this paper, we present a large-scale controlled study of three s",
+      "link": "https://arxiv.org/abs/2607.09172v1"
     },
     {
-      "arxiv_id": "2607.01953v1",
-      "title": "Underspecification does not imply Incoherence: The Risks of Semantic Collapse in Coding Models",
+      "arxiv_id": "2607.09146v1",
+      "title": "Exploring the Potential of Program Flowcharts on Code Generation Using Multimodal LLMs",
       "authors": [
-        "Cedric Richter",
-        "Mike Papadakis"
-      ],
-      "published": "2026-07-02T09:43:15Z",
-      "summary": "Large Language Models (LLMs) have become increasingly effective at generating code when task descriptions are clear and precise. Yet, in practice, user-provided task descriptions are often ambiguous, incomplete, or contradictory, leaving critical aspects of the intended program behavior underspecified. In such cases, multiple behaviorally distinct interpretations may satisfy the description equally well, yet semantically differ in ways that matter/affect the user intent. A natural expectation, o",
-      "link": "https://arxiv.org/abs/2607.01953v1"
-    },
-    {
-      "arxiv_id": "2607.01929v1",
-      "title": "Beyond Textual Repository Exploration: Dual-Modal Structural Reasoning for Agentic Issue Resolution",
-      "authors": [
-        "Jiayi Zhang",
-        "Kai Huang",
-        "Yang Liu",
-        "Chunyang Chen"
-      ],
-      "published": "2026-07-02T09:23:48Z",
-      "summary": "Recent advances in agentic program repair have significantly improved issue resolution by enabling iterative repository exploration. However, existing approaches predominantly rely on sequential, text-based code navigation, which fundamentally limits their ability to reason over large-scale long-horizon repositories with complex and long-range dependencies. As issue-resolution agents traverse repositories through fragmented textual observations, structural information such as module organization",
-      "link": "https://arxiv.org/abs/2607.01929v1"
-    },
-    {
-      "arxiv_id": "2607.01640v1",
-      "title": "AgentFlow: Building Agent Dependency Graphs for Static Analysis of Agent Programs",
-      "authors": [
-        "Shenao Wang",
-        "Xinyi Hou",
-        "Yanjie Zhao",
-        "Xiao Cheng",
-        "Haoyu Wang"
-      ],
-      "published": "2026-07-02T03:11:41Z",
-      "summary": "LLM agents are increasingly developed as source-code applications built on agent frameworks. These agent programs combine conventional host-language code with framework-defined semantics for models, prompts, tools, memory, and multi-agent orchestration logic. As a result, their behavior depends not only on traditional control and data flows, but also on a new class of agent dependencies. Such dependencies are often expressed as framework-induced semantics, such as agent constructors, tool decora",
-      "link": "https://arxiv.org/abs/2607.01640v1"
-    },
-    {
-      "arxiv_id": "2607.01590v1",
-      "title": "Hawk: Harnessing Hardware-Aware Knowledge for High-Performance NPU Kernel Generation",
-      "authors": [
-        "Junyi Wen",
-        "Ruiyan Zhuang",
-        "Yongjia Xu",
-        "Pengtu Li",
-        "Rui Zou",
-        "Hongyi Chen",
-        "Chingman Wan",
-        "Puxu Yang",
-        "Wuhui Chen",
-        "Yanlin Wang"
-      ],
-      "published": "2026-07-02T01:41:34Z",
-      "summary": "Developing high-performance kernels for Neural Processing Units (NPUs) is a critical industry bottleneck, requiring developers to manually navigate implicit hardware constraints and strict memory hierarchies. While large language models offer immense automation potential, they fail catastrophically on NPUs due to a fundamental lack of hardware-specific priors. Naively transplanting code snippets from similar NPU kernels may pass the compiler, but it consistently triggers runtime crashes and perf",
-      "link": "https://arxiv.org/abs/2607.01590v1"
-    },
-    {
-      "arxiv_id": "2607.01360v1",
-      "title": "Benchmarking Code Improvement with Progressive, Adaptive, and Interactive Feedback",
-      "authors": [
-        "Cuong Chi Le",
-        "Aashish Yadavally",
-        "Minh Le-Anh",
-        "Tien N. Nguyen"
-      ],
-      "published": "2026-07-01T18:20:27Z",
-      "summary": "Large language models (LLMs) are typically evaluated on code generation and program repair using binary functional correctness: a generated program or patch either passes or fails a test suite. This protocol is simple but coarse, as it ignores partial progress, feedback use, regressions, and the refinement trajectory through which models often improve code. We introduce PAIR-Bench, a progressive and adaptive benchmark for evaluating code improvement: transforming an incorrect or incomplete progr",
-      "link": "https://arxiv.org/abs/2607.01360v1"
-    },
-    {
-      "arxiv_id": "2607.01136v1",
-      "title": "Skills Are Not Islands: Measuring Dependency and Risk in Agent Skill Supply Chains",
-      "authors": [
-        "Changguo Jia",
-        "Tianqi Zhao",
-        "Runzhi He",
-        "Minghui Zhou"
-      ],
-      "published": "2026-07-01T16:21:49Z",
-      "summary": "Agent skills package reusable operational knowledge for Large Language Model (LLM) agents, yet as they grow in scope, they become dependency-bearing artifacts whose identities, versions, and provenance remain implicit. This opacity already causes duplicated dependencies and inconsistent installations, exposing a gap that dependency management has yet to close. We introduce Agent Skill Supply Chains (ASSCs) to characterize mixed skill-package-service dependency graphs and help close this gap. Bor",
-      "link": "https://arxiv.org/abs/2607.01136v1"
-    },
-    {
-      "arxiv_id": "2607.01063v1",
-      "title": "AutoRestTest at the SBFT 2026 Tool Competition",
-      "authors": [
-        "Tyler Stennett",
-        "Myeongsoo Kim",
-        "Saurabh Sinha",
-        "Alessandro Orso"
-      ],
-      "published": "2026-07-01T15:24:38Z",
-      "summary": "Large input spaces and complex inter-operation dependencies make black-box REST API testing challenging. AutoRestTest combines a Semantic Property Dependency Graph, multi-agent reinforcement learning, and large language models to intelligently explore large API input spaces. In the SBFT 2026 REST League, AutoRestTest ranked first in all three evaluation categories -- fault detection, overall efficiency, and overall effectiveness -- on 11 APIs (317 operations, approximately 29 per API), averaging",
-      "link": "https://arxiv.org/abs/2607.01063v1"
-    },
-    {
-      "arxiv_id": "2607.00990v1",
-      "title": "SWE-Doctor: Guiding Software Engineering Agents with Runtime Diagnosis from Multi-Faceted Bug Reproduction Tests",
-      "authors": [
-        "Yaoqi Guo",
-        "Yang Liu",
-        "Jie M. Zhang",
-        "Yun Ma",
-        "Yiling Lou",
-        "Zhenpeng Chen"
-      ],
-      "published": "2026-07-01T14:27:12Z",
-      "summary": "Large language model (LLM)-based software engineering agents are increasingly developed to resolve software issues by generating patches from issue reports and code repositories. Bug reproduction tests (BRTs) are an important building block for such agents and have been shown useful for patch validation. However, it remains unclear whether BRTs can also help the more central stage of patch generation. We first conduct a preliminary study and find that directly using advanced BRT generators to gu",
-      "link": "https://arxiv.org/abs/2607.00990v1"
-    },
-    {
-      "arxiv_id": "2607.00939v1",
-      "title": "Leveraging LLM-Based Agentic Systems to Generate Quantum Applications for Test Optimization",
-      "authors": [
-        "Ming Tao",
-        "Yuechen Li",
-        "Tao Yue",
-        "Man Zhang",
-        "Aitor Arrieta Marcos"
-      ],
-      "published": "2026-07-01T13:40:51Z",
-      "summary": "Quantum computing is increasingly explored for software engineering (SE) optimization, but translating natural-language (NL) task-level requirements into executable quantum applications still demands substantial quantum and programming expertise. We present QPipe, a large language model (LLM)-based multi-agent architecture that autonomously turns NL requirements into traceable quantum-application workflows through specialized agents for requirement parsing, formulation, code generation, review, ",
-      "link": "https://arxiv.org/abs/2607.00939v1"
-    },
-    {
-      "arxiv_id": "2607.00711v1",
-      "title": "ClarifyCodeBench: Evaluating LLMs on Clarifying Ambiguous Requirements for Code Generation",
-      "authors": [
-        "Zheng Fang",
-        "Dongming Jin",
-        "Yihong dong",
-        "Yongmin Li",
-        "Kechi Zhang",
-        "Zhi Jin",
-        "Ge Li"
-      ],
-      "published": "2026-07-01T09:58:59Z",
-      "summary": "Large Language Models have emerged as programming assistants. However, the efficacy of code generation is constrained by the quality of input requirements, which are frequently ambiguous, incomplete, or underspecified. While LLMs excel at one-shot code synthesis, their ability to proactively clarify intent remains underexplored, as a critical trait for robust software engineering. Existing benchmarks largely overlook this interactive bottleneck, assuming perfectly specified prompts that do not r",
-      "link": "https://arxiv.org/abs/2607.00711v1"
-    },
-    {
-      "arxiv_id": "2607.00700v1",
-      "title": "LLVM-Bench: Benchmarking and Advancing Large Language Models for LLVM Compiler Issue Resolution",
-      "authors": [
-        "Zhao Tian",
-        "Yingquan Zhao",
-        "Chenyao Suo",
-        "Meng Wang",
-        "Junjie Chen"
-      ],
-      "published": "2026-07-01T09:50:26Z",
-      "summary": "LLVM is a widely used compiler infrastructure whose scale and complexity make issue resolution labor-intensive and challenging. Although large language models (LLMs) have recently achieved remarkable success in issue resolution, their effectiveness on complex system-level LLVM compiler remains largely unexplored. To address this gap, we introduce LLVM-Bench, the first large-scale benchmark for LLVM issue resolution, containing 423 real-world, validated tasks collected from the LLVM project. We f",
-      "link": "https://arxiv.org/abs/2607.00700v1"
-    },
-    {
-      "arxiv_id": "2607.00511v1",
-      "title": "Large Language Models for Multi-Lingual Equivalent Mutant Detection: An Extended Empirical Study",
-      "authors": [
-        "Honglin Shu",
-        "Zhao Tian",
-        "Dong Wang",
-        "Junji Yu",
-        "Jiazhe Zhang",
-        "Xuejie Cao",
-        "Junjie Chen",
+        "Yuki Toi",
+        "Tao Xiao",
+        "Kazushi Tomoto",
+        "Masanari Kondo",
         "Yasutaka Kamei"
       ],
-      "published": "2026-07-01T06:46:13Z",
-      "summary": "Mutation testing is a powerful technique for ensuring software quality. However, the presence of equivalent mutants introduces unnecessary costs and biases, limiting its practical effectiveness. Although numerous equivalent mutant detection (EMD) methods have been proposed, they often face distinct challenges: pure-code analysis methods can be limited by their reliance on specific compiler infrastructures, while existing machine-learning approaches remain constrained by scarce training data and ",
-      "link": "https://arxiv.org/abs/2607.00511v1"
+      "published": "2026-07-10T07:00:53Z",
+      "summary": "In recent years, Large Language Models (LLMs) have made significant strides, leading to the emergence of multimodal LLMs capable of processing diverse inputs such as images and audio. Previous research indicates that the supply of multimodal LLMs with combined textual and visual information improves the automatic code generation capabilities. In software development, diagrams such as flowcharts are widely employed to facilitate tasks like code comprehension. While existing studies investigated t",
+      "link": "https://arxiv.org/abs/2607.09146v1"
     },
     {
-      "arxiv_id": "2607.00427v1",
-      "title": "BT-APE: A Computationally Light Backtracking Approach to Automatic Prompt Engineering for Requirements Classification",
+      "arxiv_id": "2607.09123v1",
+      "title": "ReProAgent: Tool-Augmented Multi-Stage Agentic Generation of Bug Reproduction Tests from Issue Reports",
       "authors": [
-        "Mohammad Amin Zadenoori",
-        "Waad Alhoshan",
-        "Jacek Dąbrowski",
-        "Liping Zhao",
-        "Alessio Ferrari"
+        "Quanjun Zhang",
+        "Yi Zheng",
+        "Ye Shang",
+        "Weifeng Sun",
+        "Haichuan Hu",
+        "Chunrong Fang",
+        "Zhenyu Chen",
+        "Liang Xiao"
       ],
-      "published": "2026-07-01T04:36:30Z",
-      "summary": "Large language models (LLMs) are increasingly applied to requirements engineering (RE) tasks, yet the prompts guiding them are typically designed manually through trial and error, yielding inconsistent and suboptimal results. Automated prompt construction remains largely unexplored in RE, leaving its effectiveness unclear. To address this, we propose a lightweight Automatic Prompt Engineering approach, Backtracking APE (BT-APE), and apply it to requirements classification. We frame prompt design",
-      "link": "https://arxiv.org/abs/2607.00427v1"
+      "published": "2026-07-10T06:25:18Z",
+      "summary": "Reproduction tests help developers confirm reported issues and provide executable feedback for issue resolution, yet issue reports in open-source projects rarely include such tests. Recent studies have explored generating issue reproduction tests from issue reports with large language models, but existing approaches largely rely on prompt-based pipelines that retrieve textual context and generate tests. This limits their ability to understand how reported issues behave in repository-scale codeba",
+      "link": "https://arxiv.org/abs/2607.09123v1"
     },
     {
-      "arxiv_id": "2607.00107v1",
-      "title": "The Illusion of Safety: Multi-Tier Verification of AI vs. Human C++ Code",
+      "arxiv_id": "2607.09101v1",
+      "title": "Multi-Agent LLM Collaboration for Unit Test Generation via Human-Testing-Inspired Workflows",
       "authors": [
-        "Saif Mahmud",
-        "Fadul Sikder",
-        "Yuede Ji",
-        "Zhang Haotian",
-        "Jeff",
-        "Lei"
+        "Quanjun Zhang",
+        "Ye Shang",
+        "Siqi Gu",
+        "Jianyi Zhou",
+        "Chunrong Fang",
+        "Zhenyu Chen",
+        "Liang Xiao"
       ],
-      "published": "2026-06-30T19:48:35Z",
-      "summary": "Large language models increasingly generate C++, a memory-unsafe language where a single overlooked violation can become an exploitable bug. Yet most security evaluations of AI-generated code rely on static analysis alone, which flags warnings without confirming runtime violations or reasoning about untested paths. We ask whether AI-generated C++ is measurably less safe than human-written code, and whether common verification tools agree on the risk. We introduce VULBENCH-CPP, a benchmark of 8,9",
-      "link": "https://arxiv.org/abs/2607.00107v1"
+      "published": "2026-07-10T05:16:54Z",
+      "summary": "Recently, the emergence of Large Language Models (LLMs) has spurred a surge of research into automated unit test generation, yielding impressive performance and reducing manual effort. However, existing LLM-based approaches still suffer from two major limitations: (1) they follow rigid, procedural workflows that underutilize the autonomous reasoning potential of LLMs, making it difficult to dynamically adapt testing strategies based on real-time feedback; and (2) they rely on rule-based context ",
+      "link": "https://arxiv.org/abs/2607.09101v1"
     },
     {
-      "arxiv_id": "2606.31725v1",
-      "title": "Do Machines Struggle Where Humans Do? LLM and Human Comprehension of Obfuscated Code",
+      "arxiv_id": "2607.09059v1",
+      "title": "ARCANA: A Reflective Multi-Agent Program Synthesis Framework for ARC-AGI-2 Reasoning",
       "authors": [
-        "Jack Le",
-        "Anh H. N. Nguyen",
-        "Tien N. Nguyen"
+        "Kunbo Zhang",
+        "Lei Fu",
+        "Zeyu Wang",
+        "Zijing Liu",
+        "Kejian Tong"
       ],
-      "published": "2026-06-30T14:26:46Z",
-      "summary": "While code obfuscation impairs human code comprehension, it remains unclear if large language models share these failure modes. Building directly on a recent human study of program comprehension under code obfuscation, we evaluate whether large language models share the failure modes that obfuscation induces in human programmers. Evaluating several LLMs with five obfuscation tiers using the Block Model, we localize comprehension failures at the atom, block, relational, and macro levels. We find ",
-      "link": "https://arxiv.org/abs/2606.31725v1"
+      "published": "2026-07-10T03:03:42Z",
+      "summary": "We present ARCANA, a collaborative multi agent framework for solving ARC AGI 2 tasks under strict test time and hardware constraints. ARCANA decomposes each task into iterative perception, hypothesis generation, symbolic execution, and reflective refinement. A perceptual grounding agent builds object centric scene graphs from raw grids, a latent program policy proposes diverse DSL programs, a symbolic executor verifies candidates on demonstrations, and a reflective agent synthesizes failure driv",
+      "link": "https://arxiv.org/abs/2607.09059v1"
     },
     {
-      "arxiv_id": "2606.31706v1",
-      "title": "AdaTrans: Automated C to Rust Transformation via Error-Adaptive Repair",
+      "arxiv_id": "2607.09007v1",
+      "title": "Benchmarking Large Language Models on Repairing Qiskit Programs using Bugs4Q",
       "authors": [
-        "Xiaofan Liu",
-        "Zecan Li",
-        "Zhuang Zhao",
-        "Ziqi Shuai",
-        "Yanming Yang",
-        "Qi Xin",
-        "Jifeng Xuan"
+        "Saumya Brahmbhatt",
+        "Mitali Hukkeri",
+        "Dongchan Kim",
+        "M. V. Panduranga Rao",
+        "Lei Zhang"
       ],
-      "published": "2026-06-30T14:11:54Z",
-      "summary": "The automated transformation of C code to Rust is challenging due to Rust's strict ownership and borrowing semantics. While Large Language Models (LLMs) show promise, they often produce code that violates these rules or relies on unsafe constructs. We propose AdaTrans, a framework that addresses these issues through three core mechanisms: a Strategy-Driven Retrieval-Augmented Generation (RAG) mechanism to map compiler errors to specific repairs, an Error-Stratified Transformation Strategy (ESTS)",
-      "link": "https://arxiv.org/abs/2606.31706v1"
+      "published": "2026-07-10T00:23:47Z",
+      "summary": "In quantum programs, Bugs4Q is a widely used benchmark containing real quantum defects. However, its evaluation assumes that benchmark labels remain valid and that generated fixes execute in the target environment. We evaluate two Bugs4Q versions containing 67 unique real Qiskit defects, adding executable tests where missing, and re-run all entries across six pinned Qiskit releases (0.25.0, 0.45.0, 1.0.0, 1.1.1, 2.0.0, and 2.3.1). We find that quantum benchmarks can suffer from silent label inve",
+      "link": "https://arxiv.org/abs/2607.09007v1"
     },
     {
-      "arxiv_id": "2606.31206v1",
-      "title": "FeatX: Editing Software by Editing Features for Repository-Level Code Evolution",
+      "arxiv_id": "2607.08740v1",
+      "title": "Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows",
       "authors": [
-        "Xutian Li",
-        "Yifeng Zhu",
-        "Xianlin Zhao",
-        "Yanzhen Zou",
-        "Lu Zhang",
-        "Bing Xie"
+        "Emanuele Quinto",
+        "Carlo Andrea Rozzi",
+        "Francesco Zanitti"
       ],
-      "published": "2026-06-30T06:38:56Z",
-      "summary": "Large language models (LLMs) are increasingly used for software evolution, yet most interaction paradigms remain code-centric and require manual context management and prompt iteration. We present FeatX, a feature-oriented tool for editing software by editing features. Given an existing repository, FeatX extracts a hierarchical epic-feature structure with explicit feature-to-code mappings, then invokes a three-stage Evolution Agent to translate feature edits into code patches. The workflow is ex",
-      "link": "https://arxiv.org/abs/2606.31206v1"
+      "published": "2026-07-09T17:40:46Z",
+      "summary": "Large language model (LLM) applications increasingly use explicit workflows for tool use, retrieval, branching, checkpointing, and human approval. Existing workflow systems already address many execution concerns. This paper proposes a Lisp-inspired but language-independent conceptual model: symbolic forms, object identity, and live-image thinking are used as explanatory lenses, not implementation commitments. In this model, workflow definitions, workflow instances, inference records, context sn",
+      "link": "https://arxiv.org/abs/2607.08740v1"
     },
     {
-      "arxiv_id": "2606.31159v1",
-      "title": "An Empirical Study of Security Calibration in Large Language Models for Code",
+      "arxiv_id": "2607.08028v1",
+      "title": "From Prompts to Contracts: Harness Engineering for Auditable Enterprise LLM Agents",
       "authors": [
-        "Mohammed Latif Siddiq",
-        "Md. Nafiu Rahman",
-        "Joanna C. S. Santos"
+        "Joongho Ahn",
+        "Moonsoo Kim"
       ],
-      "published": "2026-06-30T05:37:39Z",
-      "summary": "Large Language Models (LLMs) are rapidly transforming software development, yet their use in security-critical contexts raises a key question: do models know when their generated code is insecure? This property, known as calibration, measures whether a model's confidence aligns with the true correctness of its outputs. We present the first large-scale empirical study of security calibration in LLM-generated code. We evaluate GPT-4o-mini, Gemini-2.0-Flash, and Qwen3-Coder-Next across multiple tem",
-      "link": "https://arxiv.org/abs/2606.31159v1"
+      "published": "2026-07-09T01:08:33Z",
+      "summary": "Enterprise large language model (LLM) applications often begin as prototypes whose behavior is carried by prompts and retrieval context. Productization adds requirements for source boundaries, entity routing, answer contracts, and reproducible traces. We present a harness-engineering approach that reconstructs this pattern into a traceable, auditable LLM-agent architecture: deterministic behavior moves into code, manifests, schemas, and validation artifacts around a replaceable composition bound",
+      "link": "https://arxiv.org/abs/2607.08028v1"
     },
     {
-      "arxiv_id": "2606.31032v1",
-      "title": "Partially ordering software licenses",
+      "arxiv_id": "2607.07881v1",
+      "title": "Functional and Secure Code Generation with Task Vectors",
       "authors": [
-        "Hamidah Oderinwale",
-        "David Atkinson",
-        "Rachel Hong",
-        "Art Abal",
-        "Ben Laufer"
+        "Felix Wang",
+        "Anudeep Das",
+        "Mei Nagappan",
+        "N. Asokan"
       ],
-      "published": "2026-06-30T02:03:21Z",
-      "summary": "Licenses are legal instruments that inventors may use to protect the technologies they build and regulate how they are used -- however, the nature of their authorship and selection means that how they are interpreted, chosen, and enforced is largely unstructured. In practice, this makes it difficult to compare licenses at scale -- when is one license considered more permissive than the other, and when are their terms incomparable to each other? Currently, there is a growing list of licenses that",
-      "link": "https://arxiv.org/abs/2606.31032v1"
+      "published": "2026-07-08T19:32:22Z",
+      "summary": "Large language models (LLMs) are increasingly used for code generation, but they struggle to generate functional code free of security vulnerabilities. Prior work to improve the secure code generation abilities of such coding LLMs has largely focused on evaluating code functionality and security separately using different datasets, or focused on finding vulnerabilities post-generation. At the same time, the text-generation domain has seen significant work on alignment techniques, where models ar",
+      "link": "https://arxiv.org/abs/2607.07881v1"
     },
     {
-      "arxiv_id": "2607.00053v1",
-      "title": "SWE-Router: Routing in Multi-turn Agentic Software Engineering Tasks",
+      "arxiv_id": "2607.07619v1",
+      "title": "Rethinking Code Performance Benchmarks for LLMs",
       "authors": [
-        "Seongho Son",
-        "Sangwoong Yoon",
-        "Jiahua Tang",
-        "Shuhan Wang",
-        "Lorenz Wolf",
-        "Ilija Bogunovic"
+        "Nhat Minh Le",
+        "Yisen Xu",
+        "Zhijie Wang",
+        "Tse-Hsun",
+        "Chen"
       ],
-      "published": "2026-06-30T01:46:26Z",
-      "summary": "Large language models (LLMs) embedded in multi-turn agentic harnesses are reshaping software engineering (SWE), but routing every task to a frontier model is wasteful when many issues admit cheap fixes. Existing LLM routers operate on the task description alone, which inherits an information-theoretic Bayes-error floor in agentic settings: a similar issue can hide either a localized typo or a multi-module refactor, and the prompt does not separate the two. We introduce SWE-Router, a value-based ",
-      "link": "https://arxiv.org/abs/2607.00053v1"
+      "published": "2026-07-08T16:36:03Z",
+      "summary": "Many function-level performance benchmarks have been proposed to evaluate whether large language models (LLMs) can generate efficient programs. However, results on these benchmarks often show that LLM-generated implementations have little or no execution-time difference from canonical solutions. In this paper, we revisit four popular benchmarks: EffiBench, Enamel, EvalPerf, and Mercury. We evaluate 1,538 tasks under more rigorous setting by running each task 30 times and assessing the runtime di",
+      "link": "https://arxiv.org/abs/2607.07619v1"
     },
     {
-      "arxiv_id": "2607.00049v1",
-      "title": "Prompting GPT-5 on Scrum Certification Questions: An Empirical Accuracy Study",
+      "arxiv_id": "2607.07481v1",
+      "title": "The Poisoned Chalice of LLM Evaluation Report",
       "authors": [
-        "Mirko Perkusich",
-        "Danyllo Albuquerque",
-        "João Paiva",
-        "Robson Vilar",
-        "Emanuel Dantas",
-        "Ademar França de Sousa Neto",
-        "Rohit Gheyi",
-        "Kyller Gorgônio",
-        "Angelo Perkusich"
+        "Jonathan Katzy",
+        "Ali Al-Kaswan",
+        "Razvan Mihai Popescu",
+        "Zhou Yang"
       ],
-      "published": "2026-06-29T23:55:14Z",
-      "summary": "Large Language Models (LLMs) are increasingly used in Agile Software Development for documentation, coaching, and training. As practitioners adopt these tools to prepare for certifications such as Professional Scrum Master (PSM), a key question is whether LLMs can reliably reason about Scrum, a framework with normative, well-defined rules described in the Scrum Guide (2020). This paper examines how different prompt techniques affect the factual accuracy of LLM responses to Scrum certification-st",
-      "link": "https://arxiv.org/abs/2607.00049v1"
+      "published": "2026-07-08T14:45:08Z",
+      "summary": "Large language models are increasingly used to evaluate and support software engineering tasks, yet the validity of these evaluations is often undermined by uncertainty about whether benchmark instances were seen during pretraining. This can lead to data contamination, which may inflate performance and result in misleading conclusions about model capability. Despite this, the training corpora of many modern models are only partially disclosed, making direct decontamination infeasible. This creat",
+      "link": "https://arxiv.org/abs/2607.07481v1"
     },
     {
-      "arxiv_id": "2607.00048v1",
-      "title": "Comparing Large Language Models on Scrum Certification-Style Questions: Accuracy, Stability, and Error Patterns",
+      "arxiv_id": "2607.07461v1",
+      "title": "Mitigating Taint-Style Vulnerabilities in MCP Servers via Security-Aware Tool Descriptions",
       "authors": [
-        "Robson Alves Vilar",
-        "Emanuel Dantas Filho",
-        "Ademar França de Sousa Neto",
-        "Mirko Perkusich",
-        "Danyllo Wagner Albuquerque",
-        "João Paiva",
-        "Kyller Gorgônio",
-        "Angelo Perkusich"
+        "Yang Shi",
+        "Jiaheng Fu",
+        "Yihe Huang",
+        "Ruixiang Wu",
+        "Chengyao Sun",
+        "Kaifeng Huang"
       ],
-      "published": "2026-06-29T23:37:56Z",
-      "summary": "Large Language Models (LLMs) are increasingly used in exam- and certification-style question answering tasks, where their ability to retrieve, interpret, and apply domain-specific knowledge can be systematically assessed. In Software Engineering, such settings are particularly relevant when questions depend on strict adherence to normative definitions, roles, artifacts, and rules. This paper evaluates the performance of three contemporary LLMs, \\textit{GPT-5 mini}, \\textit{Gemini 3 Flash}, and \\",
-      "link": "https://arxiv.org/abs/2607.00048v1"
+      "published": "2026-07-08T14:29:23Z",
+      "summary": "Large language models (LLMs) are increasingly deployed as autonomous agents that interact with external tools and services via the Model Context Protocol (MCP), a standardized interface for dynamic tool invocation. While MCP simplifies integration, it also expands the attack surface and enables generic exploits across multiple servers. Despite prior work on malicious MCP servers, the vulnerability landscape of MCP servers remains underexplored. In this work, we systematically analyze MCP server ",
+      "link": "https://arxiv.org/abs/2607.07461v1"
     },
     {
-      "arxiv_id": "2607.00043v1",
-      "title": "A Taxonomy of Single-Turn Textual Prompt Patterns",
+      "arxiv_id": "2607.07007v1",
+      "title": "Thinking More, Harnessing Better: State Machine Guided Harness Automatic Generation with Project Digestion and Workflow Decomposition",
       "authors": [
-        "Vennila Sooben",
-        "Eugene Syriani"
+        "Xing Zhang",
+        "Zikang Huang",
+        "Gang Yang",
+        "CongChong Wang",
+        "Lu Liu",
+        "Bin Yin",
+        "Mingyi Wang",
+        "Ziquan Zhao",
+        "Min Li",
+        "Zhenyu Chen",
+        "Bo Wu",
+        "Lingyun Ying"
       ],
-      "published": "2026-06-29T18:54:23Z",
-      "summary": "Large language models (LLMs) are now widely employed in software development and everyday use. Interacting with LLMs requires crafting prompts, which range from simple ad hoc sentences to extensive, detailed, and structured instructions. Knowledge about prompt engineering has been documented in several surveys and catalogs in the literature. However, the term ``prompt pattern'' is defined differently across sources, and existing works have classified prompt patterns in different ways. In this re",
-      "link": "https://arxiv.org/abs/2607.00043v1"
+      "published": "2026-07-08T05:04:28Z",
+      "summary": "High-quality fuzz harnesses are essential for effective gray-box fuzzing. While Large Language Models (LLMs) offer promise for automating this task, existing one-turn generation methods suffer from hallucinations and inadequate coverage due to coarse-grained function targeting and misaligned generation workflows. We present SynapseFlow, an automatic harness generator that addresses these limitations through two key innovations: dataflow-aware function aggregation and a staged, rollback-enabled g",
+      "link": "https://arxiv.org/abs/2607.07007v1"
     },
     {
-      "arxiv_id": "2606.30810v1",
-      "title": "Towards Knowledge Alignment in Code LLMs: Contrastive Unlearning for Evolving APIs",
+      "arxiv_id": "2607.07738v1",
+      "title": "REFORGE: A Method for Benchmarking LLMs' Reverse Engineering Capabilities in Decompiled Binary Function Naming",
       "authors": [
-        "Huy Q. Tran",
-        "Dang H. Vu",
-        "Tuyen N. Dinh",
-        "Anh H. D. Nguyen",
-        "Anh N. H. Vu",
-        "Anh M. T. Bui",
-        "Phuong T. Nguyen"
+        "Nicolas Koller",
+        "Andreas u. Schmidt"
       ],
-      "published": "2026-06-29T18:34:55Z",
-      "summary": "Large Language Models (LLMs) have recently achieved strong performance in code generation. However, due to knowledge cut-off and the rapid evolution of software libraries, they often generate deprecated API usages that lead to unreliable and incompatible code. Existing fine-tuning methods lack selectivity when only a small portion of model knowledge requires modification. Recent model-level approaches, such as machine unlearning and model editing, offer a promising direction for modifying parame",
-      "link": "https://arxiv.org/abs/2606.30810v1"
+      "published": "2026-07-07T23:17:03Z",
+      "summary": "Large language models (LLMs) are increasingly applied to reverse-engineering tasks, and recent threat-intelligence reporting shows them operating inside live offensive-security workflows. Claims about their capability, however, outpace our ability to measure it. Existing benchmarks for LLM-assisted binary analysis treat the construction of function-level ground truth as a solved pre-processing step and report accuracy without disclosing how many functions were reliably evaluable. We argue that t",
+      "link": "https://arxiv.org/abs/2607.07738v1"
     },
     {
-      "arxiv_id": "2606.30610v1",
-      "title": "PyMETA: A Benchmark Dataset for Hierarchical Student Code Error Classification with Python-Interpreter-Based Labels",
+      "arxiv_id": "2607.06748v1",
+      "title": "SmartHomeSecure: Automated Detection and Repair of Smart Home Configuration Errors Using Large Language Models",
       "authors": [
-        "Chuyue Li",
-        "Ziqi Tang",
-        "Jingyi Wang",
-        "Yu Wu",
-        "Kazuma Hashimoto",
-        "Lingyu Gao"
+        "Yizhi Wang",
+        "Xinghua Gao",
+        "Reachsak Ly",
+        "Alireza Shojaei"
       ],
-      "published": "2026-06-29T17:45:36Z",
-      "summary": "With the advancement of Large Language Models (LLMs), code error detection has extended beyond traditional IDE diagnostics to context-sensitive debugging in educational scenarios. However, existing approaches lack large-scale datasets, multi-error analysis, and unified error taxonomies. To address this, we introduce PyMETA, a large-scale Python code error classification dataset of 48,646 student submissions, with single-error labels for all samples and a diagnostic subset of 97 expert-annotated ",
-      "link": "https://arxiv.org/abs/2606.30610v1"
+      "published": "2026-07-07T19:29:10Z",
+      "summary": "Smart home automation platforms increasingly rely on user-authored YAML configuration files to define device behaviors, but these files are prone to syntax, formatting, and semantic logic errors that can cause automation failures and safety risks. Existing YAML validators, static analysis tools, and general-purpose large language models offer limited support for end-to-end diagnosis and repair because they lack domain-specific understanding and validated correction workflows. This paper presents",
+      "link": "https://arxiv.org/abs/2607.06748v1"
+    },
+    {
+      "arxiv_id": "2607.06713v1",
+      "title": "Reliable and Developer-Aligned Evaluation of Agents for Software Engineering",
+      "authors": [
+        "Razvan Mihai Popescu"
+      ],
+      "published": "2026-07-07T18:29:50Z",
+      "summary": "Large language models are rapidly moving towards closing the development cycle, transitioning from simple assistive companions to autonomous contributors deeply embedded into collaborative development environments. Despite their accelerated adoption, existing evaluation techniques are limited due to their fragmented nature and distorted projection of true model capabilities, often obtained from hypothetical syntactic scenarios. This research aims to bridge this gap by providing a comprehensive e",
+      "link": "https://arxiv.org/abs/2607.06713v1"
+    },
+    {
+      "arxiv_id": "2607.06341v1",
+      "title": "Harnessing Code Agents for Automatic Software Verification",
+      "authors": [
+        "Shuangxiang Kan",
+        "Shuanglong Kan",
+        "Sebastian Ertel"
+      ],
+      "published": "2026-07-07T14:39:59Z",
+      "summary": "Formal verification offers the strongest guarantee of software correctness, but it does not scale: the proofs demanded by interactive theorem provers such as Coq require enormous expert effort. Large language models (LLMs) promise to generate these proofs automatically, yet existing approaches wire a fixed, human-designed proof strategy into the system and constrain the model to follow it (retrieving premises and predicting tactics one step at a time, or splitting goals by divide-and-conquer), a",
+      "link": "https://arxiv.org/abs/2607.06341v1"
+    },
+    {
+      "arxiv_id": "2607.06636v1",
+      "title": "Specification Grounding Drives Test Effectiveness for LLM Code",
+      "authors": [
+        "Amin Haeri",
+        "Mahdi Ghelichi"
+      ],
+      "published": "2026-07-07T14:11:00Z",
+      "summary": "Large language models frequently generate code that appears correct on typical inputs yet fails on edge cases, invalid inputs, and other specification-defined corner conditions. A popular fix has the model write its own tests and repair until they pass, but the source of the gain is unclear: does it come from the tests merely existing, or from their grounding in a specification of what the code should do? We isolate this factor. Holding the tester, test budget, and repair loop fixed, we change a",
+      "link": "https://arxiv.org/abs/2607.06636v1"
+    },
+    {
+      "arxiv_id": "2607.06306v1",
+      "title": "UI2App: Benchmarking Visual Interaction Inference in Executable Web Application Generation",
+      "authors": [
+        "Grace Man Chen",
+        "Litao Guo",
+        "Yifan Wu",
+        "Yiyu Chen",
+        "Yenchi Tseng",
+        "Sicheng Liu",
+        "Yuyu Luo",
+        "Ying-Cong Chen"
+      ],
+      "published": "2026-07-07T14:08:55Z",
+      "summary": "Large language models (LLMs) have demonstrated growing competence in web page generation. However, existing text-driven approaches rely on complex prompts that impose substantial demands on users and offer limited expressivity for page layout and cross-page visual coherence. Image-driven paradigms, which take UI screenshots as input, align more closely with real development workflows. However, current benchmarks focus primarily on visual fidelity and lack a systematic evaluation of the interacti",
+      "link": "https://arxiv.org/abs/2607.06306v1"
+    },
+    {
+      "arxiv_id": "2607.06273v1",
+      "title": "AgentTether: Graph-Guided Diagnosis and Runtime Intervention for Reliable LLM Agent Operation",
+      "authors": [
+        "Chenyu Zhao",
+        "Shenglin Zhang",
+        "Wenwei Gu",
+        "Yongqian Sun",
+        "Dan Pei",
+        "Chetan Bansal",
+        "Saravan Rajmohan",
+        "Minghua Ma"
+      ],
+      "published": "2026-07-07T13:40:31Z",
+      "summary": "Large language model (LLM) agents are increasingly used for multi-step, stateful tool-use tasks, yet production reliability remains limited. Unlike static software repair, agent repair must recover dynamic trajectories whose early decisions can propagate into later errors and external state changes. Existing automatic remedies address only part of this problem: blind retry adds no diagnosis, outcome feedback says whether a run failed but not where or why, and self-reflection often lacks grounded",
+      "link": "https://arxiv.org/abs/2607.06273v1"
+    },
+    {
+      "arxiv_id": "2607.06195v1",
+      "title": "LogicHunter: Testing LLM Agent Frameworks with an Agentic Oracle",
+      "authors": [
+        "Minghui Long",
+        "Yanjie Zhao",
+        "Haoyu Wang"
+      ],
+      "published": "2026-07-07T12:21:42Z",
+      "summary": "Large Language Model (LLM) agent frameworks such as LangChain, LlamaIndex, and CrewAI have become critical infrastructure powering production AI systems, yet they remain severely under-tested due to fundamental challenges in automated testing. Unlike traditional software, where crashes serve as reliable oracles, defects in these pure Python frameworks manifest as ordinary exceptions or silent semantic failures, creating profound oracle ambiguity. This problem is exacerbated by strict type govern",
+      "link": "https://arxiv.org/abs/2607.06195v1"
+    },
+    {
+      "arxiv_id": "2607.06039v1",
+      "title": "Automating Quality Assessment with NLP of LLM-Generated Defeaters",
+      "authors": [
+        "Tihomir Rohlinger",
+        "Daniel Ratiu",
+        "Stefan Wagner"
+      ],
+      "published": "2026-07-07T09:15:23Z",
+      "summary": "High-integrity systems, such as autonomous vehicle fleets and large-scale energy infrastructures, rely on structured assurance cases to justify safety claims. To remain valid under evolving operational conditions, such cases must be examined against potential challenges, known as defeaters. While large language models (LLMs) can support the scalable generation of candidate defeaters, assessing their quality remains largely manual and subjective process. This paper presents an automated approach ",
+      "link": "https://arxiv.org/abs/2607.06039v1"
+    },
+    {
+      "arxiv_id": "2607.06009v1",
+      "title": "Multi-Channel Spread-Spectrum Code Watermarking",
+      "authors": [
+        "Soohyeon Choi",
+        "Debin Gao",
+        "Yue Duan"
+      ],
+      "published": "2026-07-07T08:50:19Z",
+      "summary": "Attributing code to the large language model that produced it is essential for provenance, licensing, and misuse accountability, yet no deployed watermark meets this need. Generation-time schemes require access to the producing model and cannot be applied to third-party code, while post-hoc schemes work on any code but carry at most 4 bits of payload, far too few to distinguish the many deployed model configurations. We present multi-channel spread-spectrum watermarking, the first post-hoc, trai",
+      "link": "https://arxiv.org/abs/2607.06009v1"
+    },
+    {
+      "arxiv_id": "2607.06004v1",
+      "title": "Large Language Models Have Unreliable Understanding of Software Engineering Terminology",
+      "authors": [
+        "Huzaifa Ejaz",
+        "Fabian C. Peña",
+        "Steffen Herbold"
+      ],
+      "published": "2026-07-07T08:46:49Z",
+      "summary": "Large Language Models (LLMs) are increasingly used in software engineering (SE), yet there is no systematic study that determines to which degree these LLMs actually understand standardized SE terminology. Lack of such understanding can lead to miscommunication and misunderstanding, both by LLMs consuming text but also by human-developers acting on LLM-generated text. Within this paper, we investigate to which degree state-of-the-art LLMs are able to identify whether definitions from the ISO/IEC",
+      "link": "https://arxiv.org/abs/2607.06004v1"
+    },
+    {
+      "arxiv_id": "2607.05842v1",
+      "title": "Beyond Refusal: A Same-Lineage Study of Aligned and Abliterated LLMs for Vulnerability Analysis",
+      "authors": [
+        "Mingchen Li",
+        "Meikang Qiu",
+        "Zifan Peng",
+        "Heng Fan",
+        "Song Fu",
+        "Junhua Ding",
+        "Yunhe Feng"
+      ],
+      "published": "2026-07-07T05:04:48Z",
+      "summary": "Large language model (LLM)-assisted software security operates at a difficult boundary: the vulnerability-analysis terminology needed for legitimate code review, triage, and repair can closely resemble terminology associated with misuse. Existing safety and cybersecurity evaluations are difficult to interpret in this setting because they often compare unrelated model families, thereby conflating safety behavior with differences in architecture, scale, training data, and deployment. To isolate th",
+      "link": "https://arxiv.org/abs/2607.05842v1"
+    },
+    {
+      "arxiv_id": "2607.05810v1",
+      "title": "SCOPE: Leveraging Subgoal Critiques for Code Generation",
+      "authors": [
+        "Yueke Zhang",
+        "Yifan Zhang",
+        "Zihan Fang",
+        "Kevin Leach",
+        "Wei Zhang",
+        "Yu Huang"
+      ],
+      "published": "2026-07-07T04:09:41Z",
+      "summary": "Code generation with large language models (LLMs) remains unreliable because generated programs can appear correct while still violating key semantic requirements in the natural language specification. Existing feedback-based methods improve over coder-only generation, but they often rely on unstructured critique or execution signals that do not explicitly identify what the code is semantically missing. We present SCOPE, a prover-initialized subgoal critic for code generation. SCOPE adapts a Lea",
+      "link": "https://arxiv.org/abs/2607.05810v1"
     }
   ]
 }
