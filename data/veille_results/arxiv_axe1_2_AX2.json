@@ -3,8 +3,18 @@
   "nom": "Traçabilité, provenance et gouvernance du code généré par IA",
   "search_query": "all:\"code provenance\" OR all:\"AI code governance\" OR (cat:cs.SE AND all:\"semantic validation\")",
   "axis": "axe1_2",
-  "executed_at": "2026-07-13",
+  "executed_at": "2026-07-20",
   "articles": [
+    {
+      "arxiv_id": "2607.12524v1",
+      "title": "Open-Source Intelligence for Code Provenance and the Security Patterns that Separate Human and Large-Language-Model Implementations of Common Programming Tasks",
+      "authors": [
+        "Mohammadreza Rashidi"
+      ],
+      "published": "2026-07-14T08:59:42Z",
+      "summary": "Developers now draw code from two very different sources, the accumulated human answers on sites such as Stack Overflow and the output of large language models. We ask two questions about that split. First, can the provenance of a code snippet be recovered from the code itself, and second, do the two sources differ in the security patterns they adopt for the same task. Using only open sources, a public gateway of open-weight language models and the public Stack Overflow API, we build a fully rep",
+      "link": "https://arxiv.org/abs/2607.12524v1"
+    },
     {
       "arxiv_id": "2607.06471v1",
       "title": "Domain-Driven Design in Practice: A Large-Scale Empirical Characterisation of the Open-Source Ecosystem",
@@ -409,34 +419,18 @@
       "published": "2025-07-17T13:38:16Z",
       "summary": "With the rapid development of Large Language Models (LLMs), their powerful code-generation capabilities have been widely applied in tasks like code completion and automated development, demonstrating the value of improving coding efficiency. However, the extensive use of LLM-generated code also raises several new challenges. On the one hand, issues such as the regulation of code provenance, copyright disputes, and code quality have become increasingly concerning. How to effectively detect LLM-ge",
       "link": "https://arxiv.org/abs/2507.13123v1"
-    },
-    {
-      "arxiv_id": "2507.12084v1",
-      "title": "LLAMA: Multi-Feedback Smart Contract Fuzzing Framework with LLM-Guided Seed Generation",
-      "authors": [
-        "Keke Gai",
-        "Haochen Liang",
-        "Jing Yu",
-        "Liehuang Zhu",
-        "Dusit Niyato"
-      ],
-      "published": "2025-07-16T09:46:58Z",
-      "summary": "Smart contracts play a pivotal role in blockchain ecosystems, and fuzzing remains an important approach to securing smart contracts. Even though mutation scheduling is a key factor influencing fuzzing effectiveness, existing fuzzers have primarily explored seed scheduling and generation, while mutation scheduling has been rarely addressed by prior work. In this work, we propose a Large Language Models (LLMs)-based Multi-feedback Smart Contract Fuzzing framework (LLAMA) that integrates LLMs, evol",
-      "link": "https://arxiv.org/abs/2507.12084v1"
     }
   ],
   "new_articles": [
     {
-      "arxiv_id": "2607.06471v1",
-      "title": "Domain-Driven Design in Practice: A Large-Scale Empirical Characterisation of the Open-Source Ecosystem",
+      "arxiv_id": "2607.12524v1",
+      "title": "Open-Source Intelligence for Code Provenance and the Security Patterns that Separate Human and Large-Language-Model Implementations of Common Programming Tasks",
       "authors": [
-        "Ozan Özkan",
-        "Önder Babur",
-        "Mark van den Brand"
+        "Mohammadreza Rashidi"
       ],
-      "published": "2026-07-07T16:29:51Z",
-      "summary": "Context: Domain-Driven Design (DDD) is a leading paradigm for managing software complexity, yet research remains largely theoretical; our prior work found nearly 39% of DDD studies lack rigorous empirical evaluation, leaving practical adoption largely unexamined at scale. Objective: We provide the first large-scale characterisation of the DDD landscape on GitHub, a data-driven baseline for how the paradigm is implemented and sustained in practice. Method: Using a Mining Software Repositories (MS",
-      "link": "https://arxiv.org/abs/2607.06471v1"
+      "published": "2026-07-14T08:59:42Z",
+      "summary": "Developers now draw code from two very different sources, the accumulated human answers on sites such as Stack Overflow and the output of large language models. We ask two questions about that split. First, can the provenance of a code snippet be recovered from the code itself, and second, do the two sources differ in the security patterns they adopt for the same task. Using only open sources, a public gateway of open-weight language models and the public Stack Overflow API, we build a fully rep",
+      "link": "https://arxiv.org/abs/2607.12524v1"
     }
   ]
 }

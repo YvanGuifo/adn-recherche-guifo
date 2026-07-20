@@ -3,7 +3,7 @@
   "nom": "Facteurs humains et cognitifs — Behavioural Software Engineering",
   "search_query": "(cat:cs.SE AND all:\"developer cognition\") OR all:\"rubber-stamping\" AND all:\"code generation\"",
   "axis": "axe1_2",
-  "executed_at": "2026-07-13",
+  "executed_at": "2026-07-20",
   "articles": [
     {
       "arxiv_id": "2607.05125v1",
@@ -22,7 +22,7 @@
       "link": "https://arxiv.org/abs/2607.05125v1"
     },
     {
-      "arxiv_id": "2607.00533v1",
+      "arxiv_id": "2607.00533v2",
       "title": "You Shall Not Pass! Where and Why Developers Draw The Line on AI Autonomy",
       "authors": [
         "Rudrajit Choudhuri",
@@ -33,7 +33,7 @@
       ],
       "published": "2026-07-01T07:24:14Z",
       "summary": "As AI takes on more software work, the line between human and AI effort is shifting. Where developers draw that line around AI autonomy bears on how we design tools and roles that preserve meaningful work. Drawing on cognitive appraisal theory, work design, and automation research, we conducted a mixed-methods study of 448 professional developers at Microsoft to investigate their accepted levels of AI autonomy across software engineering work. Most developers accepted AI producing work under the",
-      "link": "https://arxiv.org/abs/2607.00533v1"
+      "link": "https://arxiv.org/abs/2607.00533v2"
     },
     {
       "arxiv_id": "2602.10540v2",
@@ -140,20 +140,18 @@
   ],
   "new_articles": [
     {
-      "arxiv_id": "2607.05125v1",
-      "title": "Three-Phase Evaluation of AI-Assisted Software Development Life Cycle",
+      "arxiv_id": "2607.00533v2",
+      "title": "You Shall Not Pass! Where and Why Developers Draw The Line on AI Autonomy",
       "authors": [
-        "Joshua Strubel",
-        "Professor Carrie Russell",
-        "Carson Crockett",
-        "Jason Ferraro",
-        "Nathan Londhe",
-        "Uzayr Syed",
-        "Jacob Viehe"
+        "Rudrajit Choudhuri",
+        "Christian Bird",
+        "Carmen Badea",
+        "Marco Gerosa",
+        "Anita Sarma"
       ],
-      "published": "2026-07-06T14:13:25Z",
-      "summary": "This paper presents an exploratory evaluation of how increasing levels of AI autonomy affect software development productivity, requirement adherence, and developer cognitive workload. A team of four developers reimplemented the same full-stack web application across three sequential phases: partial AI-assisted development using GitHub Copilot, an AI-exclusive workflow using GitHub Copilot, and an AI-exclusive workflow using AWS Kiro. Evaluation metrics included development effort (hours), requi",
-      "link": "https://arxiv.org/abs/2607.05125v1"
+      "published": "2026-07-01T07:24:14Z",
+      "summary": "As AI takes on more software work, the line between human and AI effort is shifting. Where developers draw that line around AI autonomy bears on how we design tools and roles that preserve meaningful work. Drawing on cognitive appraisal theory, work design, and automation research, we conducted a mixed-methods study of 448 professional developers at Microsoft to investigate their accepted levels of AI autonomy across software engineering work. Most developers accepted AI producing work under the",
+      "link": "https://arxiv.org/abs/2607.00533v2"
     }
   ]
 }
