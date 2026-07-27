@@ -3,9 +3,16 @@
   "nom": "Veille générale simulation hybride santé",
   "query": "(\"hybrid simulation\" OR \"multi-method simulation\" OR \"DES-ABM\" OR \"SD-ABM\") AND (health* OR hospital OR epidemiol*)",
   "axis": "axe3",
-  "executed_at": "2026-07-20",
-  "total_count_pubmed": "31",
+  "executed_at": "2026-07-27",
+  "total_count_pubmed": "32",
   "articles": [
+    {
+      "pmid": "42482051",
+      "title": "Hybrid simulation approach enhances technical and non-technical skills in therapeutic pharmacology education.",
+      "journal": "BMC medical education",
+      "pubdate": "2026 Jul 21",
+      "doi": "10.1186/s12909-026-09983-1"
+    },
     {
       "pmid": "42393455",
       "title": "3D-Printing in Neurosurgical Training: Hands-On Practice, Patient-Specific Planning and Simulation.",
@@ -129,7 +136,7 @@
       "pmid": "40836487",
       "title": "Student Perspectives on the Efficacy of Hybrid Simulation Laboratory Teaching-Practicing Modules.",
       "journal": "European journal of dental education : official journal of the Association for Dental Education in Europe",
-      "pubdate": "2025 Aug 20",
+      "pubdate": "2026 Aug",
       "doi": "10.1111/eje.70044"
     },
     {
@@ -208,14 +215,15 @@
       "journal": "Journal of biomaterials science. Polymer edition",
       "pubdate": "2025 Jul",
       "doi": "10.1080/09205063.2025.2450150"
-    },
-    {
-      "pmid": "39509323",
-      "title": "Simulation-Based Training in Clinical Event Debriefing Improves Leadership Performance.",
-      "journal": "Pediatric emergency care",
-      "pubdate": "2025 Feb 1",
-      "doi": "10.1097/PEC.0000000000003264"
     }
   ],
-  "new_articles": []
+  "new_articles": [
+    {
+      "pmid": "42482051",
+      "title": "Hybrid simulation approach enhances technical and non-technical skills in therapeutic pharmacology education.",
+      "journal": "BMC medical education",
+      "pubdate": "2026 Jul 21",
+      "doi": "10.1186/s12909-026-09983-1"
+    }
+  ]
 }

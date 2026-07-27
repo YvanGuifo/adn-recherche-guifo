@@ -3,7 +3,7 @@
   "nom": "Traçabilité, provenance et gouvernance du code généré par IA",
   "search_query": "all:\"code provenance\" OR all:\"AI code governance\" OR (cat:cs.SE AND all:\"semantic validation\")",
   "axis": "axe1_2",
-  "executed_at": "2026-07-20",
+  "executed_at": "2026-07-27",
   "articles": [
     {
       "arxiv_id": "2607.12524v1",
@@ -264,7 +264,7 @@
       "link": "https://arxiv.org/abs/2601.02215v1"
     },
     {
-      "arxiv_id": "2512.02918v2",
+      "arxiv_id": "2512.02918v3",
       "title": "Belobog: Move Language Fuzzing Framework For Real-World Smart Contracts",
       "authors": [
         "Ziqiao Kong",
@@ -278,8 +278,8 @@
         "Shaohua Li"
       ],
       "published": "2025-12-02T16:36:13Z",
-      "summary": "Move is a research-oriented programming language designed for secure and verifiable smart contract development and has been widely used in managing billions of digital assets in blockchains, such as Sui and Aptos. Move features a strong static type system and explicit resource semantics to enforce safety properties such as the prevention of data races, invalid asset transfers, and entry vulnerabilities. However, smart contracts written in Move may still contain certain vulnerabilities that are b",
-      "link": "https://arxiv.org/abs/2512.02918v2"
+      "summary": "Move is a resource-oriented programming language designed for secure and verifiable smart contract development and has been widely used in managing billions of digital assets in blockchains, such as Sui and Aptos.Move features a strong static type system and explicit resource semantics to enforce safety properties such as the prevention of data races, invalid asset transfers, and entry vulnerabilities. However, smart contracts written in Move may still contain certain vulnerabilities that are be",
+      "link": "https://arxiv.org/abs/2512.02918v3"
     },
     {
       "arxiv_id": "2511.08462v4",
@@ -423,14 +423,22 @@
   ],
   "new_articles": [
     {
-      "arxiv_id": "2607.12524v1",
-      "title": "Open-Source Intelligence for Code Provenance and the Security Patterns that Separate Human and Large-Language-Model Implementations of Common Programming Tasks",
+      "arxiv_id": "2512.02918v3",
+      "title": "Belobog: Move Language Fuzzing Framework For Real-World Smart Contracts",
       "authors": [
-        "Mohammadreza Rashidi"
+        "Ziqiao Kong",
+        "Wanxu Xia",
+        "Zhengwei Li",
+        "Yi Lu",
+        "Pan Li",
+        "Liqun Yang",
+        "Yang Liu",
+        "Xiapu Luo",
+        "Shaohua Li"
       ],
-      "published": "2026-07-14T08:59:42Z",
-      "summary": "Developers now draw code from two very different sources, the accumulated human answers on sites such as Stack Overflow and the output of large language models. We ask two questions about that split. First, can the provenance of a code snippet be recovered from the code itself, and second, do the two sources differ in the security patterns they adopt for the same task. Using only open sources, a public gateway of open-weight language models and the public Stack Overflow API, we build a fully rep",
-      "link": "https://arxiv.org/abs/2607.12524v1"
+      "published": "2025-12-02T16:36:13Z",
+      "summary": "Move is a resource-oriented programming language designed for secure and verifiable smart contract development and has been widely used in managing billions of digital assets in blockchains, such as Sui and Aptos.Move features a strong static type system and explicit resource semantics to enforce safety properties such as the prevention of data races, invalid asset transfers, and entry vulnerabilities. However, smart contracts written in Move may still contain certain vulnerabilities that are be",
+      "link": "https://arxiv.org/abs/2512.02918v3"
     }
   ]
 }
