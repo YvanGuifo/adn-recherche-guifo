@@ -3,7 +3,7 @@
   "nom": "Traçabilité, provenance et gouvernance du code généré par IA",
   "search_query": "all:\"code provenance\" OR all:\"AI code governance\" OR (cat:cs.SE AND all:\"semantic validation\")",
   "axis": "axe1_2",
-  "executed_at": "2026-07-27",
+  "executed_at": "2026-08-03",
   "articles": [
     {
       "arxiv_id": "2607.12524v1",
@@ -26,6 +26,34 @@
       "published": "2026-07-07T16:29:51Z",
       "summary": "Context: Domain-Driven Design (DDD) is a leading paradigm for managing software complexity, yet research remains largely theoretical; our prior work found nearly 39% of DDD studies lack rigorous empirical evaluation, leaving practical adoption largely unexamined at scale. Objective: We provide the first large-scale characterisation of the DDD landscape on GitHub, a data-driven baseline for how the paradigm is implemented and sustained in practice. Method: Using a Mining Software Repositories (MS",
       "link": "https://arxiv.org/abs/2607.06471v1"
+    },
+    {
+      "arxiv_id": "2606.27243v3",
+      "title": "NOVA: A Verification-Aware Agent Harness for Architecture Evolution in Industrial Recommender Systems",
+      "authors": [
+        "Shaohua Liu",
+        "Liang Fang",
+        "Yilong Sun",
+        "Shudong Huang",
+        "Qingsong Luo",
+        "Shaoxin Liu",
+        "Xiaoyang Chen",
+        "Dongqiang Liu",
+        "Chuangang Ma",
+        "Zhenzhen Chai",
+        "Henghuan Wang",
+        "Shijie Quan",
+        "Changyuan Cui",
+        "Zhangbin Zhu",
+        "Peng Chen",
+        "Wei Xu",
+        "Lei Xiao",
+        "Haijie Gu",
+        "Jie Jiang"
+      ],
+      "published": "2026-06-25T16:30:39Z",
+      "summary": "Industrial advertising recommender systems are continually improved through architecture modifications, yet production iteration remains expert-intensive because coordinated changes to model topology, feature configuration, and interaction modules must satisfy strict interface, resource, and serving constraints. AutoML is limited to predefined search spaces, while generic coding agents verify runnability rather than recommender-specific semantic validity. Executable candidates may therefore viol",
+      "link": "https://arxiv.org/abs/2606.27243v3"
     },
     {
       "arxiv_id": "2605.30054v1",
@@ -161,8 +189,8 @@
       "link": "https://arxiv.org/abs/2604.02039v1"
     },
     {
-      "arxiv_id": "2603.26487v1",
-      "title": "Beyond Banning AI: A First Look at GenAI Governance in Open Source Software Communities",
+      "arxiv_id": "2603.26487v2",
+      "title": "To Ban or not to Ban? How Open Source Projects Govern GenAI Contributions",
       "authors": [
         "Wenhao Yang",
         "Runzhi He",
@@ -170,7 +198,7 @@
       ],
       "published": "2026-03-27T14:48:46Z",
       "summary": "Generative AI (GenAI) is playing an increasingly important role in open source software (OSS). Beyond completing code and documentation, GenAI is increasingly involved in issues, pull requests, code reviews, and security reports. Yet, cheaper generation does not mean cheaper review - and the resulting maintenance burden has pushed OSS projects to experiment with GenAI-specific rules in contribution guidelines, security policies, and repository instructions, even including a total ban on AI-assis",
-      "link": "https://arxiv.org/abs/2603.26487v1"
+      "link": "https://arxiv.org/abs/2603.26487v2"
     },
     {
       "arxiv_id": "2603.18372v1",
@@ -405,40 +433,48 @@
       "published": "2025-07-21T18:25:11Z",
       "summary": "Broken Access Control (BAC) remains one of the most critical and widespread vulnerabilities in web applications, allowing attackers to access unauthorized resources or perform privileged actions. Despite its severity, BAC is underexplored in automated testing due to key challenges: the lack of reliable oracles and the difficulty of generating semantically valid attack requests. We introduce BACFuzz, the first gray-box fuzzing framework specifically designed to uncover BAC vulnerabilities, includ",
       "link": "https://arxiv.org/abs/2507.15984v1"
-    },
-    {
-      "arxiv_id": "2507.13123v1",
-      "title": "Detecting LLM-generated Code with Subtle Modification by Adversarial Training",
-      "authors": [
-        "Xin Yin",
-        "Xinrui Li",
-        "Chao Ni",
-        "Xiaodan Xu",
-        "Xiaohu Yang"
-      ],
-      "published": "2025-07-17T13:38:16Z",
-      "summary": "With the rapid development of Large Language Models (LLMs), their powerful code-generation capabilities have been widely applied in tasks like code completion and automated development, demonstrating the value of improving coding efficiency. However, the extensive use of LLM-generated code also raises several new challenges. On the one hand, issues such as the regulation of code provenance, copyright disputes, and code quality have become increasingly concerning. How to effectively detect LLM-ge",
-      "link": "https://arxiv.org/abs/2507.13123v1"
     }
   ],
   "new_articles": [
     {
-      "arxiv_id": "2512.02918v3",
-      "title": "Belobog: Move Language Fuzzing Framework For Real-World Smart Contracts",
+      "arxiv_id": "2606.27243v3",
+      "title": "NOVA: A Verification-Aware Agent Harness for Architecture Evolution in Industrial Recommender Systems",
       "authors": [
-        "Ziqiao Kong",
-        "Wanxu Xia",
-        "Zhengwei Li",
-        "Yi Lu",
-        "Pan Li",
-        "Liqun Yang",
-        "Yang Liu",
-        "Xiapu Luo",
-        "Shaohua Li"
+        "Shaohua Liu",
+        "Liang Fang",
+        "Yilong Sun",
+        "Shudong Huang",
+        "Qingsong Luo",
+        "Shaoxin Liu",
+        "Xiaoyang Chen",
+        "Dongqiang Liu",
+        "Chuangang Ma",
+        "Zhenzhen Chai",
+        "Henghuan Wang",
+        "Shijie Quan",
+        "Changyuan Cui",
+        "Zhangbin Zhu",
+        "Peng Chen",
+        "Wei Xu",
+        "Lei Xiao",
+        "Haijie Gu",
+        "Jie Jiang"
       ],
-      "published": "2025-12-02T16:36:13Z",
-      "summary": "Move is a resource-oriented programming language designed for secure and verifiable smart contract development and has been widely used in managing billions of digital assets in blockchains, such as Sui and Aptos.Move features a strong static type system and explicit resource semantics to enforce safety properties such as the prevention of data races, invalid asset transfers, and entry vulnerabilities. However, smart contracts written in Move may still contain certain vulnerabilities that are be",
-      "link": "https://arxiv.org/abs/2512.02918v3"
+      "published": "2026-06-25T16:30:39Z",
+      "summary": "Industrial advertising recommender systems are continually improved through architecture modifications, yet production iteration remains expert-intensive because coordinated changes to model topology, feature configuration, and interaction modules must satisfy strict interface, resource, and serving constraints. AutoML is limited to predefined search spaces, while generic coding agents verify runnability rather than recommender-specific semantic validity. Executable candidates may therefore viol",
+      "link": "https://arxiv.org/abs/2606.27243v3"
+    },
+    {
+      "arxiv_id": "2603.26487v2",
+      "title": "To Ban or not to Ban? How Open Source Projects Govern GenAI Contributions",
+      "authors": [
+        "Wenhao Yang",
+        "Runzhi He",
+        "Minghui Zhou"
+      ],
+      "published": "2026-03-27T14:48:46Z",
+      "summary": "Generative AI (GenAI) is playing an increasingly important role in open source software (OSS). Beyond completing code and documentation, GenAI is increasingly involved in issues, pull requests, code reviews, and security reports. Yet, cheaper generation does not mean cheaper review - and the resulting maintenance burden has pushed OSS projects to experiment with GenAI-specific rules in contribution guidelines, security policies, and repository instructions, even including a total ban on AI-assis",
+      "link": "https://arxiv.org/abs/2603.26487v2"
     }
   ]
 }

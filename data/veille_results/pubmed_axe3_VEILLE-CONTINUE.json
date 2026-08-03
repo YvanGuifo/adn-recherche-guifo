@@ -3,7 +3,7 @@
   "nom": "Veille générale simulation hybride santé",
   "query": "(\"hybrid simulation\" OR \"multi-method simulation\" OR \"DES-ABM\" OR \"SD-ABM\") AND (health* OR hospital OR epidemiol*)",
   "axis": "axe3",
-  "executed_at": "2026-07-27",
+  "executed_at": "2026-08-03",
   "total_count_pubmed": "32",
   "articles": [
     {
@@ -217,13 +217,5 @@
       "doi": "10.1080/09205063.2025.2450150"
     }
   ],
-  "new_articles": [
-    {
-      "pmid": "42482051",
-      "title": "Hybrid simulation approach enhances technical and non-technical skills in therapeutic pharmacology education.",
-      "journal": "BMC medical education",
-      "pubdate": "2026 Jul 21",
-      "doi": "10.1186/s12909-026-09983-1"
-    }
-  ]
+  "new_articles": []
 }
