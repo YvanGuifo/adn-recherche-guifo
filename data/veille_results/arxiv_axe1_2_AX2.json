@@ -3,8 +3,20 @@
   "nom": "Traçabilité, provenance et gouvernance du code généré par IA",
   "search_query": "all:\"code provenance\" OR all:\"AI code governance\" OR (cat:cs.SE AND all:\"semantic validation\")",
   "axis": "axe1_2",
-  "executed_at": "2026-08-03",
+  "executed_at": "2026-08-10",
   "articles": [
+    {
+      "arxiv_id": "2608.07076v1",
+      "title": "Explanation-Guided Metamorphic Testing of Specialized Language Models: An Empirical Study",
+      "authors": [
+        "Xingcheng Chen",
+        "Mehmet Besenk",
+        "Andrea Stocco"
+      ],
+      "published": "2026-08-07T10:28:50Z",
+      "summary": "\\head{Background} Task-specialized language models are increasingly integrated into software engineering workflows to support vertical-domain activities such as issue triaging, document classification, and automated analysis. Despite their adoption, there is limited empirical evidence on how to test their robustness and detect brittle behaviors under semantics-preserving input transformations. \\head{Aims} This paper investigates whether explainability-guided metamorphic testing can improve the e",
+      "link": "https://arxiv.org/abs/2608.07076v1"
+    },
     {
       "arxiv_id": "2607.12524v1",
       "title": "Open-Source Intelligence for Code Provenance and the Security Patterns that Separate Human and Large-Language-Model Implementations of Common Programming Tasks",
@@ -395,8 +407,8 @@
       "link": "https://arxiv.org/abs/2509.10572v2"
     },
     {
-      "arxiv_id": "2508.00500v3",
-      "title": "ProbGuard: Probabilistic Runtime Monitoring for LLM Agent Safety",
+      "arxiv_id": "2508.00500v4",
+      "title": "ProbGuard: Proactive Runtime Monitoring for LLM Agent Safety via Probabilistic Prediction",
       "authors": [
         "Haoyu Wang",
         "Christopher M. Poskitt",
@@ -405,7 +417,7 @@
       ],
       "published": "2025-08-01T10:24:47Z",
       "summary": "Large Language Model (LLM) agents increasingly operate across domains such as robotics, virtual assistants, and web automation. However, their stochastic decision-making introduces safety risks that are difficult to anticipate during execution. Existing runtime monitoring frameworks, such as AgentSpec, primarily rely on reactive safety rules that detect violations only when unsafe behavior is imminent or has already occurred, limiting their ability to handle long-horizon dependencies. We present",
-      "link": "https://arxiv.org/abs/2508.00500v3"
+      "link": "https://arxiv.org/abs/2508.00500v4"
     },
     {
       "arxiv_id": "2507.21271v1",
@@ -419,62 +431,33 @@
       "published": "2025-07-28T18:54:04Z",
       "summary": "[Context] Modern AI applications increasingly process highly structured data, such as 3D meshes and point clouds, where test input generation must preserve both structural and semantic validity. However, existing fuzzing tools and input generators are typically handcrafted for specific input types and often generate invalid inputs that are subsequently discarded, leading to inefficiency and poor generalizability. [Objective] This study investigates whether test inputs for structured domains can ",
       "link": "https://arxiv.org/abs/2507.21271v1"
-    },
-    {
-      "arxiv_id": "2507.15984v1",
-      "title": "BACFuzz: Exposing the Silence on Broken Access Control Vulnerabilities in Web Applications",
-      "authors": [
-        "I Putu Arya Dharmaadi",
-        "Mohannad Alhanahnah",
-        "Van-Thuan Pham",
-        "Fadi Mohsen",
-        "Fatih Turkmen"
-      ],
-      "published": "2025-07-21T18:25:11Z",
-      "summary": "Broken Access Control (BAC) remains one of the most critical and widespread vulnerabilities in web applications, allowing attackers to access unauthorized resources or perform privileged actions. Despite its severity, BAC is underexplored in automated testing due to key challenges: the lack of reliable oracles and the difficulty of generating semantically valid attack requests. We introduce BACFuzz, the first gray-box fuzzing framework specifically designed to uncover BAC vulnerabilities, includ",
-      "link": "https://arxiv.org/abs/2507.15984v1"
     }
   ],
   "new_articles": [
     {
-      "arxiv_id": "2606.27243v3",
-      "title": "NOVA: A Verification-Aware Agent Harness for Architecture Evolution in Industrial Recommender Systems",
+      "arxiv_id": "2608.07076v1",
+      "title": "Explanation-Guided Metamorphic Testing of Specialized Language Models: An Empirical Study",
       "authors": [
-        "Shaohua Liu",
-        "Liang Fang",
-        "Yilong Sun",
-        "Shudong Huang",
-        "Qingsong Luo",
-        "Shaoxin Liu",
-        "Xiaoyang Chen",
-        "Dongqiang Liu",
-        "Chuangang Ma",
-        "Zhenzhen Chai",
-        "Henghuan Wang",
-        "Shijie Quan",
-        "Changyuan Cui",
-        "Zhangbin Zhu",
-        "Peng Chen",
-        "Wei Xu",
-        "Lei Xiao",
-        "Haijie Gu",
-        "Jie Jiang"
+        "Xingcheng Chen",
+        "Mehmet Besenk",
+        "Andrea Stocco"
       ],
-      "published": "2026-06-25T16:30:39Z",
-      "summary": "Industrial advertising recommender systems are continually improved through architecture modifications, yet production iteration remains expert-intensive because coordinated changes to model topology, feature configuration, and interaction modules must satisfy strict interface, resource, and serving constraints. AutoML is limited to predefined search spaces, while generic coding agents verify runnability rather than recommender-specific semantic validity. Executable candidates may therefore viol",
-      "link": "https://arxiv.org/abs/2606.27243v3"
+      "published": "2026-08-07T10:28:50Z",
+      "summary": "\\head{Background} Task-specialized language models are increasingly integrated into software engineering workflows to support vertical-domain activities such as issue triaging, document classification, and automated analysis. Despite their adoption, there is limited empirical evidence on how to test their robustness and detect brittle behaviors under semantics-preserving input transformations. \\head{Aims} This paper investigates whether explainability-guided metamorphic testing can improve the e",
+      "link": "https://arxiv.org/abs/2608.07076v1"
     },
     {
-      "arxiv_id": "2603.26487v2",
-      "title": "To Ban or not to Ban? How Open Source Projects Govern GenAI Contributions",
+      "arxiv_id": "2508.00500v4",
+      "title": "ProbGuard: Proactive Runtime Monitoring for LLM Agent Safety via Probabilistic Prediction",
       "authors": [
-        "Wenhao Yang",
-        "Runzhi He",
-        "Minghui Zhou"
+        "Haoyu Wang",
+        "Christopher M. Poskitt",
+        "Jiali Wei",
+        "Jun Sun"
       ],
-      "published": "2026-03-27T14:48:46Z",
-      "summary": "Generative AI (GenAI) is playing an increasingly important role in open source software (OSS). Beyond completing code and documentation, GenAI is increasingly involved in issues, pull requests, code reviews, and security reports. Yet, cheaper generation does not mean cheaper review - and the resulting maintenance burden has pushed OSS projects to experiment with GenAI-specific rules in contribution guidelines, security policies, and repository instructions, even including a total ban on AI-assis",
-      "link": "https://arxiv.org/abs/2603.26487v2"
+      "published": "2025-08-01T10:24:47Z",
+      "summary": "Large Language Model (LLM) agents increasingly operate across domains such as robotics, virtual assistants, and web automation. However, their stochastic decision-making introduces safety risks that are difficult to anticipate during execution. Existing runtime monitoring frameworks, such as AgentSpec, primarily rely on reactive safety rules that detect violations only when unsafe behavior is imminent or has already occurred, limiting their ability to handle long-horizon dependencies. We present",
+      "link": "https://arxiv.org/abs/2508.00500v4"
     }
   ]
 }
