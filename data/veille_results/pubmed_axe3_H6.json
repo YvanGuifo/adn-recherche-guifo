@@ -3,7 +3,7 @@
   "nom": "Santé maternelle, néonatale et infantile",
   "query": "(\"hybrid simulation\") AND (maternal OR newborn OR \"child health\")",
   "axis": "axe3",
-  "executed_at": "2026-08-10",
+  "executed_at": "2026-08-17",
   "total_count_pubmed": "2",
   "articles": [
     {

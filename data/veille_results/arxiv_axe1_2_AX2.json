@@ -3,7 +3,7 @@
   "nom": "Traçabilité, provenance et gouvernance du code généré par IA",
   "search_query": "all:\"code provenance\" OR all:\"AI code governance\" OR (cat:cs.SE AND all:\"semantic validation\")",
   "axis": "axe1_2",
-  "executed_at": "2026-08-10",
+  "executed_at": "2026-08-17",
   "articles": [
     {
       "arxiv_id": "2608.07076v1",
@@ -433,31 +433,5 @@
       "link": "https://arxiv.org/abs/2507.21271v1"
     }
   ],
-  "new_articles": [
-    {
-      "arxiv_id": "2608.07076v1",
-      "title": "Explanation-Guided Metamorphic Testing of Specialized Language Models: An Empirical Study",
-      "authors": [
-        "Xingcheng Chen",
-        "Mehmet Besenk",
-        "Andrea Stocco"
-      ],
-      "published": "2026-08-07T10:28:50Z",
-      "summary": "\\head{Background} Task-specialized language models are increasingly integrated into software engineering workflows to support vertical-domain activities such as issue triaging, document classification, and automated analysis. Despite their adoption, there is limited empirical evidence on how to test their robustness and detect brittle behaviors under semantics-preserving input transformations. \\head{Aims} This paper investigates whether explainability-guided metamorphic testing can improve the e",
-      "link": "https://arxiv.org/abs/2608.07076v1"
-    },
-    {
-      "arxiv_id": "2508.00500v4",
-      "title": "ProbGuard: Proactive Runtime Monitoring for LLM Agent Safety via Probabilistic Prediction",
-      "authors": [
-        "Haoyu Wang",
-        "Christopher M. Poskitt",
-        "Jiali Wei",
-        "Jun Sun"
-      ],
-      "published": "2025-08-01T10:24:47Z",
-      "summary": "Large Language Model (LLM) agents increasingly operate across domains such as robotics, virtual assistants, and web automation. However, their stochastic decision-making introduces safety risks that are difficult to anticipate during execution. Existing runtime monitoring frameworks, such as AgentSpec, primarily rely on reactive safety rules that detect violations only when unsafe behavior is imminent or has already occurred, limiting their ability to handle long-horizon dependencies. We present",
-      "link": "https://arxiv.org/abs/2508.00500v4"
-    }
-  ]
+  "new_articles": []
 }

@@ -3,9 +3,16 @@
   "nom": "Veille générale simulation hybride santé",
   "query": "(\"hybrid simulation\" OR \"multi-method simulation\" OR \"DES-ABM\" OR \"SD-ABM\") AND (health* OR hospital OR epidemiol*)",
   "axis": "axe3",
-  "executed_at": "2026-08-10",
-  "total_count_pubmed": "32",
+  "executed_at": "2026-08-17",
+  "total_count_pubmed": "33",
   "articles": [
+    {
+      "pmid": "42604285",
+      "title": "Effectiveness of a surgical anastomosis simulation model in hybrid supervised and independent thoracic surgery training.",
+      "journal": "JTCVS open",
+      "pubdate": "2026 Aug",
+      "doi": "10.1016/j.xjon.2026.101880"
+    },
     {
       "pmid": "42482051",
       "title": "Hybrid simulation approach enhances technical and non-technical skills in therapeutic pharmacology education.",
@@ -31,7 +38,7 @@
       "pmid": "42296413",
       "title": "Advances in evaluating and delivering nontechnical skills training: The use of simulation, robotics, artificial intelligence and virtual reality.",
       "journal": "Current opinion in urology",
-      "pubdate": "2026 Jun 16",
+      "pubdate": "2026 Sep 1",
       "doi": "10.1097/MOU.0000000000001419"
     },
     {
@@ -208,14 +215,15 @@
       "journal": "Sensors (Basel, Switzerland)",
       "pubdate": "2025 Jan 11",
       "doi": "10.3390/s25020410"
-    },
-    {
-      "pmid": "39786352",
-      "title": "Molecular dynamics in pharmaceutical nanotechnology: simulating interactions and advancing applications.",
-      "journal": "Journal of biomaterials science. Polymer edition",
-      "pubdate": "2025 Jul",
-      "doi": "10.1080/09205063.2025.2450150"
     }
   ],
-  "new_articles": []
+  "new_articles": [
+    {
+      "pmid": "42604285",
+      "title": "Effectiveness of a surgical anastomosis simulation model in hybrid supervised and independent thoracic surgery training.",
+      "journal": "JTCVS open",
+      "pubdate": "2026 Aug",
+      "doi": "10.1016/j.xjon.2026.101880"
+    }
+  ]
 }
