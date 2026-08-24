@@ -3,7 +3,7 @@
   "nom": "Veille générale simulation hybride santé",
   "query": "(\"hybrid simulation\" OR \"multi-method simulation\" OR \"DES-ABM\" OR \"SD-ABM\") AND (health* OR hospital OR epidemiol*)",
   "axis": "axe3",
-  "executed_at": "2026-08-17",
+  "executed_at": "2026-08-24",
   "total_count_pubmed": "33",
   "articles": [
     {
@@ -217,13 +217,5 @@
       "doi": "10.3390/s25020410"
     }
   ],
-  "new_articles": [
-    {
-      "pmid": "42604285",
-      "title": "Effectiveness of a surgical anastomosis simulation model in hybrid supervised and independent thoracic surgery training.",
-      "journal": "JTCVS open",
-      "pubdate": "2026 Aug",
-      "doi": "10.1016/j.xjon.2026.101880"
-    }
-  ]
+  "new_articles": []
 }
