@@ -3,7 +3,7 @@
   "nom": "Traçabilité, provenance et gouvernance du code généré par IA",
   "search_query": "all:\"code provenance\" OR all:\"AI code governance\" OR (cat:cs.SE AND all:\"semantic validation\")",
   "axis": "axe1_2",
-  "executed_at": "2026-08-24",
+  "executed_at": "2026-08-31",
   "articles": [
     {
       "arxiv_id": "2608.07076v1",
@@ -322,7 +322,7 @@
       "link": "https://arxiv.org/abs/2512.02918v3"
     },
     {
-      "arxiv_id": "2511.08462v4",
+      "arxiv_id": "2511.08462v5",
       "title": "QLCoder: A Query Synthesizer For Static Analysis of Security Vulnerabilities",
       "authors": [
         "Claire Wang",
@@ -332,7 +332,7 @@
       ],
       "published": "2025-11-11T17:06:04Z",
       "summary": "Static analysis tools provide a powerful means to detect security vulnerabilities by specifying queries that encode vulnerable code patterns. However, writing such queries is challenging and requires diverse expertise in security and program analysis. To address this challenge, we present QLCoder - an agentic framework that automatically synthesizes queries in CodeQL, a powerful static analysis engine, directly from a given CVE metadata. QLCode embeds an LLM in a synthesis loop with execution fe",
-      "link": "https://arxiv.org/abs/2511.08462v4"
+      "link": "https://arxiv.org/abs/2511.08462v5"
     },
     {
       "arxiv_id": "2510.27417v1",
@@ -433,5 +433,19 @@
       "link": "https://arxiv.org/abs/2507.21271v1"
     }
   ],
-  "new_articles": []
+  "new_articles": [
+    {
+      "arxiv_id": "2511.08462v5",
+      "title": "QLCoder: A Query Synthesizer For Static Analysis of Security Vulnerabilities",
+      "authors": [
+        "Claire Wang",
+        "Ziyang Li",
+        "Saikat Dutta",
+        "Mayur Naik"
+      ],
+      "published": "2025-11-11T17:06:04Z",
+      "summary": "Static analysis tools provide a powerful means to detect security vulnerabilities by specifying queries that encode vulnerable code patterns. However, writing such queries is challenging and requires diverse expertise in security and program analysis. To address this challenge, we present QLCoder - an agentic framework that automatically synthesizes queries in CodeQL, a powerful static analysis engine, directly from a given CVE metadata. QLCode embeds an LLM in a synthesis loop with execution fe",
+      "link": "https://arxiv.org/abs/2511.08462v5"
+    }
+  ]
 }
