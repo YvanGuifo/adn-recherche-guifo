@@ -3,8 +3,22 @@
   "nom": "Traçabilité, provenance et gouvernance du code généré par IA",
   "search_query": "all:\"code provenance\" OR all:\"AI code governance\" OR (cat:cs.SE AND all:\"semantic validation\")",
   "axis": "axe1_2",
-  "executed_at": "2026-08-31",
+  "executed_at": "2026-09-07",
   "articles": [
+    {
+      "arxiv_id": "2609.00579v1",
+      "title": "Predicting Program Exit Code with LLMs and Programming Language Semantics",
+      "authors": [
+        "Lara Marinov",
+        "Aditya Thimmaiah",
+        "Jayanth Srinivasa",
+        "Junyi Jessy Li",
+        "Milos Gligoric"
+      ],
+      "published": "2026-09-01T02:18:20Z",
+      "summary": "Large language models (LLMs) have shown proficiency in various software engineering tasks, such as code generation and translation. However, a key limitation in their performance may be their (lack of) understanding of programming-language semantics. Even when explicit semantics are given, it remains unclear whether LLMs apply those rules or lean on priors learned during pre-training instead. We study if LLMs lean on priors or given semantics with a novel task--Program Executability Prediction (",
+      "link": "https://arxiv.org/abs/2609.00579v1"
+    },
     {
       "arxiv_id": "2608.07076v1",
       "title": "Explanation-Guided Metamorphic Testing of Specialized Language Models: An Empirical Study",
@@ -418,34 +432,22 @@
       "published": "2025-08-01T10:24:47Z",
       "summary": "Large Language Model (LLM) agents increasingly operate across domains such as robotics, virtual assistants, and web automation. However, their stochastic decision-making introduces safety risks that are difficult to anticipate during execution. Existing runtime monitoring frameworks, such as AgentSpec, primarily rely on reactive safety rules that detect violations only when unsafe behavior is imminent or has already occurred, limiting their ability to handle long-horizon dependencies. We present",
       "link": "https://arxiv.org/abs/2508.00500v4"
-    },
-    {
-      "arxiv_id": "2507.21271v1",
-      "title": "Generating Highly Structured Test Inputs Leveraging Constraint-Guided Graph Refinement",
-      "authors": [
-        "Zhaorui Yang",
-        "Yuxin Qiu",
-        "Haichao Zhu",
-        "Qian Zhang"
-      ],
-      "published": "2025-07-28T18:54:04Z",
-      "summary": "[Context] Modern AI applications increasingly process highly structured data, such as 3D meshes and point clouds, where test input generation must preserve both structural and semantic validity. However, existing fuzzing tools and input generators are typically handcrafted for specific input types and often generate invalid inputs that are subsequently discarded, leading to inefficiency and poor generalizability. [Objective] This study investigates whether test inputs for structured domains can ",
-      "link": "https://arxiv.org/abs/2507.21271v1"
     }
   ],
   "new_articles": [
     {
-      "arxiv_id": "2511.08462v5",
-      "title": "QLCoder: A Query Synthesizer For Static Analysis of Security Vulnerabilities",
+      "arxiv_id": "2609.00579v1",
+      "title": "Predicting Program Exit Code with LLMs and Programming Language Semantics",
       "authors": [
-        "Claire Wang",
-        "Ziyang Li",
-        "Saikat Dutta",
-        "Mayur Naik"
+        "Lara Marinov",
+        "Aditya Thimmaiah",
+        "Jayanth Srinivasa",
+        "Junyi Jessy Li",
+        "Milos Gligoric"
       ],
-      "published": "2025-11-11T17:06:04Z",
-      "summary": "Static analysis tools provide a powerful means to detect security vulnerabilities by specifying queries that encode vulnerable code patterns. However, writing such queries is challenging and requires diverse expertise in security and program analysis. To address this challenge, we present QLCoder - an agentic framework that automatically synthesizes queries in CodeQL, a powerful static analysis engine, directly from a given CVE metadata. QLCode embeds an LLM in a synthesis loop with execution fe",
-      "link": "https://arxiv.org/abs/2511.08462v5"
+      "published": "2026-09-01T02:18:20Z",
+      "summary": "Large language models (LLMs) have shown proficiency in various software engineering tasks, such as code generation and translation. However, a key limitation in their performance may be their (lack of) understanding of programming-language semantics. Even when explicit semantics are given, it remains unclear whether LLMs apply those rules or lean on priors learned during pre-training instead. We study if LLMs lean on priors or given semantics with a novel task--Program Executability Prediction (",
+      "link": "https://arxiv.org/abs/2609.00579v1"
     }
   ]
 }

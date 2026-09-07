@@ -3,9 +3,16 @@
   "nom": "Veille générale simulation hybride santé",
   "query": "(\"hybrid simulation\" OR \"multi-method simulation\" OR \"DES-ABM\" OR \"SD-ABM\") AND (health* OR hospital OR epidemiol*)",
   "axis": "axe3",
-  "executed_at": "2026-08-31",
-  "total_count_pubmed": "33",
+  "executed_at": "2026-09-07",
+  "total_count_pubmed": "34",
   "articles": [
+    {
+      "pmid": "42687653",
+      "title": "Effects of a hybrid delirium nursing competency enhancement program using the metaverse and standardized patients for intensive care unit nurses: a quasi-experimental study.",
+      "journal": "Journal of Korean Academy of Nursing",
+      "pubdate": "2026 Aug",
+      "doi": "10.4040/jkan.26013"
+    },
     {
       "pmid": "42604285",
       "title": "Effectiveness of a surgical anastomosis simulation model in hybrid supervised and independent thoracic surgery training.",
@@ -208,14 +215,15 @@
       "journal": "Nurse education in practice",
       "pubdate": "2025 Mar",
       "doi": "10.1016/j.nepr.2025.104294"
-    },
-    {
-      "pmid": "39860779",
-      "title": "Image-Driven Hybrid Structural Analysis Based on Continuum Point Cloud Method with Boundary Capturing Technique.",
-      "journal": "Sensors (Basel, Switzerland)",
-      "pubdate": "2025 Jan 11",
-      "doi": "10.3390/s25020410"
     }
   ],
-  "new_articles": []
+  "new_articles": [
+    {
+      "pmid": "42687653",
+      "title": "Effects of a hybrid delirium nursing competency enhancement program using the metaverse and standardized patients for intensive care unit nurses: a quasi-experimental study.",
+      "journal": "Journal of Korean Academy of Nursing",
+      "pubdate": "2026 Aug",
+      "doi": "10.4040/jkan.26013"
+    }
+  ]
 }
