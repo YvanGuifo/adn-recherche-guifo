@@ -3,8 +3,22 @@
   "nom": "Traçabilité, provenance et gouvernance du code généré par IA",
   "search_query": "all:\"code provenance\" OR all:\"AI code governance\" OR (cat:cs.SE AND all:\"semantic validation\")",
   "axis": "axe1_2",
-  "executed_at": "2026-09-07",
+  "executed_at": "2026-09-21",
   "articles": [
+    {
+      "arxiv_id": "2609.11122v1",
+      "title": "A Model-Centric DevOps Architecture for DEVS-Based Digital Twin Simulation Services",
+      "authors": [
+        "Arnis Lektauers",
+        "Gusts Linkevičs",
+        "Guntis Mosāns",
+        "Arina Fokina",
+        "Rasa Gulbe"
+      ],
+      "published": "2026-09-10T06:10:59Z",
+      "summary": "Digital twin simulation models are evolved and redeployed like software, yet DEVS-based engines offer a sound formal basis with little support for versioning, automated validation, or continuous delivery in cloud-native environments, leaving model lifecycle management ad hoc in most deployments. This paper proposes a model-centric DevOps architecture for deploying DEVS-based digital twin simulations as managed services. Simulation models are treated as first-class DevOps artefacts defined in a d",
+      "link": "https://arxiv.org/abs/2609.11122v1"
+    },
     {
       "arxiv_id": "2609.00579v1",
       "title": "Predicting Program Exit Code with LLMs and Programming Language Semantics",
@@ -419,35 +433,22 @@
       "published": "2025-09-11T14:17:42Z",
       "summary": "Reliable data quality is crucial for downstream analysis of tabular datasets, yet rule-based validation often struggles with inefficiency, human intervention, and high computational costs. We present a three-stage framework that combines statistical inliner detection with LLM-driven rule and code generation. After filtering data samples through traditional clustering, we iteratively prompt LLMs to produce semantically valid quality rules and synthesize their executable validators through code-ge",
       "link": "https://arxiv.org/abs/2509.10572v2"
-    },
-    {
-      "arxiv_id": "2508.00500v4",
-      "title": "ProbGuard: Proactive Runtime Monitoring for LLM Agent Safety via Probabilistic Prediction",
-      "authors": [
-        "Haoyu Wang",
-        "Christopher M. Poskitt",
-        "Jiali Wei",
-        "Jun Sun"
-      ],
-      "published": "2025-08-01T10:24:47Z",
-      "summary": "Large Language Model (LLM) agents increasingly operate across domains such as robotics, virtual assistants, and web automation. However, their stochastic decision-making introduces safety risks that are difficult to anticipate during execution. Existing runtime monitoring frameworks, such as AgentSpec, primarily rely on reactive safety rules that detect violations only when unsafe behavior is imminent or has already occurred, limiting their ability to handle long-horizon dependencies. We present",
-      "link": "https://arxiv.org/abs/2508.00500v4"
     }
   ],
   "new_articles": [
     {
-      "arxiv_id": "2609.00579v1",
-      "title": "Predicting Program Exit Code with LLMs and Programming Language Semantics",
+      "arxiv_id": "2609.11122v1",
+      "title": "A Model-Centric DevOps Architecture for DEVS-Based Digital Twin Simulation Services",
       "authors": [
-        "Lara Marinov",
-        "Aditya Thimmaiah",
-        "Jayanth Srinivasa",
-        "Junyi Jessy Li",
-        "Milos Gligoric"
+        "Arnis Lektauers",
+        "Gusts Linkevičs",
+        "Guntis Mosāns",
+        "Arina Fokina",
+        "Rasa Gulbe"
       ],
-      "published": "2026-09-01T02:18:20Z",
-      "summary": "Large language models (LLMs) have shown proficiency in various software engineering tasks, such as code generation and translation. However, a key limitation in their performance may be their (lack of) understanding of programming-language semantics. Even when explicit semantics are given, it remains unclear whether LLMs apply those rules or lean on priors learned during pre-training instead. We study if LLMs lean on priors or given semantics with a novel task--Program Executability Prediction (",
-      "link": "https://arxiv.org/abs/2609.00579v1"
+      "published": "2026-09-10T06:10:59Z",
+      "summary": "Digital twin simulation models are evolved and redeployed like software, yet DEVS-based engines offer a sound formal basis with little support for versioning, automated validation, or continuous delivery in cloud-native environments, leaving model lifecycle management ad hoc in most deployments. This paper proposes a model-centric DevOps architecture for deploying DEVS-based digital twin simulations as managed services. Simulation models are treated as first-class DevOps artefacts defined in a d",
+      "link": "https://arxiv.org/abs/2609.11122v1"
     }
   ]
 }
