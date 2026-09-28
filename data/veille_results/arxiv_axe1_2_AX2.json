@@ -3,8 +3,30 @@
   "nom": "Traçabilité, provenance et gouvernance du code généré par IA",
   "search_query": "all:\"code provenance\" OR all:\"AI code governance\" OR (cat:cs.SE AND all:\"semantic validation\")",
   "axis": "axe1_2",
-  "executed_at": "2026-09-21",
+  "executed_at": "2026-09-28",
   "articles": [
+    {
+      "arxiv_id": "2609.30593v1",
+      "title": "EA-Ops: Git-Native Architecture as Code for Continuous Enterprise Architecture Governance",
+      "authors": [
+        "Vahid Tavakkoli",
+        "Kabeh Mohsenzadegan",
+        "Kyandoghere Kyamakya"
+      ],
+      "published": "2026-09-24T22:15:02Z",
+      "summary": "Enterprise architecture (EA) repositories frequently separate architecture models from the engineering workflow used to change software and infrastructure. This article presents EA-Ops, an open-source Git-native Enterprise Architecture-as-Code framework that represents architecture facts as YAML, validates typed relationships against an ArchiMate 3.2 profile, enforces organization-specific governance rules, performs graph-based change-impact analysis, and publishes human-facing reports and a sta",
+      "link": "https://arxiv.org/abs/2609.30593v1"
+    },
+    {
+      "arxiv_id": "2609.29744v1",
+      "title": "Between the Commits: Process, Error, and Claim Reliability in a Wholly AI-Authored Codebase",
+      "authors": [
+        "Douglas Leith"
+      ],
+      "published": "2026-09-24T12:59:20Z",
+      "summary": "We present: (i) a new dataset consisting of the full development history of a 21,000-line Python tool built entirely by Claude AI, with no human-authored code or tests, (ii) two code-provenance tracing tools, (iii) three taxonomies for instruction intent, commit provenance, and response reliability, (iv) application of these to analyse the dataset. We find that: (i) user coding agent CLI instructions differ in kind from IDE-chat instructions, with a greater focus on comprehension, planning and c",
+      "link": "https://arxiv.org/abs/2609.29744v1"
+    },
     {
       "arxiv_id": "2609.11122v1",
       "title": "A Model-Centric DevOps Architecture for DEVS-Based Digital Twin Simulation Services",
@@ -18,6 +40,16 @@
       "published": "2026-09-10T06:10:59Z",
       "summary": "Digital twin simulation models are evolved and redeployed like software, yet DEVS-based engines offer a sound formal basis with little support for versioning, automated validation, or continuous delivery in cloud-native environments, leaving model lifecycle management ad hoc in most deployments. This paper proposes a model-centric DevOps architecture for deploying DEVS-based digital twin simulations as managed services. Simulation models are treated as first-class DevOps artefacts defined in a d",
       "link": "https://arxiv.org/abs/2609.11122v1"
+    },
+    {
+      "arxiv_id": "2609.22222v1",
+      "title": "Can Coding Agents Reproduce Official Statistics? Metadata, Retry Budget and the Limits of Execution Feedback in a Controlled Eurostat Benchmark",
+      "authors": [
+        "Sabina-Cristiana Necula"
+      ],
+      "published": "2026-09-02T13:21:14Z",
+      "summary": "Large language models can generate executable data-analysis code, but successful execution is not equivalent to a valid official-statistics result. This study asks whether authoritative metadata and execution feedback improve the reproducibility of Eurostat answers produced by a coding agent, and isolates what execution feedback actually contributes. A benchmark of 30 natural-language tasks covering seven domains, seven Eurostat datasets and four difficulty tiers was run under four conditions: t",
+      "link": "https://arxiv.org/abs/2609.22222v1"
     },
     {
       "arxiv_id": "2609.00579v1",
@@ -391,64 +423,40 @@
       "published": "2025-10-12T01:49:45Z",
       "summary": "GraphQL's flexible query model and nested data dependencies expose APIs to complex, context-dependent vulnerabilities that are difficult to uncover using conventional testing tools. Existing fuzzers either rely on random payload generation or rigid mutation heuristics, failing to adapt to the dynamic structures of GraphQL schemas and responses. We present PrediQL, the first retrieval-augmented, LLM-guided fuzzer for GraphQL APIs. PrediQL combines large language model reasoning with adaptive feed",
       "link": "https://arxiv.org/abs/2510.10407v2"
-    },
-    {
-      "arxiv_id": "2510.07815v1",
-      "title": "Interleaved Learning and Exploration: A Self-Adaptive Fuzz Testing Framework for MLIR",
-      "authors": [
-        "Zeyu Sun",
-        "Jingjing Liang",
-        "Weiyi Wang",
-        "Chenyao Suo",
-        "Junjie Chen",
-        "Fanjiang Xu"
-      ],
-      "published": "2025-10-09T05:47:20Z",
-      "summary": "MLIR (Multi-Level Intermediate Representation) has rapidly become a foundational technology for modern compiler frameworks, enabling extensibility across diverse domains. However, ensuring the correctness and robustness of MLIR itself remains challenging. Existing fuzzing approaches-based on manually crafted templates or rule-based mutations-struggle to generate sufficiently diverse and semantically valid test cases, making it difficult to expose subtle or deep-seated bugs within MLIR's complex ",
-      "link": "https://arxiv.org/abs/2510.07815v1"
-    },
-    {
-      "arxiv_id": "2510.01077v1",
-      "title": "CodeGenLink: A Tool to Find the Likely Origin and License of Automatically Generated Code",
-      "authors": [
-        "Daniele Bifolco",
-        "Guido Annicchiarico",
-        "Pierluigi Barbiero",
-        "Massimiliano Di Penta",
-        "Fiorella Zampetti"
-      ],
-      "published": "2025-10-01T16:21:13Z",
-      "summary": "Large Language Models (LLMs) are widely used in software development tasks nowadays. Unlike reusing code taken from the Web, for LLMs' generated code, developers are concerned about its lack of trustworthiness and possible copyright or licensing violations, due to the lack of code provenance information. This paper proposes CodeGenLink, a GitHub CoPilot extension for Visual Studio Code aimed at (i) suggesting links containing code very similar to automatically generated code, and (ii) whenever p",
-      "link": "https://arxiv.org/abs/2510.01077v1"
-    },
-    {
-      "arxiv_id": "2509.10572v2",
-      "title": "Quality Assessment of Tabular Data using Large Language Models and Code Generation",
-      "authors": [
-        "Ashlesha Akella",
-        "Akshar Kaul",
-        "Krishnasuri Narayanam",
-        "Sameep Mehta"
-      ],
-      "published": "2025-09-11T14:17:42Z",
-      "summary": "Reliable data quality is crucial for downstream analysis of tabular datasets, yet rule-based validation often struggles with inefficiency, human intervention, and high computational costs. We present a three-stage framework that combines statistical inliner detection with LLM-driven rule and code generation. After filtering data samples through traditional clustering, we iteratively prompt LLMs to produce semantically valid quality rules and synthesize their executable validators through code-ge",
-      "link": "https://arxiv.org/abs/2509.10572v2"
     }
   ],
   "new_articles": [
     {
-      "arxiv_id": "2609.11122v1",
-      "title": "A Model-Centric DevOps Architecture for DEVS-Based Digital Twin Simulation Services",
+      "arxiv_id": "2609.30593v1",
+      "title": "EA-Ops: Git-Native Architecture as Code for Continuous Enterprise Architecture Governance",
       "authors": [
-        "Arnis Lektauers",
-        "Gusts Linkevičs",
-        "Guntis Mosāns",
-        "Arina Fokina",
-        "Rasa Gulbe"
+        "Vahid Tavakkoli",
+        "Kabeh Mohsenzadegan",
+        "Kyandoghere Kyamakya"
       ],
-      "published": "2026-09-10T06:10:59Z",
-      "summary": "Digital twin simulation models are evolved and redeployed like software, yet DEVS-based engines offer a sound formal basis with little support for versioning, automated validation, or continuous delivery in cloud-native environments, leaving model lifecycle management ad hoc in most deployments. This paper proposes a model-centric DevOps architecture for deploying DEVS-based digital twin simulations as managed services. Simulation models are treated as first-class DevOps artefacts defined in a d",
-      "link": "https://arxiv.org/abs/2609.11122v1"
+      "published": "2026-09-24T22:15:02Z",
+      "summary": "Enterprise architecture (EA) repositories frequently separate architecture models from the engineering workflow used to change software and infrastructure. This article presents EA-Ops, an open-source Git-native Enterprise Architecture-as-Code framework that represents architecture facts as YAML, validates typed relationships against an ArchiMate 3.2 profile, enforces organization-specific governance rules, performs graph-based change-impact analysis, and publishes human-facing reports and a sta",
+      "link": "https://arxiv.org/abs/2609.30593v1"
+    },
+    {
+      "arxiv_id": "2609.29744v1",
+      "title": "Between the Commits: Process, Error, and Claim Reliability in a Wholly AI-Authored Codebase",
+      "authors": [
+        "Douglas Leith"
+      ],
+      "published": "2026-09-24T12:59:20Z",
+      "summary": "We present: (i) a new dataset consisting of the full development history of a 21,000-line Python tool built entirely by Claude AI, with no human-authored code or tests, (ii) two code-provenance tracing tools, (iii) three taxonomies for instruction intent, commit provenance, and response reliability, (iv) application of these to analyse the dataset. We find that: (i) user coding agent CLI instructions differ in kind from IDE-chat instructions, with a greater focus on comprehension, planning and c",
+      "link": "https://arxiv.org/abs/2609.29744v1"
+    },
+    {
+      "arxiv_id": "2609.22222v1",
+      "title": "Can Coding Agents Reproduce Official Statistics? Metadata, Retry Budget and the Limits of Execution Feedback in a Controlled Eurostat Benchmark",
+      "authors": [
+        "Sabina-Cristiana Necula"
+      ],
+      "published": "2026-09-02T13:21:14Z",
+      "summary": "Large language models can generate executable data-analysis code, but successful execution is not equivalent to a valid official-statistics result. This study asks whether authoritative metadata and execution feedback improve the reproducibility of Eurostat answers produced by a coding agent, and isolates what execution feedback actually contributes. A benchmark of 30 natural-language tasks covering seven domains, seven Eurostat datasets and four difficulty tiers was run under four conditions: t",
+      "link": "https://arxiv.org/abs/2609.22222v1"
     }
   ]
 }
