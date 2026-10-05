@@ -3,9 +3,16 @@
   "nom": "Veille générale simulation hybride santé",
   "query": "(\"hybrid simulation\" OR \"multi-method simulation\" OR \"DES-ABM\" OR \"SD-ABM\") AND (health* OR hospital OR epidemiol*)",
   "axis": "axe3",
-  "executed_at": "2026-09-28",
-  "total_count_pubmed": "34",
+  "executed_at": "2026-10-05",
+  "total_count_pubmed": "35",
   "articles": [
+    {
+      "pmid": "42804962",
+      "title": "A hybrid simulation phase correction method for endoscopic trans-osseous ultrasound imaging.",
+      "journal": "Ultrasonics",
+      "pubdate": "2026 Sep 28",
+      "doi": "10.1016/j.ultras.2026.108322"
+    },
     {
       "pmid": "42687653",
       "title": "Effects of a hybrid delirium nursing competency enhancement program using the metaverse and standardized patients for intensive care unit nurses: a quasi-experimental study.",
@@ -208,14 +215,15 @@
       "journal": "Korean journal of medical education",
       "pubdate": "2025 Mar",
       "doi": "10.3946/kjme.2025.325"
-    },
-    {
-      "pmid": "39987664",
-      "title": "Enhancing nurse-parent partnership for NICU nurses by investigating multi-modal learning with a hybrid simulation approach that integrates metaverses and real-world training.",
-      "journal": "Nurse education in practice",
-      "pubdate": "2025 Mar",
-      "doi": "10.1016/j.nepr.2025.104294"
     }
   ],
-  "new_articles": []
+  "new_articles": [
+    {
+      "pmid": "42804962",
+      "title": "A hybrid simulation phase correction method for endoscopic trans-osseous ultrasound imaging.",
+      "journal": "Ultrasonics",
+      "pubdate": "2026 Sep 28",
+      "doi": "10.1016/j.ultras.2026.108322"
+    }
+  ]
 }

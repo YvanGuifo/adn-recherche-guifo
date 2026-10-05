@@ -3,8 +3,18 @@
   "nom": "Traçabilité, provenance et gouvernance du code généré par IA",
   "search_query": "all:\"code provenance\" OR all:\"AI code governance\" OR (cat:cs.SE AND all:\"semantic validation\")",
   "axis": "axe1_2",
-  "executed_at": "2026-09-28",
+  "executed_at": "2026-10-05",
   "articles": [
+    {
+      "arxiv_id": "2610.01664v1",
+      "title": "Code Detectors Have a Half-Life: Obsolescence and Metric Illusions in LLM-Generated Code Detection",
+      "authors": [
+        "Alberick Euraste Djire"
+      ],
+      "published": "2026-10-01T13:24:51Z",
+      "summary": "Code detectors can become obsolete as code-generating models evolve: a detector validated on one generation of models may not transfer to the next. We call this limited useful life a detector half-life. We evaluate eight general-purpose LLM judges and three dedicated detectors on human-written code and code produced by seven generators across C++, Java, and Python. Our results reveal two problems. First, performance varies considerably across generators and prompting strategies, suggesting that ",
+      "link": "https://arxiv.org/abs/2610.01664v1"
+    },
     {
       "arxiv_id": "2609.30593v1",
       "title": "EA-Ops: Git-Native Architecture as Code for Continuous Enterprise Architecture Governance",
@@ -407,56 +417,18 @@
       "published": "2025-10-31T12:12:01Z",
       "summary": "Representational State Transfer (REST) APIs are a cornerstone of modern cloud native systems. Ensuring their reliability demands automated test suites that exercise diverse and boundary level behaviors. Nevertheless, designing such test cases remains a challenging and resource intensive endeavor. This study extends prior work on Large Language Model (LLM) based test amplification by evaluating single agent and multi agent configurations across four additional cloud applications. The amplified te",
       "link": "https://arxiv.org/abs/2510.27417v1"
-    },
-    {
-      "arxiv_id": "2510.10407v2",
-      "title": "PrediQL: Automated Testing of GraphQL APIs with LLMs",
-      "authors": [
-        "Shaolun Liu",
-        "Sina Marefat",
-        "Omar Tsai",
-        "Yu Chen",
-        "Zecheng Deng",
-        "Jia Wang",
-        "Mohammad A. Tayebi"
-      ],
-      "published": "2025-10-12T01:49:45Z",
-      "summary": "GraphQL's flexible query model and nested data dependencies expose APIs to complex, context-dependent vulnerabilities that are difficult to uncover using conventional testing tools. Existing fuzzers either rely on random payload generation or rigid mutation heuristics, failing to adapt to the dynamic structures of GraphQL schemas and responses. We present PrediQL, the first retrieval-augmented, LLM-guided fuzzer for GraphQL APIs. PrediQL combines large language model reasoning with adaptive feed",
-      "link": "https://arxiv.org/abs/2510.10407v2"
     }
   ],
   "new_articles": [
     {
-      "arxiv_id": "2609.30593v1",
-      "title": "EA-Ops: Git-Native Architecture as Code for Continuous Enterprise Architecture Governance",
+      "arxiv_id": "2610.01664v1",
+      "title": "Code Detectors Have a Half-Life: Obsolescence and Metric Illusions in LLM-Generated Code Detection",
       "authors": [
-        "Vahid Tavakkoli",
-        "Kabeh Mohsenzadegan",
-        "Kyandoghere Kyamakya"
+        "Alberick Euraste Djire"
       ],
-      "published": "2026-09-24T22:15:02Z",
-      "summary": "Enterprise architecture (EA) repositories frequently separate architecture models from the engineering workflow used to change software and infrastructure. This article presents EA-Ops, an open-source Git-native Enterprise Architecture-as-Code framework that represents architecture facts as YAML, validates typed relationships against an ArchiMate 3.2 profile, enforces organization-specific governance rules, performs graph-based change-impact analysis, and publishes human-facing reports and a sta",
-      "link": "https://arxiv.org/abs/2609.30593v1"
-    },
-    {
-      "arxiv_id": "2609.29744v1",
-      "title": "Between the Commits: Process, Error, and Claim Reliability in a Wholly AI-Authored Codebase",
-      "authors": [
-        "Douglas Leith"
-      ],
-      "published": "2026-09-24T12:59:20Z",
-      "summary": "We present: (i) a new dataset consisting of the full development history of a 21,000-line Python tool built entirely by Claude AI, with no human-authored code or tests, (ii) two code-provenance tracing tools, (iii) three taxonomies for instruction intent, commit provenance, and response reliability, (iv) application of these to analyse the dataset. We find that: (i) user coding agent CLI instructions differ in kind from IDE-chat instructions, with a greater focus on comprehension, planning and c",
-      "link": "https://arxiv.org/abs/2609.29744v1"
-    },
-    {
-      "arxiv_id": "2609.22222v1",
-      "title": "Can Coding Agents Reproduce Official Statistics? Metadata, Retry Budget and the Limits of Execution Feedback in a Controlled Eurostat Benchmark",
-      "authors": [
-        "Sabina-Cristiana Necula"
-      ],
-      "published": "2026-09-02T13:21:14Z",
-      "summary": "Large language models can generate executable data-analysis code, but successful execution is not equivalent to a valid official-statistics result. This study asks whether authoritative metadata and execution feedback improve the reproducibility of Eurostat answers produced by a coding agent, and isolates what execution feedback actually contributes. A benchmark of 30 natural-language tasks covering seven domains, seven Eurostat datasets and four difficulty tiers was run under four conditions: t",
-      "link": "https://arxiv.org/abs/2609.22222v1"
+      "published": "2026-10-01T13:24:51Z",
+      "summary": "Code detectors can become obsolete as code-generating models evolve: a detector validated on one generation of models may not transfer to the next. We call this limited useful life a detector half-life. We evaluate eight general-purpose LLM judges and three dedicated detectors on human-written code and code produced by seven generators across C++, Java, and Python. Our results reveal two problems. First, performance varies considerably across generators and prompting strategies, suggesting that ",
+      "link": "https://arxiv.org/abs/2610.01664v1"
     }
   ]
 }

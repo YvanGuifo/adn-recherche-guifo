@@ -3,8 +3,31 @@
   "nom": "Facteurs humains et cognitifs — Behavioural Software Engineering",
   "search_query": "(cat:cs.SE AND all:\"developer cognition\") OR all:\"rubber-stamping\" AND all:\"code generation\"",
   "axis": "axe1_2",
-  "executed_at": "2026-09-28",
+  "executed_at": "2026-10-05",
   "articles": [
+    {
+      "arxiv_id": "2610.00961v1",
+      "title": "Cybernetic and Epistemic: A Missing Vocabulary for Trustworthy Agentic Delegation",
+      "authors": [
+        "Jérémie Lumbroso"
+      ],
+      "published": "2026-10-01T02:46:49Z",
+      "summary": "As code generation is increasingly delegated to AI systems, the bottleneck is shifting from writing code to supervising the systems that write it --- a shift CS-education researchers have begun to name. This shift exposes a vocabulary gap: the field asks for \"human oversight\" without a working distinction between the two things language does in a delegation channel --- coordinate action (cybernetic: words succeed when the world comes to match them) and coordinate understanding (epistemic: they s",
+      "link": "https://arxiv.org/abs/2610.00961v1"
+    },
+    {
+      "arxiv_id": "2609.37645v1",
+      "title": "Beyond Productivity: Measuring Developers' Cognitive Load During GenAI-Supported Software Development",
+      "authors": [
+        "Charlotte Brandebusemeyer",
+        "Daniela Gasser",
+        "Tobias Schimmer",
+        "Bert Arnrich"
+      ],
+      "published": "2026-09-29T14:12:56Z",
+      "summary": "Generative AI (GenAI) is changing software development workflows and how developers work. Industry evaluations of GenAI adoption often monitor productivity gains, usage, and output quality, but limited attention is paid to the interaction experience and cognitive load of the actual adopters and drivers of GenAI technology - the software developers. Understanding whether GenAI changes or shifts developers' cognitive demands during everyday development is important for a developer-centered evaluat",
+      "link": "https://arxiv.org/abs/2609.37645v1"
+    },
     {
       "arxiv_id": "2607.05125v1",
       "title": "Three-Phase Evaluation of AI-Assisted Software Development Life Cycle",
@@ -138,5 +161,29 @@
       "link": "https://arxiv.org/abs/2501.02684v1"
     }
   ],
-  "new_articles": []
+  "new_articles": [
+    {
+      "arxiv_id": "2610.00961v1",
+      "title": "Cybernetic and Epistemic: A Missing Vocabulary for Trustworthy Agentic Delegation",
+      "authors": [
+        "Jérémie Lumbroso"
+      ],
+      "published": "2026-10-01T02:46:49Z",
+      "summary": "As code generation is increasingly delegated to AI systems, the bottleneck is shifting from writing code to supervising the systems that write it --- a shift CS-education researchers have begun to name. This shift exposes a vocabulary gap: the field asks for \"human oversight\" without a working distinction between the two things language does in a delegation channel --- coordinate action (cybernetic: words succeed when the world comes to match them) and coordinate understanding (epistemic: they s",
+      "link": "https://arxiv.org/abs/2610.00961v1"
+    },
+    {
+      "arxiv_id": "2609.37645v1",
+      "title": "Beyond Productivity: Measuring Developers' Cognitive Load During GenAI-Supported Software Development",
+      "authors": [
+        "Charlotte Brandebusemeyer",
+        "Daniela Gasser",
+        "Tobias Schimmer",
+        "Bert Arnrich"
+      ],
+      "published": "2026-09-29T14:12:56Z",
+      "summary": "Generative AI (GenAI) is changing software development workflows and how developers work. Industry evaluations of GenAI adoption often monitor productivity gains, usage, and output quality, but limited attention is paid to the interaction experience and cognitive load of the actual adopters and drivers of GenAI technology - the software developers. Understanding whether GenAI changes or shifts developers' cognitive demands during everyday development is important for a developer-centered evaluat",
+      "link": "https://arxiv.org/abs/2609.37645v1"
+    }
+  ]
 }
