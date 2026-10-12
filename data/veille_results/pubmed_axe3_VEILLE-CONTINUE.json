@@ -3,9 +3,16 @@
   "nom": "Veille générale simulation hybride santé",
   "query": "(\"hybrid simulation\" OR \"multi-method simulation\" OR \"DES-ABM\" OR \"SD-ABM\") AND (health* OR hospital OR epidemiol*)",
   "axis": "axe3",
-  "executed_at": "2026-10-05",
-  "total_count_pubmed": "35",
+  "executed_at": "2026-10-12",
+  "total_count_pubmed": "36",
   "articles": [
+    {
+      "pmid": "42837675",
+      "title": "Immersive 3D vs Physical Simulation in Training Novices for Laser-Based Endourological Procedures: Protocol for a Randomized Controlled Trial.",
+      "journal": "JMIR research protocols",
+      "pubdate": "2026 Oct 6",
+      "doi": "10.2196/94628"
+    },
     {
       "pmid": "42804962",
       "title": "A hybrid simulation phase correction method for endoscopic trans-osseous ultrasound imaging.",
@@ -208,22 +215,15 @@
       "journal": "Advances in simulation (London, England)",
       "pubdate": "2025 Mar 24",
       "doi": "10.1186/s41077-025-00336-4"
-    },
-    {
-      "pmid": "40049685",
-      "title": "Medical students' experience of culturally diverse family presence during resuscitation simulation.",
-      "journal": "Korean journal of medical education",
-      "pubdate": "2025 Mar",
-      "doi": "10.3946/kjme.2025.325"
     }
   ],
   "new_articles": [
     {
-      "pmid": "42804962",
-      "title": "A hybrid simulation phase correction method for endoscopic trans-osseous ultrasound imaging.",
-      "journal": "Ultrasonics",
-      "pubdate": "2026 Sep 28",
-      "doi": "10.1016/j.ultras.2026.108322"
+      "pmid": "42837675",
+      "title": "Immersive 3D vs Physical Simulation in Training Novices for Laser-Based Endourological Procedures: Protocol for a Randomized Controlled Trial.",
+      "journal": "JMIR research protocols",
+      "pubdate": "2026 Oct 6",
+      "doi": "10.2196/94628"
     }
   ]
 }

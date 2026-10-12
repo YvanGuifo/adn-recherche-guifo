@@ -3,7 +3,7 @@
   "nom": "Traçabilité, provenance et gouvernance du code généré par IA",
   "search_query": "all:\"code provenance\" OR all:\"AI code governance\" OR (cat:cs.SE AND all:\"semantic validation\")",
   "axis": "axe1_2",
-  "executed_at": "2026-10-05",
+  "executed_at": "2026-10-12",
   "articles": [
     {
       "arxiv_id": "2610.01664v1",
@@ -419,16 +419,5 @@
       "link": "https://arxiv.org/abs/2510.27417v1"
     }
   ],
-  "new_articles": [
-    {
-      "arxiv_id": "2610.01664v1",
-      "title": "Code Detectors Have a Half-Life: Obsolescence and Metric Illusions in LLM-Generated Code Detection",
-      "authors": [
-        "Alberick Euraste Djire"
-      ],
-      "published": "2026-10-01T13:24:51Z",
-      "summary": "Code detectors can become obsolete as code-generating models evolve: a detector validated on one generation of models may not transfer to the next. We call this limited useful life a detector half-life. We evaluate eight general-purpose LLM judges and three dedicated detectors on human-written code and code produced by seven generators across C++, Java, and Python. Our results reveal two problems. First, performance varies considerably across generators and prompting strategies, suggesting that ",
-      "link": "https://arxiv.org/abs/2610.01664v1"
-    }
-  ]
+  "new_articles": []
 }
