@@ -3,7 +3,7 @@
   "nom": "Traçabilité, provenance et gouvernance du code généré par IA",
   "search_query": "all:\"code provenance\" OR all:\"AI code governance\" OR (cat:cs.SE AND all:\"semantic validation\")",
   "axis": "axe1_2",
-  "executed_at": "2026-10-12",
+  "executed_at": "2026-10-19",
   "articles": [
     {
       "arxiv_id": "2610.01664v1",
@@ -36,20 +36,6 @@
       "published": "2026-09-24T12:59:20Z",
       "summary": "We present: (i) a new dataset consisting of the full development history of a 21,000-line Python tool built entirely by Claude AI, with no human-authored code or tests, (ii) two code-provenance tracing tools, (iii) three taxonomies for instruction intent, commit provenance, and response reliability, (iv) application of these to analyse the dataset. We find that: (i) user coding agent CLI instructions differ in kind from IDE-chat instructions, with a greater focus on comprehension, planning and c",
       "link": "https://arxiv.org/abs/2609.29744v1"
-    },
-    {
-      "arxiv_id": "2609.11122v1",
-      "title": "A Model-Centric DevOps Architecture for DEVS-Based Digital Twin Simulation Services",
-      "authors": [
-        "Arnis Lektauers",
-        "Gusts Linkevičs",
-        "Guntis Mosāns",
-        "Arina Fokina",
-        "Rasa Gulbe"
-      ],
-      "published": "2026-09-10T06:10:59Z",
-      "summary": "Digital twin simulation models are evolved and redeployed like software, yet DEVS-based engines offer a sound formal basis with little support for versioning, automated validation, or continuous delivery in cloud-native environments, leaving model lifecycle management ad hoc in most deployments. This paper proposes a model-centric DevOps architecture for deploying DEVS-based digital twin simulations as managed services. Simulation models are treated as first-class DevOps artefacts defined in a d",
-      "link": "https://arxiv.org/abs/2609.11122v1"
     },
     {
       "arxiv_id": "2609.22222v1",
@@ -219,7 +205,7 @@
       "link": "https://arxiv.org/abs/2604.23523v1"
     },
     {
-      "arxiv_id": "2604.22046v1",
+      "arxiv_id": "2604.22046v2",
       "title": "Call-Chain-Aware LLM-Based Test Generation for Java Projects",
       "authors": [
         "Guancheng Wang",
@@ -230,7 +216,7 @@
       ],
       "published": "2026-04-23T20:03:18Z",
       "summary": "Large language models (LLMs) have recently shown strong potential for generating project-level unit tests. However, existing state-of-the-art approaches primarily rely on execution-path information to guide prompt construction, which is often insufficient for complex software systems with rich inter-class dependencies, deep call chains, and intricate object initialization requirements. In this paper, we present CAT, a novel call-chain-aware LLM-based test generation approach that explicitly inco",
-      "link": "https://arxiv.org/abs/2604.22046v1"
+      "link": "https://arxiv.org/abs/2604.22046v2"
     },
     {
       "arxiv_id": "2604.16001v1",
@@ -417,7 +403,54 @@
       "published": "2025-10-31T12:12:01Z",
       "summary": "Representational State Transfer (REST) APIs are a cornerstone of modern cloud native systems. Ensuring their reliability demands automated test suites that exercise diverse and boundary level behaviors. Nevertheless, designing such test cases remains a challenging and resource intensive endeavor. This study extends prior work on Large Language Model (LLM) based test amplification by evaluating single agent and multi agent configurations across four additional cloud applications. The amplified te",
       "link": "https://arxiv.org/abs/2510.27417v1"
+    },
+    {
+      "arxiv_id": "2510.10407v2",
+      "title": "PrediQL: Automated Testing of GraphQL APIs with LLMs",
+      "authors": [
+        "Shaolun Liu",
+        "Sina Marefat",
+        "Omar Tsai",
+        "Yu Chen",
+        "Zecheng Deng",
+        "Jia Wang",
+        "Mohammad A. Tayebi"
+      ],
+      "published": "2025-10-12T01:49:45Z",
+      "summary": "GraphQL's flexible query model and nested data dependencies expose APIs to complex, context-dependent vulnerabilities that are difficult to uncover using conventional testing tools. Existing fuzzers either rely on random payload generation or rigid mutation heuristics, failing to adapt to the dynamic structures of GraphQL schemas and responses. We present PrediQL, the first retrieval-augmented, LLM-guided fuzzer for GraphQL APIs. PrediQL combines large language model reasoning with adaptive feed",
+      "link": "https://arxiv.org/abs/2510.10407v2"
     }
   ],
-  "new_articles": []
+  "new_articles": [
+    {
+      "arxiv_id": "2604.22046v2",
+      "title": "Call-Chain-Aware LLM-Based Test Generation for Java Projects",
+      "authors": [
+        "Guancheng Wang",
+        "Qinghua Xu",
+        "Lionel C. Briand",
+        "Zhaoqiang Guo",
+        "Kui Liu"
+      ],
+      "published": "2026-04-23T20:03:18Z",
+      "summary": "Large language models (LLMs) have recently shown strong potential for generating project-level unit tests. However, existing state-of-the-art approaches primarily rely on execution-path information to guide prompt construction, which is often insufficient for complex software systems with rich inter-class dependencies, deep call chains, and intricate object initialization requirements. In this paper, we present CAT, a novel call-chain-aware LLM-based test generation approach that explicitly inco",
+      "link": "https://arxiv.org/abs/2604.22046v2"
+    },
+    {
+      "arxiv_id": "2510.10407v2",
+      "title": "PrediQL: Automated Testing of GraphQL APIs with LLMs",
+      "authors": [
+        "Shaolun Liu",
+        "Sina Marefat",
+        "Omar Tsai",
+        "Yu Chen",
+        "Zecheng Deng",
+        "Jia Wang",
+        "Mohammad A. Tayebi"
+      ],
+      "published": "2025-10-12T01:49:45Z",
+      "summary": "GraphQL's flexible query model and nested data dependencies expose APIs to complex, context-dependent vulnerabilities that are difficult to uncover using conventional testing tools. Existing fuzzers either rely on random payload generation or rigid mutation heuristics, failing to adapt to the dynamic structures of GraphQL schemas and responses. We present PrediQL, the first retrieval-augmented, LLM-guided fuzzer for GraphQL APIs. PrediQL combines large language model reasoning with adaptive feed",
+      "link": "https://arxiv.org/abs/2510.10407v2"
+    }
+  ]
 }

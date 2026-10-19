@@ -3,9 +3,16 @@
   "nom": "Veille générale simulation hybride santé",
   "query": "(\"hybrid simulation\" OR \"multi-method simulation\" OR \"DES-ABM\" OR \"SD-ABM\") AND (health* OR hospital OR epidemiol*)",
   "axis": "axe3",
-  "executed_at": "2026-10-12",
-  "total_count_pubmed": "36",
+  "executed_at": "2026-10-19",
+  "total_count_pubmed": "37",
   "articles": [
+    {
+      "pmid": "42863930",
+      "title": "Comparing virtual, standardized patient and hybrid psychiatric simulation in undergraduate nursing: Impact on clinical judgment, communication and attitudes toward mental illness.",
+      "journal": "Archives of psychiatric nursing",
+      "pubdate": "2026 Oct",
+      "doi": "10.1016/j.apnu.2026.152236"
+    },
     {
       "pmid": "42837675",
       "title": "Immersive 3D vs Physical Simulation in Training Novices for Laser-Based Endourological Procedures: Protocol for a Randomized Controlled Trial.",
@@ -208,22 +215,15 @@
       "journal": "Proceedings of the Institution of Mechanical Engineers. Part H, Journal of engineering in medicine",
       "pubdate": "2025 Apr",
       "doi": "10.1177/09544119251328414"
-    },
-    {
-      "pmid": "40122898",
-      "title": "Hybrid simulation and immersive, lived-experience perspectives to shape medical student attitudes towards patients experiencing emotional distress, suicidality, and self-harm.",
-      "journal": "Advances in simulation (London, England)",
-      "pubdate": "2025 Mar 24",
-      "doi": "10.1186/s41077-025-00336-4"
     }
   ],
   "new_articles": [
     {
-      "pmid": "42837675",
-      "title": "Immersive 3D vs Physical Simulation in Training Novices for Laser-Based Endourological Procedures: Protocol for a Randomized Controlled Trial.",
-      "journal": "JMIR research protocols",
-      "pubdate": "2026 Oct 6",
-      "doi": "10.2196/94628"
+      "pmid": "42863930",
+      "title": "Comparing virtual, standardized patient and hybrid psychiatric simulation in undergraduate nursing: Impact on clinical judgment, communication and attitudes toward mental illness.",
+      "journal": "Archives of psychiatric nursing",
+      "pubdate": "2026 Oct",
+      "doi": "10.1016/j.apnu.2026.152236"
     }
   ]
 }
