@@ -3,8 +3,20 @@
   "nom": "Facteurs humains et cognitifs — Behavioural Software Engineering",
   "search_query": "(cat:cs.SE AND all:\"developer cognition\") OR all:\"rubber-stamping\" AND all:\"code generation\"",
   "axis": "axe1_2",
-  "executed_at": "2026-10-19",
+  "executed_at": "2026-10-26",
   "articles": [
+    {
+      "arxiv_id": "2610.24935v1",
+      "title": "Theory of Developer Momentum: The Developer's Experience of Progress and the Craft of Maintaining Motion",
+      "authors": [
+        "Arty Starr",
+        "Keith Mann",
+        "Margaret-Anne Storey"
+      ],
+      "published": "2026-10-18T01:11:05Z",
+      "summary": "This paper introduces a Theory of Developer Momentum that helps us see the activity of developing software in motion and the skilled craft through which progress unfolds. We define Developer Momentum as the developer's experience of progress and forward motion toward the goal of a task. Our theory disentangles the related constructs of flow state, momentum, and motivation, so we can more clearly see the relationships between them and how they interweave to support progress. In order to make prog",
+      "link": "https://arxiv.org/abs/2610.24935v1"
+    },
     {
       "arxiv_id": "2610.00961v1",
       "title": "Cybernetic and Epistemic: A Missing Vocabulary for Trustworthy Agentic Delegation",
@@ -161,5 +173,18 @@
       "link": "https://arxiv.org/abs/2501.02684v1"
     }
   ],
-  "new_articles": []
+  "new_articles": [
+    {
+      "arxiv_id": "2610.24935v1",
+      "title": "Theory of Developer Momentum: The Developer's Experience of Progress and the Craft of Maintaining Motion",
+      "authors": [
+        "Arty Starr",
+        "Keith Mann",
+        "Margaret-Anne Storey"
+      ],
+      "published": "2026-10-18T01:11:05Z",
+      "summary": "This paper introduces a Theory of Developer Momentum that helps us see the activity of developing software in motion and the skilled craft through which progress unfolds. We define Developer Momentum as the developer's experience of progress and forward motion toward the goal of a task. Our theory disentangles the related constructs of flow state, momentum, and motivation, so we can more clearly see the relationships between them and how they interweave to support progress. In order to make prog",
+      "link": "https://arxiv.org/abs/2610.24935v1"
+    }
+  ]
 }

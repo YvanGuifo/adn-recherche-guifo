@@ -3,9 +3,16 @@
   "nom": "Veille générale simulation hybride santé",
   "query": "(\"hybrid simulation\" OR \"multi-method simulation\" OR \"DES-ABM\" OR \"SD-ABM\") AND (health* OR hospital OR epidemiol*)",
   "axis": "axe3",
-  "executed_at": "2026-10-19",
-  "total_count_pubmed": "37",
+  "executed_at": "2026-10-26",
+  "total_count_pubmed": "38",
   "articles": [
+    {
+      "pmid": "42895126",
+      "title": "What Counts as 'Real' in Healthcare Interaction? Examining Human/Technology Hybrid Simulation Interactions in Communication Skills Training.",
+      "journal": "Sociology of health & illness",
+      "pubdate": "2026 Nov",
+      "doi": "10.1111/1467-9566.70284"
+    },
     {
       "pmid": "42863930",
       "title": "Comparing virtual, standardized patient and hybrid psychiatric simulation in undergraduate nursing: Impact on clinical judgment, communication and attitudes toward mental illness.",
@@ -208,22 +215,15 @@
       "journal": "Cureus",
       "pubdate": "2025 Mar",
       "doi": "10.7759/cureus.81532"
-    },
-    {
-      "pmid": "40165487",
-      "title": "A 3D-printed hybrid portable simulator for skills training in arthroscopic knee surgery.",
-      "journal": "Proceedings of the Institution of Mechanical Engineers. Part H, Journal of engineering in medicine",
-      "pubdate": "2025 Apr",
-      "doi": "10.1177/09544119251328414"
     }
   ],
   "new_articles": [
     {
-      "pmid": "42863930",
-      "title": "Comparing virtual, standardized patient and hybrid psychiatric simulation in undergraduate nursing: Impact on clinical judgment, communication and attitudes toward mental illness.",
-      "journal": "Archives of psychiatric nursing",
-      "pubdate": "2026 Oct",
-      "doi": "10.1016/j.apnu.2026.152236"
+      "pmid": "42895126",
+      "title": "What Counts as 'Real' in Healthcare Interaction? Examining Human/Technology Hybrid Simulation Interactions in Communication Skills Training.",
+      "journal": "Sociology of health & illness",
+      "pubdate": "2026 Nov",
+      "doi": "10.1111/1467-9566.70284"
     }
   ]
 }

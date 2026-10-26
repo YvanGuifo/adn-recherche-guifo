@@ -3,8 +3,23 @@
   "nom": "Traçabilité, provenance et gouvernance du code généré par IA",
   "search_query": "all:\"code provenance\" OR all:\"AI code governance\" OR (cat:cs.SE AND all:\"semantic validation\")",
   "axis": "axe1_2",
-  "executed_at": "2026-10-19",
+  "executed_at": "2026-10-26",
   "articles": [
+    {
+      "arxiv_id": "2610.25616v1",
+      "title": "Better Specifications, Better Code: Fine-Tuning LLMs for Behavioral Contract Generation",
+      "authors": [
+        "Brhane Team",
+        "Tiantian Yang",
+        "Nikta Akbarpour",
+        "Simone Bartucci",
+        "Francesco Calimeri",
+        "Song Wang"
+      ],
+      "published": "2026-10-19T00:44:11Z",
+      "summary": "Large language models (LLMs) demonstrate strong code-generation capabilities but often struggle with functional correctness due to implicit or ambiguous behavioral requirements. We present CG2, a contract-guided code generation framework that translates natural-language tasks into structured behavioral contracts specifying interfaces, preconditions, postconditions, and invariants. CG2 fine-tunes an LLM to generate these contracts and introduces an iterative semantic validation and repair process",
+      "link": "https://arxiv.org/abs/2610.25616v1"
+    },
     {
       "arxiv_id": "2610.01664v1",
       "title": "Code Detectors Have a Half-Life: Obsolescence and Metric Illusions in LLM-Generated Code Detection",
@@ -403,54 +418,23 @@
       "published": "2025-10-31T12:12:01Z",
       "summary": "Representational State Transfer (REST) APIs are a cornerstone of modern cloud native systems. Ensuring their reliability demands automated test suites that exercise diverse and boundary level behaviors. Nevertheless, designing such test cases remains a challenging and resource intensive endeavor. This study extends prior work on Large Language Model (LLM) based test amplification by evaluating single agent and multi agent configurations across four additional cloud applications. The amplified te",
       "link": "https://arxiv.org/abs/2510.27417v1"
-    },
-    {
-      "arxiv_id": "2510.10407v2",
-      "title": "PrediQL: Automated Testing of GraphQL APIs with LLMs",
-      "authors": [
-        "Shaolun Liu",
-        "Sina Marefat",
-        "Omar Tsai",
-        "Yu Chen",
-        "Zecheng Deng",
-        "Jia Wang",
-        "Mohammad A. Tayebi"
-      ],
-      "published": "2025-10-12T01:49:45Z",
-      "summary": "GraphQL's flexible query model and nested data dependencies expose APIs to complex, context-dependent vulnerabilities that are difficult to uncover using conventional testing tools. Existing fuzzers either rely on random payload generation or rigid mutation heuristics, failing to adapt to the dynamic structures of GraphQL schemas and responses. We present PrediQL, the first retrieval-augmented, LLM-guided fuzzer for GraphQL APIs. PrediQL combines large language model reasoning with adaptive feed",
-      "link": "https://arxiv.org/abs/2510.10407v2"
     }
   ],
   "new_articles": [
     {
-      "arxiv_id": "2604.22046v2",
-      "title": "Call-Chain-Aware LLM-Based Test Generation for Java Projects",
+      "arxiv_id": "2610.25616v1",
+      "title": "Better Specifications, Better Code: Fine-Tuning LLMs for Behavioral Contract Generation",
       "authors": [
-        "Guancheng Wang",
-        "Qinghua Xu",
-        "Lionel C. Briand",
-        "Zhaoqiang Guo",
-        "Kui Liu"
+        "Brhane Team",
+        "Tiantian Yang",
+        "Nikta Akbarpour",
+        "Simone Bartucci",
+        "Francesco Calimeri",
+        "Song Wang"
       ],
-      "published": "2026-04-23T20:03:18Z",
-      "summary": "Large language models (LLMs) have recently shown strong potential for generating project-level unit tests. However, existing state-of-the-art approaches primarily rely on execution-path information to guide prompt construction, which is often insufficient for complex software systems with rich inter-class dependencies, deep call chains, and intricate object initialization requirements. In this paper, we present CAT, a novel call-chain-aware LLM-based test generation approach that explicitly inco",
-      "link": "https://arxiv.org/abs/2604.22046v2"
-    },
-    {
-      "arxiv_id": "2510.10407v2",
-      "title": "PrediQL: Automated Testing of GraphQL APIs with LLMs",
-      "authors": [
-        "Shaolun Liu",
-        "Sina Marefat",
-        "Omar Tsai",
-        "Yu Chen",
-        "Zecheng Deng",
-        "Jia Wang",
-        "Mohammad A. Tayebi"
-      ],
-      "published": "2025-10-12T01:49:45Z",
-      "summary": "GraphQL's flexible query model and nested data dependencies expose APIs to complex, context-dependent vulnerabilities that are difficult to uncover using conventional testing tools. Existing fuzzers either rely on random payload generation or rigid mutation heuristics, failing to adapt to the dynamic structures of GraphQL schemas and responses. We present PrediQL, the first retrieval-augmented, LLM-guided fuzzer for GraphQL APIs. PrediQL combines large language model reasoning with adaptive feed",
-      "link": "https://arxiv.org/abs/2510.10407v2"
+      "published": "2026-10-19T00:44:11Z",
+      "summary": "Large language models (LLMs) demonstrate strong code-generation capabilities but often struggle with functional correctness due to implicit or ambiguous behavioral requirements. We present CG2, a contract-guided code generation framework that translates natural-language tasks into structured behavioral contracts specifying interfaces, preconditions, postconditions, and invariants. CG2 fine-tunes an LLM to generate these contracts and introduces an iterative semantic validation and repair process",
+      "link": "https://arxiv.org/abs/2610.25616v1"
     }
   ]
 }
