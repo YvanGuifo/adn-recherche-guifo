@@ -3,9 +3,16 @@
   "nom": "Veille générale simulation hybride santé",
   "query": "(\"hybrid simulation\" OR \"multi-method simulation\" OR \"DES-ABM\" OR \"SD-ABM\") AND (health* OR hospital OR epidemiol*)",
   "axis": "axe3",
-  "executed_at": "2026-10-26",
-  "total_count_pubmed": "38",
+  "executed_at": "2026-11-02",
+  "total_count_pubmed": "39",
   "articles": [
+    {
+      "pmid": "42953415",
+      "title": "Virtual Reality in Surgical Education: Evidence, Applications, Implementation Challenges, and Future Directions.",
+      "journal": "Advances in medical education and practice",
+      "pubdate": "2026",
+      "doi": "10.2147/AMEP.S642019"
+    },
     {
       "pmid": "42895126",
       "title": "What Counts as 'Real' in Healthcare Interaction? Examining Human/Technology Hybrid Simulation Interactions in Communication Skills Training.",
@@ -208,22 +215,15 @@
       "journal": "PloS one",
       "pubdate": "2025",
       "doi": "10.1371/journal.pone.0319788"
-    },
-    {
-      "pmid": "40314050",
-      "title": "Impact of an Obstetrical Emergency Simulation Learning Module on Midwifery Students' Competency: A Non-randomized Control Study.",
-      "journal": "Cureus",
-      "pubdate": "2025 Mar",
-      "doi": "10.7759/cureus.81532"
     }
   ],
   "new_articles": [
     {
-      "pmid": "42895126",
-      "title": "What Counts as 'Real' in Healthcare Interaction? Examining Human/Technology Hybrid Simulation Interactions in Communication Skills Training.",
-      "journal": "Sociology of health & illness",
-      "pubdate": "2026 Nov",
-      "doi": "10.1111/1467-9566.70284"
+      "pmid": "42953415",
+      "title": "Virtual Reality in Surgical Education: Evidence, Applications, Implementation Challenges, and Future Directions.",
+      "journal": "Advances in medical education and practice",
+      "pubdate": "2026",
+      "doi": "10.2147/AMEP.S642019"
     }
   ]
 }

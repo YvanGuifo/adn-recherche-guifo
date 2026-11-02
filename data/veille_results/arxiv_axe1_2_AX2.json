@@ -3,8 +3,34 @@
   "nom": "Traçabilité, provenance et gouvernance du code généré par IA",
   "search_query": "all:\"code provenance\" OR all:\"AI code governance\" OR (cat:cs.SE AND all:\"semantic validation\")",
   "axis": "axe1_2",
-  "executed_at": "2026-10-26",
+  "executed_at": "2026-11-02",
   "articles": [
+    {
+      "arxiv_id": "2610.41800v1",
+      "title": "Reparo: Synthesizing and Validating Access Control Policies",
+      "authors": [
+        "Ayesha Binte Mostofa",
+        "Gehao Zhang",
+        "Sam Stern",
+        "Juan Zhai",
+        "Pubali Datta"
+      ],
+      "published": "2026-10-30T14:29:17Z",
+      "summary": "Writing correct access control policies for software applications is difficult because it requires expertise in the authorization language and a thorough understanding of the application's authorization requirements. Existing synthesis and mining approaches assume explicit authorization inputs and a trusted reference policy. However, authorization logic is often distributed across code, comments, and documentation rather than captured in a single artifact, and developer-defined policies in real-",
+      "link": "https://arxiv.org/abs/2610.41800v1"
+    },
+    {
+      "arxiv_id": "2610.37663v1",
+      "title": "An EVM-Cosmos Bridge for Atomic, Semantic-Preserving Transfer of Environmental Tokens",
+      "authors": [
+        "Sebastian Pandolfi",
+        "Guzmán Llambías",
+        "Laura González"
+      ],
+      "published": "2026-10-27T17:59:30Z",
+      "summary": "Transferring semantically typed tokens between heterogeneous blockchains (e.g. EVM and Cosmos ecosystems) raises two problems: semantic mixing, the loss of a token's domainspecific meaning in transit (e.g., CO2 removals issued under different methodologies), and atomicity despite divergent consensus and timing assumptions. We propose a bridge that addresses both. A deterministic indicator identity derived from cryptographic commitments, mirrored in class registries on both chains and checked at ",
+      "link": "https://arxiv.org/abs/2610.37663v1"
+    },
     {
       "arxiv_id": "2610.25616v1",
       "title": "Better Specifications, Better Code: Fine-Tuning LLMs for Behavioral Contract Generation",
@@ -391,50 +417,34 @@
       "published": "2025-12-02T16:36:13Z",
       "summary": "Move is a resource-oriented programming language designed for secure and verifiable smart contract development and has been widely used in managing billions of digital assets in blockchains, such as Sui and Aptos.Move features a strong static type system and explicit resource semantics to enforce safety properties such as the prevention of data races, invalid asset transfers, and entry vulnerabilities. However, smart contracts written in Move may still contain certain vulnerabilities that are be",
       "link": "https://arxiv.org/abs/2512.02918v3"
-    },
-    {
-      "arxiv_id": "2511.08462v5",
-      "title": "QLCoder: A Query Synthesizer For Static Analysis of Security Vulnerabilities",
-      "authors": [
-        "Claire Wang",
-        "Ziyang Li",
-        "Saikat Dutta",
-        "Mayur Naik"
-      ],
-      "published": "2025-11-11T17:06:04Z",
-      "summary": "Static analysis tools provide a powerful means to detect security vulnerabilities by specifying queries that encode vulnerable code patterns. However, writing such queries is challenging and requires diverse expertise in security and program analysis. To address this challenge, we present QLCoder - an agentic framework that automatically synthesizes queries in CodeQL, a powerful static analysis engine, directly from a given CVE metadata. QLCode embeds an LLM in a synthesis loop with execution fe",
-      "link": "https://arxiv.org/abs/2511.08462v5"
-    },
-    {
-      "arxiv_id": "2510.27417v1",
-      "title": "Agentic LLMs for REST API Test Amplification: A Comparative Study Across Cloud Applications",
-      "authors": [
-        "Jarne Besjes",
-        "Robbe Nooyens",
-        "Tolgahan Bardakci",
-        "Mutlu Beyazit",
-        "Serge Demeyer"
-      ],
-      "published": "2025-10-31T12:12:01Z",
-      "summary": "Representational State Transfer (REST) APIs are a cornerstone of modern cloud native systems. Ensuring their reliability demands automated test suites that exercise diverse and boundary level behaviors. Nevertheless, designing such test cases remains a challenging and resource intensive endeavor. This study extends prior work on Large Language Model (LLM) based test amplification by evaluating single agent and multi agent configurations across four additional cloud applications. The amplified te",
-      "link": "https://arxiv.org/abs/2510.27417v1"
     }
   ],
   "new_articles": [
     {
-      "arxiv_id": "2610.25616v1",
-      "title": "Better Specifications, Better Code: Fine-Tuning LLMs for Behavioral Contract Generation",
+      "arxiv_id": "2610.41800v1",
+      "title": "Reparo: Synthesizing and Validating Access Control Policies",
       "authors": [
-        "Brhane Team",
-        "Tiantian Yang",
-        "Nikta Akbarpour",
-        "Simone Bartucci",
-        "Francesco Calimeri",
-        "Song Wang"
+        "Ayesha Binte Mostofa",
+        "Gehao Zhang",
+        "Sam Stern",
+        "Juan Zhai",
+        "Pubali Datta"
       ],
-      "published": "2026-10-19T00:44:11Z",
-      "summary": "Large language models (LLMs) demonstrate strong code-generation capabilities but often struggle with functional correctness due to implicit or ambiguous behavioral requirements. We present CG2, a contract-guided code generation framework that translates natural-language tasks into structured behavioral contracts specifying interfaces, preconditions, postconditions, and invariants. CG2 fine-tunes an LLM to generate these contracts and introduces an iterative semantic validation and repair process",
-      "link": "https://arxiv.org/abs/2610.25616v1"
+      "published": "2026-10-30T14:29:17Z",
+      "summary": "Writing correct access control policies for software applications is difficult because it requires expertise in the authorization language and a thorough understanding of the application's authorization requirements. Existing synthesis and mining approaches assume explicit authorization inputs and a trusted reference policy. However, authorization logic is often distributed across code, comments, and documentation rather than captured in a single artifact, and developer-defined policies in real-",
+      "link": "https://arxiv.org/abs/2610.41800v1"
+    },
+    {
+      "arxiv_id": "2610.37663v1",
+      "title": "An EVM-Cosmos Bridge for Atomic, Semantic-Preserving Transfer of Environmental Tokens",
+      "authors": [
+        "Sebastian Pandolfi",
+        "Guzmán Llambías",
+        "Laura González"
+      ],
+      "published": "2026-10-27T17:59:30Z",
+      "summary": "Transferring semantically typed tokens between heterogeneous blockchains (e.g. EVM and Cosmos ecosystems) raises two problems: semantic mixing, the loss of a token's domainspecific meaning in transit (e.g., CO2 removals issued under different methodologies), and atomicity despite divergent consensus and timing assumptions. We propose a bridge that addresses both. A deterministic indicator identity derived from cryptographic commitments, mirrored in class registries on both chains and checked at ",
+      "link": "https://arxiv.org/abs/2610.37663v1"
     }
   ]
 }
