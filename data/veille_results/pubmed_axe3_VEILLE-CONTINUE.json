@@ -3,7 +3,7 @@
   "nom": "Veille générale simulation hybride santé",
   "query": "(\"hybrid simulation\" OR \"multi-method simulation\" OR \"DES-ABM\" OR \"SD-ABM\") AND (health* OR hospital OR epidemiol*)",
   "axis": "axe3",
-  "executed_at": "2026-11-02",
+  "executed_at": "2026-11-09",
   "total_count_pubmed": "39",
   "articles": [
     {
@@ -38,7 +38,7 @@
       "pmid": "42804962",
       "title": "A hybrid simulation phase correction method for endoscopic trans-osseous ultrasound imaging.",
       "journal": "Ultrasonics",
-      "pubdate": "2026 Sep 28",
+      "pubdate": "2027 Feb",
       "doi": "10.1016/j.ultras.2026.108322"
     },
     {
@@ -217,13 +217,5 @@
       "doi": "10.1371/journal.pone.0319788"
     }
   ],
-  "new_articles": [
-    {
-      "pmid": "42953415",
-      "title": "Virtual Reality in Surgical Education: Evidence, Applications, Implementation Challenges, and Future Directions.",
-      "journal": "Advances in medical education and practice",
-      "pubdate": "2026",
-      "doi": "10.2147/AMEP.S642019"
-    }
-  ]
+  "new_articles": []
 }
